@@ -50,14 +50,10 @@ namespace Common.Movement
 
         private void CheckFacing()
         {
-            var dir = character.FacingDirection;
-
-            if(input.x != 0)
-                dir.x = input.x;
-            if(input.y != 0)
-                dir.y = input.y;
-
-            character.FacingDirection = dir;
+            if(input.magnitude != 0)
+            {
+                character.FacingDirection = input.normalized;
+            }
         }
 
         private void Move()

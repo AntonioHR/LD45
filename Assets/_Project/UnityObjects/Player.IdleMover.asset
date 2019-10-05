@@ -17,5 +17,5 @@ MonoBehaviour:
   useBraking: 1
   frictionSettings:
     brakeForce: 25
-    speedCap: 5
+    speedCap: 1.5
     speedCapFrictionPower: 25

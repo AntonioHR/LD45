@@ -1,3 +1,4 @@
+using System;
 using Common.Input;
 using Common.Movement;
 using UnityEngine;
@@ -11,7 +12,6 @@ namespace SamuraiGame.Player
         public PlayerConfigs configs;
 
         public CharMover defaultMover { get => configs.defaultMover; }
-        public CharMover dashMover { get => configs.dashMover; }
         public SpriteRenderer SpriteRenderer { get; private set; }
 
         public Rigidbody2D Rigidbody { get; private set; }
@@ -35,11 +35,20 @@ namespace SamuraiGame.Player
         }
         private void Update()
         {
+            UpdateFacingDirection();
             stateMachine.Update();
 
             if(Input.GetKeyDown(KeyCode.Z))
             {
                 stateMachine.OnDashPressed();
+            }
+        }
+
+        private void UpdateFacingDirection()
+        {
+            if(DirectionInput.magnitude != 0)
+            {
+                FacingDirection = DirectionInput.normalized;
             }
         }
     }
