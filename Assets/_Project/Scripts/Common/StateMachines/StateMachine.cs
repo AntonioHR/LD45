@@ -13,7 +13,7 @@ namespace Common.StateMachines
 
         State<TContext, TState> IStateMachine<TContext, TState>.CurrentState => CurrentState;
 
-        public void Init(TContext context)
+        public void Begin(TContext context)
         {
             this.Context = context;
             ChangeState(DefaultState);
