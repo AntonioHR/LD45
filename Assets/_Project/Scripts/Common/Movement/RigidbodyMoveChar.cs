@@ -30,7 +30,6 @@ namespace Common.Movement
 
         Rigidbody2D rb;
         Vector2 input;
-        Vector2 moveForceVec;
         bool facingLeft = false;
 
         public float VelocityMag { get { return rb.velocity.magnitude; } }
