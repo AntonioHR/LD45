@@ -18,10 +18,13 @@ namespace SamuraiGame.Player.States
 
         private Vector2 directionInput;
         private Configs configs;
+        private Stopwatch dashTimer = new Stopwatch();
         private Stopwatch recoverTimer = new Stopwatch();
         private bool dashOver = false;
 
         private Vector3 startPosition;
+        private float dashDuration;
+
         public Vector2 TravelVector{ get => ( Player.transform.position - startPosition); }
 
         public DashState(Vector2 directionInput)
@@ -33,6 +36,8 @@ namespace SamuraiGame.Player.States
         {
             configs = Player.configs.dash;
             startPosition = Player.transform.position;
+            dashDuration = configs.dashDistance / configs.dashVel;
+            dashTimer.Reset();
             Player.SpriteRenderer.color = Color.red;
 
             Player.Rigidbody.velocity = directionInput * configs.dashVel;
@@ -41,7 +46,7 @@ namespace SamuraiGame.Player.States
 
         public override void Update()
         {
-            if(!dashOver && TravelVector.magnitude > configs.dashDistance)
+            if(!dashOver && dashTimer.ElapsedSeconds >= dashDuration)
             {
                 dashOver = true;
                 recoverTimer = Stopwatch.CreateAndStart();
@@ -57,13 +62,5 @@ namespace SamuraiGame.Player.States
             Player.SpriteRenderer.color = Color.white;
                 Player.Rigidbody.velocity = Vector2.zero;
         }
-
-
-        // public override void FixedUpdate()
-        // {
-        //     var move = dashOver ? Player.configs.dashDriftMover : Player.configs.dashMover;
-
-        //     move.DoFixedUpdate(Player, directionInput);
-        // }
     }
 }
