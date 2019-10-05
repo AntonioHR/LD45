@@ -1,14 +1,11 @@
-﻿using System;
-using Common.Input;
+using System;
 using UnityEngine;
 
 namespace Common.Movement
 {
-    [RequireComponent(typeof(Rigidbody2D))]
-    public class RigidbodyMoveChar : MonoBehaviour
+    [CreateAssetMenu(menuName="2D/CharMover")]
+    public class CharMover : ScriptableObject
     {
-
-
         #region Inspector Variables
         public float moveForce = 5.0f;
         public bool useSpeedCapFriction = false;
@@ -28,38 +25,39 @@ namespace Common.Movement
 
 
 
-        Rigidbody2D rb;
-        Vector2 input;
-        bool facingLeft = false;
+        private IMovingChar character;
+        private Vector2 input;
 
-        public float VelocityMag { get { return rb.velocity.magnitude; } }
-        public bool FacingLeft { get { return facingLeft; } }
+        private Rigidbody2D rb{ get => character.Rigidbody; }
 
-        // Use this for initialization
-        void Start()
+
+        public void DoFixedUpdate(IMovingChar character, Vector2 direction)
         {
-            rb = GetComponent<Rigidbody2D>();
+            this.character = character;
+            input = direction;
+            FixedUpdate();
         }
 
-        // Update is called once per frame
-        void FixedUpdate()
-        {
-            input = InputHelper.DefaultJoystickInputRawCapped;
+        private void FixedUpdate()
+        {            
             Move();
             if (useSpeedCapFriction || useBraking)
             {
                 ApplyFriction();
             }
-
             CheckFacing();
         }
 
         private void CheckFacing()
         {
-            if (input.x > 0)
-                facingLeft = false;
-            else if (input.x < 0)
-                facingLeft = true;
+            var dir = character.FacingDirection;
+
+            if(input.x != 0)
+                dir.x = input.x;
+            if(input.y != 0)
+                dir.y = input.y;
+
+            character.FacingDirection = dir;
         }
 
         private void Move()
@@ -99,6 +97,5 @@ namespace Common.Movement
                 brakeForce.y = 0;
             rb.AddForce(brakeForce);
         }
-
     }
 }

@@ -2,26 +2,26 @@
 
 namespace Common.Movement
 {
-    [RequireComponent(typeof(RigidbodyMoveChar))]
+    [RequireComponent(typeof(IMovingChar))]
     [RequireComponent(typeof(Animator))]
     [RequireComponent(typeof(SpriteRenderer))]
     public class AnimateByRigidbodyMove : MonoBehaviour
     {
-        RigidbodyMoveChar mov;
+        IMovingChar @char;
         Animator animator;
         SpriteRenderer spr;
 
         private void Start()
         {
-            mov = GetComponent<RigidbodyMoveChar>();
+            @char = GetComponent<IMovingChar>();
             animator = GetComponent<Animator>();
             spr = GetComponent<SpriteRenderer>();
         }
         private void Update()
         {
-            animator.SetFloat("velocity_magnitude", mov.VelocityMag);
+            animator.SetFloat("velocity_magnitude", @char.GetSpeed());
 
-            spr.flipX = mov.FacingLeft;
+            spr.flipX = @char.FacingDirection.x < 0;
         }
     }
 }

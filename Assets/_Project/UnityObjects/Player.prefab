@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 5805275858296463307}
   - component: {fileID: 5805275858296463306}
   - component: {fileID: 5805275858296463309}
-  - component: {fileID: 5805275858296463308}
-  - component: {fileID: 5805275858296463311}
+  - component: {fileID: 2402087460547848553}
+  - component: {fileID: 108497727035554311}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -124,7 +124,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5805275858296463308
+--- !u!114 &2402087460547848553
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,17 +133,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5805275858296463310}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4bde53a4fbb44e4bbd85d28da478247, type: 3}
+  m_Script: {fileID: 11500000, guid: 08624942cefb4914c93ee8c328603142, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveForce: 25
-  useSpeedCapFriction: 1
-  useBraking: 1
-  frictionSettings:
-    brakeForce: 25
-    speedCap: 5
-    speedCapFrictionPower: 25
---- !u!114 &5805275858296463311
+  configs: {fileID: 11400000, guid: b37fe734eaf27eb4d87c7ff9749823db, type: 2}
+--- !u!114 &108497727035554311
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -8,6 +8,8 @@ namespace SamuraiGame.Player
         protected PlayerController Player { get => Context; }
 
         public virtual void Update() { }
+        public virtual void FixedUpdate() { }
 
+        public virtual void OnDashPressed() { }
     }
 }

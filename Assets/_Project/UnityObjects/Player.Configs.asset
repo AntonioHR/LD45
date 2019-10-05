@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c22134623493d34fa916eee1b55f33b, type: 3}
+  m_Name: Player.Configs
+  m_EditorClassIdentifier: 
+  dash:
+    dashDistance: 2
+    recoverTime: 0.25
+  defaultMover: {fileID: 11400000, guid: 660dfd131925b584eaa6267390fcc2f3, type: 2}
+  dashMover: {fileID: 11400000, guid: fa2333cf6bee05f45965d20250332c8b, type: 2}

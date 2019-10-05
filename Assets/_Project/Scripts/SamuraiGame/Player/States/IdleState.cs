@@ -1,3 +1,6 @@
+using Common.Input;
+using UnityEngine;
+
 namespace SamuraiGame.Player.States
 {
     public class IdleState : PlayerStateBase
@@ -7,8 +10,13 @@ namespace SamuraiGame.Player.States
         {
 
         }
-        public override void Update()
+        public override void FixedUpdate()
         {
+            Player.defaultMover.DoFixedUpdate(Player, Player.DirectionInput);
+        }
+        public override void OnDashPressed()
+        {
+            ExitTo(new DashState(Player.FacingDirection));
         }
     }
 }
