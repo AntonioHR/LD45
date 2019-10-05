@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class EventManager : MonoBehaviour
 {
-    public static EventManager Instance { get; private set}
+    public static EventManager Instance { get; private set; }
 
     private Dictionary<string, UnityEvent> events = new Dictionary<string, UnityEvent>();
 
