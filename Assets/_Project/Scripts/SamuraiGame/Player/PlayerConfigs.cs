@@ -8,5 +8,7 @@ namespace SamuraiGame.Player
     {
         public States.DashState.Configs dash;
         public CharMover defaultMover;
+
+        public KeyCode[] dashKeys;
     }
 }

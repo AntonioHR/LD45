@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using Common.Input;
 using Common.Movement;
 using UnityEngine;
@@ -38,7 +39,7 @@ namespace SamuraiGame.Player
             UpdateFacingDirection();
             stateMachine.Update();
 
-            if(Input.GetKeyDown(KeyCode.Space))
+            if(configs.dashKeys.Any(k=>Input.GetKeyDown(k)))
             {
                 stateMachine.OnDashPressed();
             }
