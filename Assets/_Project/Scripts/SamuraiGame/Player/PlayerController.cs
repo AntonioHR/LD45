@@ -38,7 +38,7 @@ namespace SamuraiGame.Player
             UpdateFacingDirection();
             stateMachine.Update();
 
-            if(Input.GetKeyDown(KeyCode.Z))
+            if(Input.GetKeyDown(KeyCode.Space))
             {
                 stateMachine.OnDashPressed();
             }
