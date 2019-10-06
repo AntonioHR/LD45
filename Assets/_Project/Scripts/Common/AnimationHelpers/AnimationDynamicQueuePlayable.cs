@@ -13,7 +13,7 @@ namespace Common.AnimationHelpers
     [RequireComponent(typeof(Animator))]
     public class AnimationDynamicQueuePlayable : MonoBehaviour, IAnimationClipSource
     {
-        private AnimationClip[] clips;
+        private AnimationClip[] clips = new AnimationClip[0];
         private PlayableGraph playableGraph;
         private PlayQueuePlayable playQueue;
 
