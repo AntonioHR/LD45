@@ -22,7 +22,6 @@ namespace SamuraiGame.Enemy
         public SpriteRenderer sprite;
         public SpriteRenderer emoteSprite;
 
-        
         public CharMover pursueMove;
         public EnemyConfigs configs;
 
@@ -33,6 +32,8 @@ namespace SamuraiGame.Enemy
 
         private EnemyStateMachine stateMachine = new EnemyStateMachine();
         internal PlayerController target;
+
+        private event Action onEnemyOutOfCombat;
 
         public Vector2 TargetDirection {
             get
@@ -109,6 +110,7 @@ namespace SamuraiGame.Enemy
         public void OnPlayerDead()
         {
             stateMachine.OnPlayerDead();
+            TriggerOnDeath();
         }
 
 
@@ -125,6 +127,19 @@ namespace SamuraiGame.Enemy
                 hitBoxComponent.isDashable = isDashable;
                 hitBoxComponent.enemy = this;
             }
+        }
+
+        public void RegisterOnEnemyOutOfCombat(Action deathAction)
+        {
+            onEnemyOutOfCombat += deathAction;
+        }
+        public void RemoveOnEnemyOutOfCombat(Action deathAction)
+        {
+            onEnemyOutOfCombat -= deathAction;
+        }
+        private void TriggerOnDeath()
+        {
+            onEnemyOutOfCombat?.Invoke();
         }
     }
 }
