@@ -106,16 +106,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animationSetup: {fileID: 11400000, guid: d6518a94e54e64621ad3263302a6f6ab, type: 2}
   attackAnimations:
-  - isDashable: 1
-    damageHitBox: {fileID: 1040177798028141831}
-    animationId: hit_0
-    waitTime: 0.1
-    gettingReadyTime: 0.15
   - isDashable: 0
     damageHitBox: {fileID: 5807229870557788835}
     animationId: hit_0
     waitTime: 0.25
     gettingReadyTime: 0.3
+  - isDashable: 1
+    damageHitBox: {fileID: 1040177798028141831}
+    animationId: hit_0
+    waitTime: 0.1
+    gettingReadyTime: 0.15
   aggroTrigger: {fileID: 6317976589128720475}
   sprite: {fileID: 1040177797947906762}
   emoteSprite: {fileID: 8581068516057824095}
