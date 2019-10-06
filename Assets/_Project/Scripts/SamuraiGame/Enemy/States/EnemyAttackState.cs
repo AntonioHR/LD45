@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
+using SamuraiGame.Managers;
+using SamuraiGame.Player;
+using System;
 
 namespace SamuraiGame.Enemy.States {
 
@@ -15,8 +18,6 @@ namespace SamuraiGame.Enemy.States {
             PlayAttackAnimations();
         }
 
-        
-
         private void PlayAttackAnimations()
         {
             animationIndex = 0;
@@ -28,7 +29,7 @@ namespace SamuraiGame.Enemy.States {
         {
             Debug.Log("startWaiting");
             currentDamageArea?.SetActive(false);
-            waitAttackCoroutine = WaitAttackAnimation(Enemy.attackAnimations[animationIndex].WaitTime);
+            waitAttackCoroutine = Wait(Enemy.attackAnimations[animationIndex].WaitTime, StartNextAttack);
 
             Enemy.StartCoroutine(waitAttackCoroutine);
         }
@@ -48,10 +49,21 @@ namespace SamuraiGame.Enemy.States {
             }
             else
             {
-                Debug.Log("next animation");
-                StartNextAnimation();
+                StartAttack();
             }
         }
+
+        private void StartAttack()
+        {
+            float getReadyTime = Enemy.attackAnimations[animationIndex].GettingReadyTime;
+            bool isDashable = Enemy.attackAnimations[animationIndex].IsDashable;
+
+            GettingReady(isDashable);
+
+            waitAttackCoroutine = Wait(Enemy.attackAnimations[animationIndex].GettingReadyTime, StartNextAnimation);
+
+            Enemy.StartCoroutine(waitAttackCoroutine);
+		}
 
         private void StartNextAnimation()
         {
@@ -94,10 +106,21 @@ namespace SamuraiGame.Enemy.States {
             StartNextAttack();
         }
 
+        private IEnumerator Wait (float seconds, Action callback)
+        {
+            yield return new WaitForSeconds(seconds);
+            callback?.Invoke();
+        }
+
         public override void OnHitParried()
         {
             StopAllAnimations();
             ExitTo(new EnemyStaggerState());
+        }
+
+        private void GettingReady(bool isDashable)
+        {
+
         }
     }
 }

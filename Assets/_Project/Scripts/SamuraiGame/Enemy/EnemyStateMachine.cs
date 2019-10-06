@@ -2,6 +2,7 @@
 using System.Collections;
 using Common.StateMachines;
 using SamuraiGame.Enemy.States;
+using System;
 
 namespace SamuraiGame.Enemy
 {
@@ -22,6 +23,11 @@ namespace SamuraiGame.Enemy
         public void OnStagger()
         {
             CurrentState.OnStagger();
+        }
+
+        public void OnHitParried()
+        {
+            CurrentState.OnHitParried();
         }
     }
 }
