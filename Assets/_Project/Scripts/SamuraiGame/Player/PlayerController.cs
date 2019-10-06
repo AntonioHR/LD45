@@ -84,11 +84,13 @@ namespace SamuraiGame.Player
         }
         public void Heal()
         {
+            AudioManager.Instance.Play("recover");
             health.Heal();
         }
         public void OnDead()
         {
-            if(Died != null)
+            AudioManager.Instance.Play("player_dead");
+            if (Died != null)
                 Died();
         }
 
@@ -99,10 +101,16 @@ namespace SamuraiGame.Player
                 bool isDashing = stateMachine.IsDashing();
                 if (isDashing)
                 {
+                    OnBlock();
                     return;
                 }
             }
             OnHit(enemy);
+        }
+
+        private void OnBlock()
+        {
+            AudioManager.Instance.Play("dash_block");
         }
 
         public bool IsDashing()

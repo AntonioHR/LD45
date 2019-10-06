@@ -15,6 +15,7 @@ public class FrameWaiterHelper : MonoBehaviour
         else
         {
             Instance = this;
+            transform.parent = null;
             DontDestroyOnLoad(gameObject);
         }
     }
