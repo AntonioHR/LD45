@@ -18,5 +18,10 @@ namespace SamuraiGame.Enemy
         {
             this.CurrentState.OnDamageTaken();
         }
+
+        public void OnStagger()
+        {
+            CurrentState.OnStagger();
+        }
     }
 }

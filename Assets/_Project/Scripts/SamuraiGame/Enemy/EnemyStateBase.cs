@@ -12,6 +12,7 @@ namespace SamuraiGame.Enemy
         {
             return false;
         }
+        public virtual void OnStagger() { }
 
         public abstract void OnDamageTaken();
     }

@@ -75,5 +75,11 @@ namespace SamuraiGame.Enemy.States {
             StopAllAnimations();
             ExitTo(new EnemyDamageTakenState());
         }
+
+        public override void OnStagger()
+        {
+            StopAllAnimations();
+            ExitTo(new EnemyStaggerState());
+        }
     }
 }

@@ -13,6 +13,7 @@ namespace SamuraiGame.Enemy.States
 
         public override bool TryAttack()
         {
+            ExitTo(new EnemyAttackState());
             return false;
         }
 
