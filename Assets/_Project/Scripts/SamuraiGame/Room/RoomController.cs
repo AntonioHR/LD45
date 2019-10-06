@@ -45,7 +45,14 @@ namespace SamuraiGame.Room
         {
             SceneManager.LoadScene(nextSceneName);
         }
+        private void OnRoomCompleted() {
+        }
+            
+        public void ReloadRoom()
+		{
+            string sceneName = SceneManager.GetActiveScene().name;
 
-        
+            SceneManager.LoadScene(sceneName);
+		}
     }
 }
