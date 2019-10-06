@@ -22,5 +22,10 @@ namespace SamuraiGame.Player
         {
             
         }
+
+        public virtual bool IsDashing()
+        {
+            return false;
+        }
     }
 }

@@ -10,6 +10,8 @@ namespace SamuraiGame.Player
     public class PlayerController : MonoBehaviour, IMovingChar
     {
         public event Action<int> HealthChanged{ add => health.ValueChanged+=value; remove => health.ValueChanged -= value; }
+
+
         public event Action Died;
 
         private PlayerStateMachine stateMachine = new PlayerStateMachine();
@@ -80,6 +82,24 @@ namespace SamuraiGame.Player
         public void Heal()
         {
             health.Heal();
+        }
+
+        public void OnHitByEnemy(bool isHitDashable, Transform enemy)
+        {
+            if (isHitDashable)
+            {
+                bool isDhasing = stateMachine.IsDhashing();
+                if (isDhasing)
+                {
+                    return;
+                }
+            }
+            OnHit(enemy);
+        }
+
+        public bool IsDashing()
+        {
+            return stateMachine.IsDhashing();
         }
     }
 }

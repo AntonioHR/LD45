@@ -69,6 +69,10 @@ namespace Common.Animation
 
         void IAnimationClipSource.GetAnimationClips(List<AnimationClip> results)
         {
+            if(setup == null || setup.entries == null)
+            {
+                return;
+            }
             foreach (var e in setup.entries)
             {
                 if (e.clip != null)

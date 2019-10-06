@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using Common.AnimationHelpers;
-
+using System;
 
 namespace SamuraiGame.Enemy
 {
@@ -24,6 +24,16 @@ namespace SamuraiGame.Enemy
             SetAllDamageHitBox();
 
             TryAttack();
+        }
+
+        private void OnDestroy()
+        {
+            StopAllCoroutines();
+        }
+
+        public void HitParried()
+        {
+            Destroy(this);
         }
 
         public bool TryAttack()
