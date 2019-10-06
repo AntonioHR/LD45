@@ -111,7 +111,6 @@ namespace SamuraiGame.Enemy
         public void OnPlayerDead()
         {
             stateMachine.OnPlayerDead();
-            TriggerOnOutOfCombat();
         }
 
 
