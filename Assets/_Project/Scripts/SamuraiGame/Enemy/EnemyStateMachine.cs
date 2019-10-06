@@ -2,6 +2,8 @@
 using System.Collections;
 using Common.StateMachines;
 using SamuraiGame.Enemy.States;
+using SamuraiGame.Player;
+using System;
 
 namespace SamuraiGame.Enemy
 {
@@ -22,6 +24,20 @@ namespace SamuraiGame.Enemy
         public void OnStagger()
         {
             CurrentState.OnStagger();
+        }
+
+        public void OnPlayerIsInAggroRange(PlayerController player)
+        {
+            CurrentState.OnPlayerIsInAggroRange(player);
+        }
+
+        public void Update()
+        {
+            CurrentState.Update();
+        }
+        public void FixedUpdate()
+        {
+            CurrentState.FixedUpdate();
         }
     }
 }

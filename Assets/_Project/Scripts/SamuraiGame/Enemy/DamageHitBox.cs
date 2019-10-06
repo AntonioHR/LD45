@@ -11,7 +11,7 @@ namespace SamuraiGame.Enemy
 
         protected override void OnTriggered(PlayerController player)
         {
-            player.OnHit(isDashable);
+            throw new System.NotImplementedException();
         }
     }
 }
