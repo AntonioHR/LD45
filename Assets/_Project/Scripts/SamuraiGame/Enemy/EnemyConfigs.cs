@@ -12,5 +12,6 @@ namespace SamuraiGame.Enemy
         public SurroundRange.Setup closeIn;
         public float attackDelayMin = .25f;
         public float attackDelayMax= 1;
+        public Color CloseInColor = Color.red;
     }
 }
