@@ -14,6 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   entries:
   - id: empty
-    clip: {fileID: 7400000, guid: 9a47c779f39db461eafb3b8f0c108450, type: 2}
+    clip: {fileID: 7400000, guid: 4ab1c6d39210f432a8c5958eb1ca56d0, type: 2}
   - id: hit_0
     clip: {fileID: 7400000, guid: 4c40270243cae4faeacb8ceb2917f8e1, type: 2}
+  - id: hit_1
+    clip: {fileID: 7400000, guid: 9a47c779f39db461eafb3b8f0c108450, type: 2}
+  - id: prep_1
+    clip: {fileID: 7400000, guid: d052e14b7109a4bbfa1c9b3ab6ad0624, type: 2}
+  - id: prep_2
+    clip: {fileID: 7400000, guid: 90394a8d3a7f44309b85bfa4cafd7818, type: 2}
