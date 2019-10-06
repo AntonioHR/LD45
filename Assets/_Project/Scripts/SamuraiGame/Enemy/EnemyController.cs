@@ -80,6 +80,7 @@ namespace SamuraiGame.Enemy
 
         internal void HitParried()
         {
+            TriggerOnOutOfCombat();
             stateMachine.OnStagger();
         }
 
@@ -110,7 +111,7 @@ namespace SamuraiGame.Enemy
         public void OnPlayerDead()
         {
             stateMachine.OnPlayerDead();
-            TriggerOnDeath();
+            TriggerOnOutOfCombat();
         }
 
 
@@ -137,7 +138,7 @@ namespace SamuraiGame.Enemy
         {
             onEnemyOutOfCombat -= deathAction;
         }
-        private void TriggerOnDeath()
+        private void TriggerOnOutOfCombat()
         {
             onEnemyOutOfCombat?.Invoke();
         }

@@ -19,4 +19,10 @@ MonoBehaviour:
     - {fileID: 1040177797947906758, guid: 0d972a66dd74a49f9afe104969e41c97, type: 3}
     - {fileID: 1040177797947906758, guid: 0d972a66dd74a49f9afe104969e41c97, type: 3}
     - {fileID: 1040177797947906758, guid: 0d972a66dd74a49f9afe104969e41c97, type: 3}
-  totalEnemies: 0
+  - SpawnerId: spawner01
+    enemyPrefab:
+    - {fileID: 1040177797947906758, guid: 0d972a66dd74a49f9afe104969e41c97, type: 3}
+    - {fileID: 1040177797947906758, guid: 0d972a66dd74a49f9afe104969e41c97, type: 3}
+    - {fileID: 1040177797947906758, guid: 0d972a66dd74a49f9afe104969e41c97, type: 3}
+    - {fileID: 1040177797947906758, guid: 0d972a66dd74a49f9afe104969e41c97, type: 3}
+  totalEnemies: 4
