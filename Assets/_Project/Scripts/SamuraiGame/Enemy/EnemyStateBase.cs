@@ -40,6 +40,10 @@ namespace SamuraiGame.Enemy
 
         }
 
+        public virtual void LateUpdate()
+        {
+        }
+
         protected void RemovePlayerListener()
         {
             Enemy.target.Died -= Enemy.OnPlayerDead;

@@ -48,7 +48,7 @@ namespace SamuraiGame.Enemy.States {
             Enemy.animationPlayable.PlayOnce(animationId, DoFade);
         }
 
-        private void DoFade()
+        private async void DoFade()
         {
             Vector3 scale = Enemy.transform.localScale;
             scale.x = -scale.x;
@@ -65,10 +65,12 @@ namespace SamuraiGame.Enemy.States {
 
             var invi = new Color(1, 1, 1, 0);
 
+            await Wait.For(0.7f);
+
             var seq = DOTween.Sequence();
-            seq.Append(Enemy.sprite.DOColor(invi, .05f));
-            seq.Append(Enemy.sprite.DOColor(Color.white, .05f));
-            seq.AppendInterval(.05f);
+            seq.Append(Enemy.sprite.DOColor(invi, .1f));
+            seq.Append(Enemy.sprite.DOColor(Color.white, .1f));
+            seq.AppendInterval(.1f);
             seq.SetLoops(4);
 
             seq.OnComplete(Destroy);

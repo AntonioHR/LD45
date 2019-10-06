@@ -26,10 +26,10 @@ namespace SamuraiGame.Enemy.States {
 
         private void StartIdleAnimation()
         {
-            Enemy.animationPlayable.PlayLooped(Enemy.attackAnimations[0].AnimationId, () => { });
+            Enemy.animationPlayable.PlayLooped(GameConstants.ENEMY_ANIMATION_IDLE, () => { });
         }
 
-        public override  void OnPlayerIsInAggroRange(PlayerController player)
+        public override void OnPlayerIsInAggroRange(PlayerController player)
         {
             Enemy.target = player;
             player.Died += Enemy.OnPlayerDead;

@@ -14,5 +14,7 @@ namespace SamuraiGame
         public static readonly string ENEMY_ANIMATION_DYING = "dying";
         public static readonly string ENEMY_ANIMATION_RECOVERING = "recovering";
         public static readonly string ENEMY_ANIMATION_IDLE = "idle";
+
+        public const float ENEMY_WALK_ANIMATION_THRESHOLD = 0.005f;
     }
 }

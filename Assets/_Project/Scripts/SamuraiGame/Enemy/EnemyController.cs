@@ -149,5 +149,10 @@ namespace SamuraiGame.Enemy
         {
             onEnemyOutOfCombat?.Invoke();
         }
+
+        private void LateUpdate()
+        {
+            stateMachine.LateUpdate();
+        }
     }
 }

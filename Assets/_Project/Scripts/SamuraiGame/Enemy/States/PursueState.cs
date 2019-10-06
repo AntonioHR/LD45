@@ -1,5 +1,7 @@
 using System;
 using Common.Timers;
+using SamuraiGame.Managers;
+using SamuraiGame.Player;
 using UnityEngine;
 
 namespace SamuraiGame.Enemy.States
@@ -8,6 +10,9 @@ namespace SamuraiGame.Enemy.States
     {
         float closeInDelay;
         bool isInrange;
+        bool isRunning;
+        Vector3 lastPosition = Vector3.zero;
+        Vector3 preLastPosition = Vector3.zero;
 
         Stopwatch stopwatch = new Stopwatch();
 
@@ -16,14 +21,22 @@ namespace SamuraiGame.Enemy.States
         }
         protected override void Begin()
         {
+            Enemy.animationPlayable.PlayLooped(GameConstants.ENEMY_ANIMATION_RUN, () => { });
+
             closeInDelay = UnityEngine.Random.Range(Enemy.configs.attackDelayMin, Enemy.configs.attackDelayMax);
-            StartIdleAnimation();
+            StartRunAnimation();
         }
 
 
+        private void StartRunAnimation()
+        {
+            isRunning = true;
+            Enemy.animationPlayable.PlayLooped(GameConstants.ENEMY_ANIMATION_RUN, () => { });
+        }
         private void StartIdleAnimation()
         {
-            Enemy.animationPlayable.PlayLooped(Enemy.animationSetup.entries[0].id, () => { });
+            isRunning = false;
+            Enemy.animationPlayable.PlayLooped(GameConstants.ENEMY_ANIMATION_IDLE, () => { });
         }
 
         public override void Update()
@@ -48,8 +61,24 @@ namespace SamuraiGame.Enemy.States
 
             }
 
-            
         }
+
+        public override void LateUpdate()
+        {
+            float distance = Vector3.Distance(Enemy.transform.position, lastPosition);
+            lastPosition = preLastPosition;
+            preLastPosition = Enemy.transform.position;
+
+            if (distance > GameConstants.ENEMY_WALK_ANIMATION_THRESHOLD && !isRunning)
+            {
+                StartRunAnimation();
+            } else if(distance <= GameConstants.ENEMY_WALK_ANIMATION_THRESHOLD && isRunning)
+            {
+                StartIdleAnimation();
+            }
+        }
+
+
         public override void FixedUpdate()
         {
             FacePlayer();
