@@ -31,7 +31,7 @@ namespace SamuraiGame.Room
 
         private void Start()
         {
-            TriggerManager.StartListening(EventName.OnGateEnter, OnGateEnter);
+            TriggerManager.StartListening(EventName.OnTransitionOver, OnGateEnter);
             
 
             StartRoom();

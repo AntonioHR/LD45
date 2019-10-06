@@ -212,7 +212,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allowMultipleTriggers: 0
   openDistance: 0.548
-  openTime: 0.5
+  openTime: 1
   left: {fileID: 5169897118244434240}
   right: {fileID: 5597608772576540498}
   blocker: {fileID: 8990526973272251617}
