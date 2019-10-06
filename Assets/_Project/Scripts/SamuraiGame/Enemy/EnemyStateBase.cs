@@ -11,9 +11,11 @@ namespace SamuraiGame.Enemy
     {
         protected EnemyController Enemy { get => Context; }
 
-        public float SurroundCoordinates{ get => Enemy.Surround.RangeCoordinates(Enemy.target.transform.position); }
-        public float SurroundAttackCoordinates{ get => Enemy.SurroundAttack.RangeCoordinates(Enemy.target.transform.position); }
-        public float CloseInCoordinates{ get => Enemy.CloseIn.RangeCoordinates(Enemy.target.transform.position); }
+        public float SurroundCoordinates{ get => Enemy.target == null? float.PositiveInfinity: Enemy.Surround.RangeCoordinates(Enemy.target.transform.position); }
+
+
+        public float SurroundAttackCoordinates{ get => Enemy.target == null? float.PositiveInfinity: Enemy.SurroundAttack.RangeCoordinates(Enemy.target.transform.position); }
+        public float CloseInCoordinates{ get => Enemy.target == null? float.PositiveInfinity: Enemy.CloseIn.RangeCoordinates(Enemy.target.transform.position); }
 
         public virtual bool TryAttack()
         {
@@ -39,6 +41,10 @@ namespace SamuraiGame.Enemy
         protected void FacePlayer()
         {
             Enemy.FacingDirection = Enemy.TargetDirection;
+        }
+        protected void RemovePlayerListener()
+        {
+            Enemy.target.Died -= Enemy.OnPlayerDead;
         }
     }
 }

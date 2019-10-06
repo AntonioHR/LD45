@@ -65,6 +65,7 @@ namespace Common.Animation
         private void Cleanup()
         {
             playableGraph.Destroy();
+            
             hasInit = false;
         }
 

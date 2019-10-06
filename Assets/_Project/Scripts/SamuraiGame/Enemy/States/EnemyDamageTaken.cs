@@ -8,7 +8,7 @@ namespace SamuraiGame.Enemy.States
     {
         public override void OnDamageTaken()
         {
-            
+
         }
 
         public override bool TryAttack()
@@ -19,7 +19,10 @@ namespace SamuraiGame.Enemy.States
 
         protected override void Begin()
         {
+            RemovePlayerListener();
 
         }
+
+        public override void OnPlayerDead() { }
     }
 }

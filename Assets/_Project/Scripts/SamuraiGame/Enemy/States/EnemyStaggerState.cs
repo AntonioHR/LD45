@@ -13,6 +13,7 @@ namespace SamuraiGame.Enemy.States {
 
         protected override void Begin()
         {
+            RemovePlayerListener();
             var invi = new Color(1, 1, 1, 0);
             Enemy.Rigidbody.velocity = -Enemy.TargetDirection * .5f;
 
@@ -29,5 +30,6 @@ namespace SamuraiGame.Enemy.States {
         {
             GameObject.Destroy(Enemy.gameObject);
         }
+        public override void OnPlayerDead() { }
     }
 }

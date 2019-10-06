@@ -34,7 +34,6 @@ namespace SamuraiGame.Enemy.States {
 
         private void OnAnimationFinished()
         {
-            Debug.Log("startWaiting");
             currentDamageArea?.SetActive(false);
             attacking = false;
             waitAttackCoroutine = Wait(Enemy.attackAnimations[animationIndex].WaitTime, StartNextAttack);
@@ -76,7 +75,6 @@ namespace SamuraiGame.Enemy.States {
         private void StartNextAnimation()
         {
             UnsetRiposte();
-            Debug.Log("finish waiting");
 
             string animationId = Enemy.attackAnimations[animationIndex].AnimationId;
             attacking = true;
@@ -87,7 +85,6 @@ namespace SamuraiGame.Enemy.States {
 
         private void FinishAttack()
         {
-            Debug.Log("animationFinished");
             StopAllAnimations();
             ExitTo(new PursueState());
         }
