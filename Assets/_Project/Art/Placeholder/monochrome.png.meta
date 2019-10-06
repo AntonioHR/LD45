@@ -2461,7 +2461,7 @@ TextureImporter:
     second: monochrome_818
   - first:
       213: -5913264784211887221
-    second: monochrome_819
+    second: exclamation
   - first:
       213: 371045436300791414
     second: monochrome_820
@@ -3120,7 +3120,7 @@ TextureImporter:
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
-  alphaUsage: 1
+  alphaUsage: 2
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
@@ -20369,7 +20369,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monochrome_819
+      name: exclamation
       rect:
         serializedVersion: 2
         x: 323

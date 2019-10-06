@@ -41,6 +41,26 @@ namespace Common.Interactables
             }
         }
 
+        private void OnTriggerExit2D(Collider2D other)
+        {
+
+            var target = other.GetComponent<T>();
+
+            if(target == null)
+            {
+                var proxy = other.GetComponent<IProxyFor<T>>();
+                if (proxy != null)
+                    target = proxy.Owner;
+            }
+
+            if(target != null)
+            {
+                OnExit(target);
+            }
+        }
+
+        protected virtual void OnExit(T target) { }
+
         protected abstract void OnTriggered(T obj);
 
         public void Reset()

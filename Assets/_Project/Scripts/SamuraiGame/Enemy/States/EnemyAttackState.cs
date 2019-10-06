@@ -67,7 +67,7 @@ namespace SamuraiGame.Enemy.States {
         {
             Debug.Log("animationFinished");
             StopAllAnimations();
-            ExitTo(new EnemyIdleState());
+            ExitTo(new PursueState());
         }
 
         private void StopAllAnimations()

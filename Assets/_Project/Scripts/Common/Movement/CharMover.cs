@@ -1,4 +1,5 @@
 using System;
+using SamuraiGame.Enemy;
 using UnityEngine;
 
 namespace Common.Movement
@@ -10,6 +11,8 @@ namespace Common.Movement
         public float moveForce = 5.0f;
         public bool useSpeedCapFriction = false;
         public bool useBraking = false;
+
+
         public FrictionSettings frictionSettings;
 
         [Serializable]

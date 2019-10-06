@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
+using SamuraiGame.Player;
+using DG.Tweening;
+using System;
 
 namespace SamuraiGame.Enemy.States {
 
@@ -19,6 +22,22 @@ namespace SamuraiGame.Enemy.States {
         protected override void Begin()
         {
 
+        }
+        public override  void OnPlayerIsInAggroRange(PlayerController player)
+        {
+            Enemy.target = player;
+
+            FlickerWarning();
+
+            ExitTo(new PursueState());
+
+        }
+
+        private async void FlickerWarning()
+        {
+            Enemy.emoteSprite.color = Color.white;
+            await Wait.For(3);
+            Enemy.emoteSprite.color = new Color(1,1,1, 0);
         }
     }
 }
