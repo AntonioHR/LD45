@@ -74,7 +74,7 @@ namespace SamuraiGame.Enemy
 
         internal void HitParried()
         {
-            Destroy(gameObject);
+            stateMachine.OnStagger();
         }
 
         private void Start()
