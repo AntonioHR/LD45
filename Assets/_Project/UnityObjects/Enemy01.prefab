@@ -109,13 +109,13 @@ MonoBehaviour:
   - isDashable: 0
     damageHitBox: {fileID: 5807229870557788835}
     animationId: hit_0
-    waitTime: 0.25
-    gettingReadyTime: 0.3
+    waitTime: 0.2
+    gettingReadyTime: 1
   - isDashable: 1
     damageHitBox: {fileID: 1040177798028141831}
     animationId: hit_0
-    waitTime: 0.1
-    gettingReadyTime: 0.15
+    waitTime: 0.5
+    gettingReadyTime: 0.5
   aggroTrigger: {fileID: 6317976589128720475}
   sprite: {fileID: 1040177797947906762}
   emoteSprite: {fileID: 8581068516057824095}

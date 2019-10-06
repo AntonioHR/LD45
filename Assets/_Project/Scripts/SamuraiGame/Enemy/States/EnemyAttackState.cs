@@ -12,12 +12,11 @@ namespace SamuraiGame.Enemy.States {
         private GameObject currentDamageArea;
 
         private IEnumerator waitAttackCoroutine;
+        private bool attacking;
 
         protected override void Begin()
         {
             Enemy.Rigidbody.velocity = Vector2.zero;
-            Enemy.Rigidbody.isKinematic = true;
-            FacePlayer();
             PlayAttackAnimations();
         }
         protected override void End()
@@ -37,6 +36,7 @@ namespace SamuraiGame.Enemy.States {
         {
             Debug.Log("startWaiting");
             currentDamageArea?.SetActive(false);
+            attacking = false;
             waitAttackCoroutine = Wait(Enemy.attackAnimations[animationIndex].WaitTime, StartNextAttack);
 
             Enemy.StartCoroutine(waitAttackCoroutine);
@@ -79,6 +79,7 @@ namespace SamuraiGame.Enemy.States {
             Debug.Log("finish waiting");
 
             string animationId = Enemy.attackAnimations[animationIndex].AnimationId;
+            attacking = true;
             Enemy.animationPlayable.PlayOnce(animationId, OnAnimationFinished);
             currentDamageArea = Enemy.attackAnimations[animationIndex].DamageHitBox;
             currentDamageArea.SetActive(true);
@@ -125,6 +126,15 @@ namespace SamuraiGame.Enemy.States {
         {
             StopAllAnimations();
             ExitTo(new EnemyStaggerState());
+        }
+
+        public override void FixedUpdate()
+        {
+            Vector2 move = attacking ? Enemy.FacingDirection : Vector2.zero;
+            Enemy.configs.hitAdvanceMover.DoFixedUpdate(Enemy, move);
+
+            if(!attacking)
+                FacePlayer();
         }
 
         private void GettingReady(bool isDashable)
