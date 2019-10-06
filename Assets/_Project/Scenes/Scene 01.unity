@@ -2272,6 +2272,10 @@ PrefabInstance:
       propertyPath: roomSpawner.spawners.Array.data[1].spawnerId
       value: b
       objectReference: {fileID: 0}
+    - target: {fileID: 1279245592, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
+      propertyPath: nextSceneName
+      value: Scene 02
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
 --- !u!1 &456036647

@@ -323,7 +323,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 42224212}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.45, y: -3.65, z: -13.995068}
+  m_LocalPosition: {x: -10.18, y: -3.86, z: -13.995068}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1661,6 +1661,51 @@ PrefabInstance:
       value: d
       objectReference: {fileID: 0}
     - target: {fileID: 1459097262, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
+      propertyPath: roomSpawner.spawners.Array.data[3].spawner
+      value: 
+      objectReference: {fileID: 433380208}
+    - target: {fileID: 1279245592, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
+      propertyPath: roomSpawner.spawners.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1279245592, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
+      propertyPath: config
+      value: 
+      objectReference: {fileID: 11400000, guid: 6ef1c98d2fce340bda69729cc727051d,
+        type: 2}
+    - target: {fileID: 1279245592, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
+      propertyPath: nextSceneName
+      value: Scene 03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1279245592, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
+      propertyPath: roomSpawner.spawners.Array.data[0].spawnerId
+      value: a
+      objectReference: {fileID: 0}
+    - target: {fileID: 1279245592, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
+      propertyPath: roomSpawner.spawners.Array.data[1].spawnerId
+      value: b
+      objectReference: {fileID: 0}
+    - target: {fileID: 1279245592, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
+      propertyPath: roomSpawner.spawners.Array.data[2].spawnerId
+      value: c
+      objectReference: {fileID: 0}
+    - target: {fileID: 1279245592, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
+      propertyPath: roomSpawner.spawners.Array.data[3].spawnerId
+      value: d
+      objectReference: {fileID: 0}
+    - target: {fileID: 1279245592, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
+      propertyPath: roomSpawner.spawners.Array.data[0].spawner
+      value: 
+      objectReference: {fileID: 1456344372}
+    - target: {fileID: 1279245592, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
+      propertyPath: roomSpawner.spawners.Array.data[1].spawner
+      value: 
+      objectReference: {fileID: 168356595}
+    - target: {fileID: 1279245592, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
+      propertyPath: roomSpawner.spawners.Array.data[2].spawner
+      value: 
+      objectReference: {fileID: 42224212}
+    - target: {fileID: 1279245592, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
       propertyPath: roomSpawner.spawners.Array.data[3].spawner
       value: 
       objectReference: {fileID: 433380208}
