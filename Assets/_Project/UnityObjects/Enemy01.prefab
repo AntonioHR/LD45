@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 1040177797947906760}
   - component: {fileID: 1764966244}
   - component: {fileID: 1215452728954885746}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -188,14 +188,14 @@ MonoBehaviour:
   - isDashable: 0
     damageHitBox: {fileID: 1040177798028141831}
     animationId: hit_1
-    waitTime: 1
+    waitTime: 0.2
     gettingReadyTime: 1
     prepAnimationId: prep_2
   - isDashable: 1
     damageHitBox: {fileID: 4294165899137205245}
     animationId: hit_0
-    waitTime: 1
-    gettingReadyTime: 1.5
+    waitTime: 0.5
+    gettingReadyTime: 0.5
     prepAnimationId: prep_1
   aggroTrigger: {fileID: 6317976589128720475}
   sprite: {fileID: 1040177797947906762}
