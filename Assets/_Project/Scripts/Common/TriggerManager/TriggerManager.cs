@@ -2,9 +2,9 @@
 using UnityEngine.Events;
 using System.Collections.Generic;
 
-public class EventManager : MonoBehaviour
+public class TriggerManager : MonoBehaviour
 {
-    public static EventManager Instance { get; private set; }
+    public static TriggerManager Instance { get; private set; }
 
     private Dictionary<string, UnityEvent> events = new Dictionary<string, UnityEvent>();
 

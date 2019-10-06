@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using SamuraiGame.Enemy;
 using SamuraiGame.Room;
+using SamuraiGame.Events;
+using System.Threading.Tasks;
 
 namespace SamuraiGame.Managers
 {
@@ -39,17 +41,19 @@ namespace SamuraiGame.Managers
 
         private void Start()
         {
-            StartRoom(currentRoomConfig);
+            //StartRoom(currentRoomConfig);
         }
 
-        public void StartRoom(RoomConfig roomConfig)
+        public async Task StartRoom(RoomConfig roomConfig)
         {
             currentWaveIndex = 0;
-            SpawnWave(roomConfig.waves[0]);
+            await SpawnWave(roomConfig.waves[0]);
         }
 
-        public void SpawnWave(WaveConfig spawnConfig)
+        public async Task SpawnWave(WaveConfig spawnConfig)
         {
+			await Wait.For(spawnConfig.startDelay);
+
             List<List<EnemyWithPosition>> enemies = CreateSpawnEnemiesStructure(spawnConfig);
 
             numberOfEnemiesAlive = 0;
@@ -149,11 +153,11 @@ namespace SamuraiGame.Managers
             currentWaveIndex++;
             if (currentWaveIndex >= currentRoomConfig.waves.Length)
             {
-                Debug.Log("End room");
+                TriggerManager.Trigger(EventName.RoomCompleted);
             } else
             {
                 WaveConfig nextWave = currentRoomConfig.waves[currentWaveIndex];
-                SpawnWave(nextWave);
+                _ = SpawnWave(nextWave);
             }
         }
     }
