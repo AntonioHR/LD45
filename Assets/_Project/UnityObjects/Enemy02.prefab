@@ -185,6 +185,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animationSetup: {fileID: 11400000, guid: d6518a94e54e64621ad3263302a6f6ab, type: 2}
   attackAnimations:
+  - isDashable: 0
+    damageHitBox: {fileID: 1040177798028141831}
+    animationId: hit_1
+    waitTime: 0.2
+    gettingReadyTime: 1
+    prepAnimationId: prep_2
   - isDashable: 1
     damageHitBox: {fileID: 4294165899137205245}
     animationId: hit_0
