@@ -1,15 +1,22 @@
 using System;
+using Common.Timers;
 using UnityEngine;
 
 namespace SamuraiGame.Enemy.States
 {
     public class PursueState : EnemyStateBase
     {
+        float closeInDelay;
+        bool isInrange;
+
+        Stopwatch stopwatch = new Stopwatch();
+
         public override void OnDamageTaken()
         {
         }
         protected override void Begin()
         {
+            closeInDelay = UnityEngine.Random.Range(Enemy.configs.attackDelayMin, Enemy.configs.attackDelayMax);
         }
 
 
@@ -17,8 +24,24 @@ namespace SamuraiGame.Enemy.States
         {
             if(SurroundCoordinates > 0 && SurroundCoordinates < 1)
             {
-                ExitTo(new CloseInState());
+                if(!isInrange)
+                {
+                    isInrange = true;
+                    stopwatch = Stopwatch.CreateAndStart();
+                }
+                if(stopwatch.ElapsedSeconds > closeInDelay)
+                    ExitTo(new CloseInState());
+            } else
+            {
+                if(isInrange)
+                {
+                    isInrange = false;
+
+                    stopwatch = new Stopwatch();
+                }
+
             }
+
             
         }
         public override void FixedUpdate()
