@@ -4,6 +4,7 @@ using Common.StateMachines;
 using SamuraiGame.Player;
 using System;
 using SamuraiGame.Enemy.States;
+using Common.Audio;
 
 namespace SamuraiGame.Enemy
 {
@@ -53,6 +54,16 @@ namespace SamuraiGame.Enemy
             {
                 GameObject.Instantiate(Context.configs.healthDrop, Context.transform.position, Quaternion.identity);
             }
+        }
+
+        public void PlayAttackSound()
+        {
+            SoundEffectAsset[] hitSounds = Enemy.configs.hitSounds;
+
+            if(hitSounds.Length > 0)
+                hitSounds[UnityEngine.Random.Range(0, hitSounds.Length)].Play();
+
+
         }
     }
 }

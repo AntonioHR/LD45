@@ -28,3 +28,7 @@ MonoBehaviour:
   healthDrop: {fileID: 5340488198108731901, guid: 15f6513bbf337a346a151930fa773a4d,
     type: 3}
   healthDropRate: 0.5
+  hitSounds:
+  - {fileID: 11400000, guid: 23a6cca7cae132d48bef5b6941b68cf6, type: 2}
+  - {fileID: 11400000, guid: b9f099ef8c8637b4c89cf4aff10889ef, type: 2}
+  - {fileID: 11400000, guid: 3514f9f2c9150464385f507e12e38853, type: 2}

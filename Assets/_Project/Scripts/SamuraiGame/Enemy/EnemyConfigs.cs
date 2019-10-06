@@ -1,3 +1,4 @@
+using Common.Audio;
 using Common.Movement;
 using UnityEngine;
 
@@ -16,5 +17,6 @@ namespace SamuraiGame.Enemy
 
         public GameObject healthDrop;
         public float healthDropRate = .3f;
+        public SoundEffectAsset[] hitSounds;
     }
 }

@@ -17,7 +17,7 @@ namespace Common.Audio
     }
     public static class SoundEffectAssetExtensions
     {
-        public static void Play(SoundEffectAsset soundEffect)
+        public static void Play(this SoundEffectAsset soundEffect)
         {
             AudioManager.Instance.Play(soundEffect);
         }

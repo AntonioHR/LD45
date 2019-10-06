@@ -80,6 +80,7 @@ namespace SamuraiGame.Enemy.States {
             attacking = true;
             Enemy.animationPlayable.PlayOnce(animationId, OnAnimationFinished);
             currentDamageArea = Enemy.attackAnimations[animationIndex].DamageHitBox;
+            PlayAttackSound();
             currentDamageArea.SetActive(true);
         }
 
