@@ -7,5 +7,12 @@ namespace SamuraiGame
     {
         public static readonly Color RIPOSTE_UNBLOCKABLE_COLOR = Color.red;
         public static readonly Color RIPOSTE_BLOCKABLE_COLOR = Color.white;
+
+        public static readonly string ENEMY_ANIMATION_DISARM = "disarm";
+        public static readonly string ENEMY_ANIMATION_RUN = "run";
+        public static readonly string ENEMY_ANIMATION_ESCAPING = "escaping";
+        public static readonly string ENEMY_ANIMATION_DYING = "dying";
+        public static readonly string ENEMY_ANIMATION_RECOVERING = "recovering";
+        public static readonly string ENEMY_ANIMATION_IDLE = "idle";
     }
 }

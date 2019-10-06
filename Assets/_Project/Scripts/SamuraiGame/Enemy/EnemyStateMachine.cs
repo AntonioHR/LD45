@@ -48,5 +48,10 @@ namespace SamuraiGame.Enemy
         {
             CurrentState.OnHitParried();
         }
+
+        internal void FacePlayer()
+        {
+            CurrentState.FacePlayer();
+        }
     }
 }

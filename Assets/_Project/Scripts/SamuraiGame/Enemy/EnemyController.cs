@@ -5,6 +5,7 @@ using System;
 using SamuraiGame.Enemy.Triggers;
 using SamuraiGame.Player;
 using Common.Movement;
+using SamuraiGame.Managers;
 
 namespace SamuraiGame.Enemy
 {
@@ -97,7 +98,15 @@ namespace SamuraiGame.Enemy
         private void Update()
         {
             stateMachine.Update();
+
+            FacePlayer();
         }
+
+        private void FacePlayer()
+        {
+            stateMachine.FacePlayer();
+        }
+
         private void FixedUpdate()
         {
             stateMachine.FixedUpdate();

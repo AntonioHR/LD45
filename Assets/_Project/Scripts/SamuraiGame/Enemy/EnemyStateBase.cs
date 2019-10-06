@@ -4,6 +4,7 @@ using Common.StateMachines;
 using SamuraiGame.Player;
 using System;
 using SamuraiGame.Enemy.States;
+using SamuraiGame.Managers;
 
 namespace SamuraiGame.Enemy
 {
@@ -39,10 +40,6 @@ namespace SamuraiGame.Enemy
 
         }
 
-        protected void FacePlayer()
-        {
-            Enemy.FacingDirection = Enemy.TargetDirection;
-        }
         protected void RemovePlayerListener()
         {
             Enemy.target.Died -= Enemy.OnPlayerDead;
@@ -52,6 +49,22 @@ namespace SamuraiGame.Enemy
             if(UnityEngine.Random.value < Context.configs.healthDropRate)
             {
                 GameObject.Instantiate(Context.configs.healthDrop, Context.transform.position, Quaternion.identity);
+            }
+        }
+
+        public virtual void FacePlayer() {
+            Enemy.FacingDirection = Enemy.TargetDirection;
+
+            PlayerController player = GameManager.Instance.CurrentScene.Player;
+
+            bool shouldFlip = player.transform.position.x < Enemy.transform.position.x;
+
+            if (shouldFlip && !Enemy.sprite.flipX)
+            {
+                Enemy.sprite.flipX = true;
+            } else if(!shouldFlip && Enemy.sprite.flipX)
+            {
+                Enemy.sprite.flipX = false;
             }
         }
     }
