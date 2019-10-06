@@ -11,10 +11,8 @@ namespace SamuraiGame.Managers
     {
         public static EnemyManager Instance { get; private set; }
 
-        [SerializeField]
         private RoomConfig currentRoomConfig;
 
-        [SerializeField]
         private RoomSpawner roomSpawner;
 
         private int currentWaveIndex;
@@ -44,8 +42,10 @@ namespace SamuraiGame.Managers
             //StartRoom(currentRoomConfig);
         }
 
-        public async Task StartRoom(RoomConfig roomConfig)
+        public async Task StartRoom(RoomConfig roomConfig, RoomSpawner _roomSpawner)
         {
+            currentRoomConfig = roomConfig;
+            roomSpawner = _roomSpawner;
             currentWaveIndex = 0;
             await SpawnWave(roomConfig.waves[0]);
         }

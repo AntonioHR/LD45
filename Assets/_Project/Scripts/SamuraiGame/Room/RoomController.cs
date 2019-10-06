@@ -15,6 +15,21 @@ namespace SamuraiGame.Room
         private string nextSceneName;
         [SerializeField]
         private RoomConfig config;
+        [SerializeField]
+        private RoomSpawner roomSpawner;
+
+        public static RoomController Instance { get; private set; }
+
+        private void Awake()
+        {
+            if(Instance == null)
+            {
+                Instance = this;
+            } else
+            {
+                Destroy(this);
+            }
+        }
 
         private void Start()
         {
@@ -27,7 +42,7 @@ namespace SamuraiGame.Room
         }
 
         private void StartRoom(){
-            EnemyManager.Instance.StartRoom(config);
+            _ = EnemyManager.Instance.StartRoom(config, roomSpawner);
         }
 
         private void OnGateEnter()
