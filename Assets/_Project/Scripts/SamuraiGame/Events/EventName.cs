@@ -1,9 +1,10 @@
 ﻿using System;
 
-namespace Events
+namespace SamuraiGame.Events
 {
     public static class EventName
     {
-		public static readonly string TestEvent = "event-name";
+		public static readonly string RoomCompleted = "room-completed";
+		public static readonly string OnGateEnter = "on-gate-enter";
     }
 }
