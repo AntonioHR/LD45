@@ -13,5 +13,8 @@ namespace SamuraiGame.Enemy
         public float attackDelayMin = .25f;
         public float attackDelayMax= 1;
         public Color CloseInColor = Color.red;
+
+        public GameObject healthDrop;
+        public float healthDropRate = .3f;
     }
 }

@@ -31,7 +31,7 @@ namespace SamuraiGame.Player
         private Health health = new Health(3);
 
         public int CurrentHealth{ get => health.Current; }
-
+        public bool CanHeal { get => health.CanHeal; }
 
         private void Awake()
         {

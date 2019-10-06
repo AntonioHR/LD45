@@ -25,3 +25,6 @@ MonoBehaviour:
   attackDelayMin: 0.25
   attackDelayMax: 3.5
   CloseInColor: {r: 0.754717, g: 0.73234, b: 0.4805981, a: 1}
+  healthDrop: {fileID: 5340488198108731901, guid: 15f6513bbf337a346a151930fa773a4d,
+    type: 3}
+  healthDropRate: 0.3

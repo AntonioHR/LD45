@@ -1,7 +1,7 @@
 using Common.Interactables;
 using SamuraiGame.Player;
 
-namespace SamuraiGame.Hazard
+namespace SamuraiGame.Pickups
 {
     public class SimpleHazard : ObjectTrigger<Player.PlayerController>
     {

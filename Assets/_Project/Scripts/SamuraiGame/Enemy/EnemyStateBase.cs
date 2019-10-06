@@ -17,6 +17,7 @@ namespace SamuraiGame.Enemy
         public float SurroundAttackCoordinates{ get => Enemy.target == null? float.PositiveInfinity: Enemy.SurroundAttack.RangeCoordinates(Enemy.target.transform.position); }
         public float CloseInCoordinates{ get => Enemy.target == null? float.PositiveInfinity: Enemy.CloseIn.RangeCoordinates(Enemy.target.transform.position); }
 
+
         public virtual bool TryAttack()
         {
             return false;
@@ -45,6 +46,13 @@ namespace SamuraiGame.Enemy
         protected void RemovePlayerListener()
         {
             Enemy.target.Died -= Enemy.OnPlayerDead;
+        }
+        protected void TrySpawnPickup()
+        {
+            if(UnityEngine.Random.value < Context.configs.healthDropRate)
+            {
+                GameObject.Instantiate(Context.configs.healthDrop, Context.transform.position, Quaternion.identity);
+            }
         }
     }
 }

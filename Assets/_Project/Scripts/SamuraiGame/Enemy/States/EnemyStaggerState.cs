@@ -22,6 +22,8 @@ namespace SamuraiGame.Enemy.States {
             seq.Append(Enemy.sprite.DOColor(Color.white, .05f));
             seq.AppendInterval(.05f);
             seq.SetLoops(4);
+
+            TrySpawnPickup();
             
             seq.OnComplete(Destroy);
         }
