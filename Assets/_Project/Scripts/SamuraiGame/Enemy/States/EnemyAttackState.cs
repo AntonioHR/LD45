@@ -67,6 +67,7 @@ namespace SamuraiGame.Enemy.States {
 
         private void StartNextAnimation()
         {
+            UnsetRiposte();
             Debug.Log("finish waiting");
 
             string animationId = Enemy.attackAnimations[animationIndex].AnimationId;
@@ -120,7 +121,20 @@ namespace SamuraiGame.Enemy.States {
 
         private void GettingReady(bool isDashable)
         {
+            SpriteRenderer riposteIndicator = Enemy.riposteIndicator;
+            if(isDashable)
+            {
+                riposteIndicator.color = GameConstants.RIPOSTE_BLOCKABLE_COLOR;
+            } else
+            {
+                riposteIndicator.color = GameConstants.RIPOSTE_UNBLOCKABLE_COLOR;
+            }
+            riposteIndicator.gameObject.SetActive(true);
+        }
 
+        private void UnsetRiposte()
+        {
+            Enemy.riposteIndicator.gameObject.SetActive(false);
         }
     }
 }
