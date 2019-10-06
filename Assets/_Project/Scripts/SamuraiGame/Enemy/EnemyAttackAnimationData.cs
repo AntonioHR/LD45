@@ -18,9 +18,13 @@ namespace SamuraiGame.Enemy
         [SerializeField]
         private float waitTime;
 
+        [SerializeField]
+        private float gettingReadyTime;
+
         public bool IsDashable { get => isDashable; }
         public string AnimationId { get => animationId; }
         public GameObject DamageHitBox { get => damageHitBox; }
         public float WaitTime { get => waitTime; }
+        public float GettingReadyTime { get => gettingReadyTime; }
     }
 }

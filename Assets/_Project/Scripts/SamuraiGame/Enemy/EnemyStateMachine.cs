@@ -44,5 +44,9 @@ namespace SamuraiGame.Enemy
         {
             CurrentState.OnPlayerDead();
         }
+        public void OnHitParried()
+        {
+            CurrentState.OnHitParried();
+        }
     }
 }

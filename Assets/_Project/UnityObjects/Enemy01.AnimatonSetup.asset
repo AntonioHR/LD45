@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: Enemy01.AnimatonSetup
   m_EditorClassIdentifier: 
   entries:
+  - id: empty
+    clip: {fileID: 7400000, guid: 9a47c779f39db461eafb3b8f0c108450, type: 2}
   - id: hit_0
     clip: {fileID: 7400000, guid: 4c40270243cae4faeacb8ceb2917f8e1, type: 2}

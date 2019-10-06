@@ -29,6 +29,8 @@ namespace SamuraiGame.Enemy
         [System.NonSerialized]
         public CallbackAnimationPlayer animationPlayable;
 
+        public SpriteRenderer riposteIndicator;
+
         private EnemyStateMachine stateMachine = new EnemyStateMachine();
         internal PlayerController target;
 
