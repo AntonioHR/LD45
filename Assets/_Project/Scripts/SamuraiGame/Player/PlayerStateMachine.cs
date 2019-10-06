@@ -33,7 +33,7 @@ namespace SamuraiGame.Player
             CurrentState.OnHit(source);
         }
 
-        public bool IsDhashing()
+        public bool IsDashing()
         {
             return CurrentState.IsDashing();
         }

@@ -94,8 +94,8 @@ namespace SamuraiGame.Player
         {
             if (isHitDashable)
             {
-                bool isDhasing = stateMachine.IsDhashing();
-                if (isDhasing)
+                bool isDashing = stateMachine.IsDashing();
+                if (isDashing)
                 {
                     return;
                 }
@@ -105,7 +105,7 @@ namespace SamuraiGame.Player
 
         public bool IsDashing()
         {
-            return stateMachine.IsDhashing();
+            return stateMachine.IsDashing();
         }
     }
 }
