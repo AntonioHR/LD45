@@ -10,8 +10,7 @@ namespace Common.Interactables
     [RequireComponent(typeof(Collider2D))]
     public abstract class ObjectTrigger<T> : MonoBehaviour
     {
-        [SerializeField]
-        private bool allowMultipleTriggers = false;
+        public bool allowMultipleTriggers = false;
 
         private bool triggered;
 

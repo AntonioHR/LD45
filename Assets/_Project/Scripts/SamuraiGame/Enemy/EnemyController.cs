@@ -121,6 +121,7 @@ namespace SamuraiGame.Enemy
 
                 hitBox.AddComponent<DamageHitBox>();
                 DamageHitBox hitBoxComponent = hitBox.GetComponent<DamageHitBox>();
+                hitBoxComponent.allowMultipleTriggers = true;
                 hitBoxComponent.isDashable = isDashable;
                 hitBoxComponent.enemy = this;
             }
