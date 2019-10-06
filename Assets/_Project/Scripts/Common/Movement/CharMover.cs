@@ -11,6 +11,7 @@ namespace Common.Movement
         public float moveForce = 5.0f;
         public bool useSpeedCapFriction = false;
         public bool useBraking = false;
+        public bool setDirection = true;
 
 
         public FrictionSettings frictionSettings;
@@ -48,7 +49,8 @@ namespace Common.Movement
             {
                 ApplyFriction();
             }
-            CheckFacing();
+            if(setDirection)
+                CheckFacing();
         }
 
         private void CheckFacing()

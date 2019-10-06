@@ -15,7 +15,14 @@ namespace SamuraiGame.Enemy.States {
 
         protected override void Begin()
         {
+            Enemy.Rigidbody.velocity = Vector2.zero;
+            Enemy.Rigidbody.isKinematic = true;
+            FacePlayer();
             PlayAttackAnimations();
+        }
+        protected override void End()
+        {
+            Enemy.Rigidbody.isKinematic = false;
         }
 
         private void PlayAttackAnimations()

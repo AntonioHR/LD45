@@ -15,6 +15,7 @@ MonoBehaviour:
   moveForce: 15
   useSpeedCapFriction: 1
   useBraking: 1
+  setDirection: 0
   frictionSettings:
     brakeForce: 15
     speedCap: 3

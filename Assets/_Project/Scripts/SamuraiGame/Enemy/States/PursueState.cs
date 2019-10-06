@@ -23,6 +23,7 @@ namespace SamuraiGame.Enemy.States
         }
         public override void FixedUpdate()
         {
+            FacePlayer();
             if(SurroundCoordinates < 0 )
             {
                 Context.pursueMove.DoFixedUpdate(Enemy, -Enemy.TargetDirection);

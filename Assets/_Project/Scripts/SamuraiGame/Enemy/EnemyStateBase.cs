@@ -34,5 +34,10 @@ namespace SamuraiGame.Enemy
             ExitTo(new EnemyIdleState());
 
         }
+
+        protected void FacePlayer()
+        {
+            Enemy.FacingDirection = Enemy.TargetDirection;
+        }
     }
 }
