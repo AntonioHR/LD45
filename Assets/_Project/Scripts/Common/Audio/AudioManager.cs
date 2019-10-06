@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Audio;
 
 namespace Common.Audio
 {
@@ -14,6 +15,25 @@ namespace Common.Audio
         private SoundEffect playerPrefab;
         [SerializeField]
         private AudioDatabase audioDatabase;
+        [SerializeField]
+        private MixerSetup[] mixerSetups;
+        [SerializeField]
+        private AudioMixer mixer;
+
+        [Serializable]
+        public class MixerSetup
+        {
+            public string Trigger;
+            public AudioMixerSnapshot snapshot;
+
+            [NonSerialized]
+            public AudioMixer mixer;
+
+            public void Start()
+            {
+                mixer.TransitionToSnapshots(new [] { snapshot}, new[] { 1.0f }, .5f);
+            }
+        }
 
         public static AudioManager Instance { get; private set; }
 
@@ -36,6 +56,13 @@ namespace Common.Audio
 
             soundEffects = audioDatabase.soundEffects.ToDictionary(a => a, a => BuildAudioPlayer(a));
             soundEffectsById = soundEffects.Where(s => s.Key.HasValidID).ToDictionary(s => s.Key.id, s => s.Value);
+
+
+            foreach (var mixerSetup in mixerSetups)
+            {
+                mixerSetup.mixer = mixer;
+                TriggerManager.StartListening(mixerSetup.Trigger, mixerSetup.Start);
+            }
         }
 
         private SoundEffect BuildAudioPlayer(SoundEffectAsset asset)

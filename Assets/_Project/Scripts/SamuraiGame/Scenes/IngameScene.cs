@@ -1,3 +1,4 @@
+using SamuraiGame.Events;
 using SamuraiGame.Managers;
 using SamuraiGame.Player;
 using UnityEngine;
@@ -16,6 +17,10 @@ namespace SamuraiGame.Scenes
 
         public void Start()
         {
+            if(IsFirstScene)
+            {
+                TriggerManager.Trigger(EventName.OnFirstScene);
+            }
             GameManager.Instance.OnEnteredScene(this);
         }
     }

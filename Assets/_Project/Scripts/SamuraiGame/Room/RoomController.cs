@@ -15,6 +15,10 @@ namespace SamuraiGame.Room
         private RoomConfig config;
         [SerializeField]
         private RoomSpawner roomSpawner;
+        [SerializeField]
+        private bool autoStart = true;
+        [SerializeField]
+        private string startTrigger;
 
         public static RoomController Instance { get; private set; }
 
@@ -32,9 +36,20 @@ namespace SamuraiGame.Room
         private void Start()
         {
             TriggerManager.StartListening(EventName.OnTransitionOver, OnGateEnter);
-            
 
-            StartRoom();
+            if (autoStart)
+                StartRoom();
+            else if (startTrigger.Length > 0)
+            {
+                TriggerManager.StartListening(startTrigger, StartRoom);
+                TriggerManager.StartListening(startTrigger, StopListening);
+            }
+        }
+
+        private void StopListening()
+        {
+            TriggerManager.StopListening(startTrigger, StartRoom);
+            TriggerManager.StopListening(startTrigger, StopListening);
         }
 
         private void StartRoom(){
