@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using Common.Audio;
 using Common.Input;
 using Common.Movement;
 using SamuraiGame.Managers;
@@ -77,6 +78,7 @@ namespace SamuraiGame.Player
 
         public void OnHit(Transform source)
         {
+            AudioManager.Instance.Play("take_hit");
             stateMachine.OnHit(source);
             health.Hit();
         }

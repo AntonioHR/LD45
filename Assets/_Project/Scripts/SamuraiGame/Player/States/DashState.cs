@@ -1,4 +1,5 @@
 using System;
+using Common.Audio;
 using Common.Timers;
 using UnityEngine;
 
@@ -38,6 +39,8 @@ namespace SamuraiGame.Player.States
             configs = Player.configs.dash;
             startPosition = Player.transform.position;
             dashDuration = configs.dashDistance / configs.dashVel;
+
+            AudioManager.Instance.Play("dash");
             dashTimer.Reset();
             Player.SpriteRenderer.color = Color.red;
 
