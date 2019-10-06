@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using Common.StateMachines;
+using System;
 
 namespace SamuraiGame.Enemy
 {
@@ -15,5 +16,9 @@ namespace SamuraiGame.Enemy
         public virtual void OnStagger() { }
 
         public abstract void OnDamageTaken();
+
+        public virtual void OnHitParried()
+        {
+        }
     }
 }

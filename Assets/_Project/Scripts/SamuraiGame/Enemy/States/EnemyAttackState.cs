@@ -93,5 +93,11 @@ namespace SamuraiGame.Enemy.States {
             yield return new WaitForSeconds(seconds);
             StartNextAttack();
         }
+
+        public override void OnHitParried()
+        {
+            StopAllAnimations();
+            ExitTo(new EnemyStaggerState());
+        }
     }
 }
