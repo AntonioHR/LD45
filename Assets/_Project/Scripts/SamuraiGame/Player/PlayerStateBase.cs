@@ -1,5 +1,6 @@
 using System;
 using Common.StateMachines;
+using UnityEngine;
 
 namespace SamuraiGame.Player
 {
@@ -11,5 +12,15 @@ namespace SamuraiGame.Player
         public virtual void FixedUpdate() { }
 
         public virtual void OnDashPressed() { }
+
+        public virtual void OnNoHealth()
+        {
+            UnityEngine.GameObject.Destroy(Context.gameObject);
+        }
+
+        public virtual void OnHit(Transform source)
+        {
+            
+        }
     }
 }

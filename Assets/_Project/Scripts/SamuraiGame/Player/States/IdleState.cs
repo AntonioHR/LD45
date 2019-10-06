@@ -18,5 +18,13 @@ namespace SamuraiGame.Player.States
         {
             ExitTo(new DashState(Player.FacingDirection));
         }
+
+        public override void OnHit(Transform source)
+        {
+            var dist = Player.transform.position - source.transform.position;
+            dist.z = 0;
+            dist.Normalize();
+            Player.Rigidbody.AddForce(10 * dist, ForceMode2D.Impulse);
+        }
     }
 }

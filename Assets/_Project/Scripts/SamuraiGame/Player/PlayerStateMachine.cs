@@ -1,6 +1,7 @@
 using System;
 using Common.StateMachines;
 using SamuraiGame.Player.States;
+using UnityEngine;
 
 namespace SamuraiGame.Player
 {
@@ -20,6 +21,16 @@ namespace SamuraiGame.Player
         public void OnDashPressed()
         {
             CurrentState.OnDashPressed();
+        }
+
+        public void OnNoHealth()
+        {
+            CurrentState.OnNoHealth();
+        }
+
+        public void OnHit(Transform source)
+        {
+            CurrentState.OnHit(source);
         }
     }
 }

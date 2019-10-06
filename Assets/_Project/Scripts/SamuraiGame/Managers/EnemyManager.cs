@@ -6,7 +6,7 @@ namespace SamuraiGame.Managers
 {
     public class EnemyManager : MonoBehaviour
     {
-        public EnemyManager Instance { get; private set; }
+        public static EnemyManager Instance { get; private set; }
 
         public GameObject Player;
 

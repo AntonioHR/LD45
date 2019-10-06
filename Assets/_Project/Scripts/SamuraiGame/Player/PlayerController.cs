@@ -2,12 +2,16 @@ using System;
 using System.Linq;
 using Common.Input;
 using Common.Movement;
+using SamuraiGame.Managers;
 using UnityEngine;
 
 namespace SamuraiGame.Player
 {
     public class PlayerController : MonoBehaviour, IMovingChar
     {
+        public event Action<int> HealthChanged{ add => health.ValueChanged+=value; remove => health.ValueChanged -= value; }
+        public event Action Died;
+
         private PlayerStateMachine stateMachine = new PlayerStateMachine();
 
         public PlayerConfigs configs;
@@ -20,12 +24,21 @@ namespace SamuraiGame.Player
         public Vector2 DirectionInput { get => InputHelper.DefaultJoystickInputRawCapped; }
         public Vector2 FacingDirection { get; set; }
 
+        private Health health = new Health(3);
+
+        public int CurrentHealth{ get => health.Current; }
+
+
         private void Awake()
         {
             Rigidbody = GetComponent<Rigidbody2D>();
             SpriteRenderer = GetComponent<SpriteRenderer>();
 
+            health.Died += OnNoHealth;
+
         }
+
+
         private void Start()
         {
             stateMachine.Begin(this);
@@ -51,6 +64,22 @@ namespace SamuraiGame.Player
             {
                 FacingDirection = DirectionInput.normalized;
             }
+        }
+
+        
+        private void OnNoHealth()
+        {
+            stateMachine.OnNoHealth();
+        }
+
+        public void OnHit(Transform source)
+        {
+            stateMachine.OnHit(source);
+            health.Hit();
+        }
+        public void Heal()
+        {
+            health.Heal();
         }
     }
 }
