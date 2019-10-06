@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using Common.Animation;
-
+using System;
 
 namespace SamuraiGame.Enemy
 {
@@ -17,6 +17,11 @@ namespace SamuraiGame.Enemy
         public CallbackAnimationPlayer animationPlayable;
 
         private EnemyStateMachine stateMachine = new EnemyStateMachine();
+
+        internal void HitParried()
+        {
+            Destroy(gameObject);
+        }
 
         private void Start()
         {
@@ -45,6 +50,7 @@ namespace SamuraiGame.Enemy
                 hitBox.AddComponent<DamageHitBox>();
                 DamageHitBox hitBoxComponent = hitBox.GetComponent<DamageHitBox>();
                 hitBoxComponent.isDashable = isDashable;
+                hitBoxComponent.enemy = this;
             }
         }
     }

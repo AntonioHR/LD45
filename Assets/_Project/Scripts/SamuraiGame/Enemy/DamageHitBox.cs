@@ -7,11 +7,18 @@ namespace SamuraiGame.Enemy
 {
     public class DamageHitBox : ObjectTrigger<PlayerController>
     {
+        public EnemyController enemy;
         public bool isDashable;
 
         protected override void OnTriggered(PlayerController player)
         {
-            player.OnHit(isDashable);
+            player.OnHitByEnemy(isDashable, transform);
+
+            if(isDashable && player.IsDashing())
+            {
+                enemy.HitParried();
+            }
         }
     }
 }
+

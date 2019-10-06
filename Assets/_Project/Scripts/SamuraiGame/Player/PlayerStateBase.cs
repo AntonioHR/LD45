@@ -20,7 +20,15 @@ namespace SamuraiGame.Player
 
         public virtual void OnHit(Transform source)
         {
-            
+            var dist = Player.transform.position - source.transform.position;
+            dist.z = 0;
+            dist.Normalize();
+            Player.Rigidbody.AddForce(10 * dist, ForceMode2D.Impulse);
+        }
+
+        public virtual bool IsDashing()
+        {
+            return false;
         }
     }
 }

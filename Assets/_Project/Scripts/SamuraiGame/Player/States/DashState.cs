@@ -62,5 +62,10 @@ namespace SamuraiGame.Player.States
             Player.SpriteRenderer.color = Color.white;
                 Player.Rigidbody.velocity = Vector2.zero;
         }
+
+        public override bool IsDashing()
+        {
+            return true;
+        }
     }
 }
