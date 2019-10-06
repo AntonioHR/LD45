@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: AnimationSetup
   m_EditorClassIdentifier: 
   entries:
-  - id: 0
+  - id: hit_0
     clip: {fileID: 7400000, guid: 4c40270243cae4faeacb8ceb2917f8e1, type: 2}

@@ -9,6 +9,8 @@ namespace SamuraiGame.Enemy
     public class EnemyController : MonoBehaviour
     {
         [SerializeField]
+        private AnimationSetup animationSetup;
+        [SerializeField]
         public EnemyAttackAnimation[] attackAnimations;
 
         [System.NonSerialized]
@@ -18,8 +20,10 @@ namespace SamuraiGame.Enemy
 
         private void Start()
         {
-            stateMachine.Begin(this);
             animationPlayable = GetComponent<CallbackAnimationPlayer>();
+            animationPlayable.Init(animationSetup);
+            
+            stateMachine.Begin(this);
 
             SetAllDamageHitBox();
 
