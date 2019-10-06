@@ -139,20 +139,21 @@ namespace SamuraiGame.Enemy.States {
 
         private void GettingReady(bool isDashable)
         {
-            SpriteRenderer riposteIndicator = Enemy.riposteIndicator;
-            if(isDashable)
-            {
-                riposteIndicator.color = GameConstants.RIPOSTE_BLOCKABLE_COLOR;
-            } else
-            {
-                riposteIndicator.color = GameConstants.RIPOSTE_UNBLOCKABLE_COLOR;
-            }
-            riposteIndicator.gameObject.SetActive(true);
+            SetRiposteSprite();
+        }
+
+        private void SetRiposteSprite()
+        {
+            string animationId = Enemy.attackAnimations[animationIndex].PrepAnimationId;
+            Enemy.animationPlayable.PlayLooped(animationId, ()=> { });
         }
 
         private void UnsetRiposte()
         {
-            Enemy.riposteIndicator.gameObject.SetActive(false);
+            if(Enemy.riposteIndicator != null)
+            {
+                Enemy.riposteIndicator.gameObject.SetActive(false);
+            }
         }
     }
 }

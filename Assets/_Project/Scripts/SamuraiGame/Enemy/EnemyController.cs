@@ -13,7 +13,7 @@ namespace SamuraiGame.Enemy
     public class EnemyController : MonoBehaviour, IMovingChar
     {
         [SerializeField]
-        private AnimationSetup animationSetup;
+        public AnimationSetup animationSetup;
         [SerializeField]
         public EnemyAttackAnimation[] attackAnimations;
         [SerializeField]
@@ -55,6 +55,8 @@ namespace SamuraiGame.Enemy
 
         public Vector2 FacingDirection { get; set; }
         public bool IsTooCloseToTarget { get; internal set; }
+
+        public Sprite idleSprite;
 
         public SurroundRange CloseIn;
         public SurroundRange Surround;

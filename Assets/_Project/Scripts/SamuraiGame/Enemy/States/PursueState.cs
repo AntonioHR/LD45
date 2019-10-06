@@ -17,8 +17,14 @@ namespace SamuraiGame.Enemy.States
         protected override void Begin()
         {
             closeInDelay = UnityEngine.Random.Range(Enemy.configs.attackDelayMin, Enemy.configs.attackDelayMax);
+            StartIdleAnimation();
         }
 
+
+        private void StartIdleAnimation()
+        {
+            Enemy.animationPlayable.PlayLooped(Enemy.animationSetup.entries[0].id, () => { });
+        }
 
         public override void Update()
         {

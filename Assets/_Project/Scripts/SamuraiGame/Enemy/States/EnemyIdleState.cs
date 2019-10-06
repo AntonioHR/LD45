@@ -21,8 +21,14 @@ namespace SamuraiGame.Enemy.States {
 
         protected override void Begin()
         {
-
+            StartIdleAnimation();
         }
+
+        private void StartIdleAnimation()
+        {
+            Enemy.animationPlayable.PlayLooped(Enemy.attackAnimations[0].AnimationId, () => { });
+        }
+
         public override  void OnPlayerIsInAggroRange(PlayerController player)
         {
             Enemy.target = player;
