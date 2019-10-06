@@ -52,5 +52,10 @@ namespace SamuraiGame.Player
                 FacingDirection = DirectionInput.normalized;
             }
         }
+
+        public bool OnHit(bool isDashable)
+        {
+            return false;
+        }
     }
 }

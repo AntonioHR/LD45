@@ -13,10 +13,14 @@ namespace SamuraiGame.Enemy
         private GameObject damageHitBox;
 
         [SerializeField]
-        private AnimationClip animation;
+        private string animationId;
+
+        [SerializeField]
+        private float waitTime;
 
         public bool IsDashable { get => isDashable; }
-        public AnimationClip Animation { get => animation; }
+        public string AnimationId { get => animationId; }
         public GameObject DamageHitBox { get => damageHitBox; }
+        public float WaitTime { get => waitTime; }
     }
 }
