@@ -194,6 +194,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3924937034470328408}
   - component: {fileID: 4832694518411730481}
+  - component: {fileID: 4339565725946409840}
   m_Layer: 0
   m_Name: Base
   m_TagString: Untagged
@@ -227,7 +228,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -6732998162031813222, guid: feeaca2e8dc95dc4f80ead021704df43,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: abc5bf111f7333c40bdedd66d7a4b282, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -312,6 +313,33 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4339565725946409840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5856300329120929005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50bf4a186d6457042b93d3194fb0f974, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unityEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4832694518411730481}
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  id: on-intro-started
 --- !u!1 &9144248899110546010
 GameObject:
   m_ObjectHideFlags: 0
