@@ -19,6 +19,11 @@ namespace SamuraiGame.Enemy
                 enemy.HitParried();
             }
         }
+
+        private void OnEnable()
+        {
+            Reset();
+        }
     }
 }
 
