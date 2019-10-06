@@ -18,6 +18,7 @@ namespace SamuraiGame.Player
 
         public PlayerConfigs configs;
 
+
         public CharMover defaultMover { get => configs.defaultMover; }
         public SpriteRenderer SpriteRenderer { get; private set; }
 
@@ -82,6 +83,11 @@ namespace SamuraiGame.Player
         public void Heal()
         {
             health.Heal();
+        }
+        public void OnDead()
+        {
+            if(Died != null)
+                Died();
         }
 
         public void OnHitByEnemy(bool isHitDashable, Transform enemy)

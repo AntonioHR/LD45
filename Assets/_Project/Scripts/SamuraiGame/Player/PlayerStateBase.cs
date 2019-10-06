@@ -16,6 +16,7 @@ namespace SamuraiGame.Player
         public virtual void OnNoHealth()
         {
             UnityEngine.GameObject.Destroy(Context.gameObject);
+            Player.OnDead();
         }
 
         public virtual void OnHit(Transform source)

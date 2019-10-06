@@ -26,6 +26,7 @@ namespace SamuraiGame.Enemy.States {
         public override  void OnPlayerIsInAggroRange(PlayerController player)
         {
             Enemy.target = player;
+            player.Died += Enemy.OnPlayerDead;
 
             FlickerWarning();
 

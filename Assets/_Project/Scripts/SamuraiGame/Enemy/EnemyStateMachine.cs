@@ -39,5 +39,10 @@ namespace SamuraiGame.Enemy
         {
             CurrentState.FixedUpdate();
         }
+
+        public void OnPlayerDead()
+        {
+            CurrentState.OnPlayerDead();
+        }
     }
 }

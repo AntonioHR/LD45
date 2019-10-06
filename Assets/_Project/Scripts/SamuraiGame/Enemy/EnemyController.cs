@@ -22,6 +22,7 @@ namespace SamuraiGame.Enemy
         public SpriteRenderer sprite;
         public SpriteRenderer emoteSprite;
 
+        
         public CharMover pursueMove;
         public EnemyConfigs configs;
 
@@ -97,6 +98,12 @@ namespace SamuraiGame.Enemy
         {
             return stateMachine.TryAttack();
         }
+        
+        public void OnPlayerDead()
+        {
+            stateMachine.OnPlayerDead();
+        }
+
 
         private void SetAllDamageHitBox()
         {

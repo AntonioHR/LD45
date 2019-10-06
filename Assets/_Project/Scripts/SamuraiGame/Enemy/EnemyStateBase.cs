@@ -3,6 +3,7 @@ using System.Collections;
 using Common.StateMachines;
 using SamuraiGame.Player;
 using System;
+using SamuraiGame.Enemy.States;
 
 namespace SamuraiGame.Enemy
 {
@@ -27,5 +28,11 @@ namespace SamuraiGame.Enemy
         {
         }
         public virtual void OnPlayerIsInAggroRange(PlayerController player) { }
+
+        public virtual void OnPlayerDead()
+        {
+            ExitTo(new EnemyIdleState());
+
+        }
     }
 }
