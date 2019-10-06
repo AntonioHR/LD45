@@ -59,12 +59,15 @@ namespace SamuraiGame.Enemy
         public SurroundRange CloseIn;
         public SurroundRange Surround;
 
+        public SurroundRange SurroundAttack;
+
         private void Awake()
         {
             SetupTriggers();
             Rigidbody = GetComponent<Rigidbody2D>();
             CloseIn = new SurroundRange(transform, configs.closeIn);
             Surround = new SurroundRange(transform, configs.surround);
+            SurroundAttack = new SurroundRange(transform, configs.surroundAttack);
         }
 
         private void SetupTriggers()

@@ -12,6 +12,7 @@ namespace SamuraiGame.Enemy
         protected EnemyController Enemy { get => Context; }
 
         public float SurroundCoordinates{ get => Enemy.Surround.RangeCoordinates(Enemy.target.transform.position); }
+        public float SurroundAttackCoordinates{ get => Enemy.SurroundAttack.RangeCoordinates(Enemy.target.transform.position); }
         public float CloseInCoordinates{ get => Enemy.CloseIn.RangeCoordinates(Enemy.target.transform.position); }
 
         public virtual bool TryAttack()

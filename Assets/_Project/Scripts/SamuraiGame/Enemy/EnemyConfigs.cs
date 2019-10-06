@@ -8,6 +8,7 @@ namespace SamuraiGame.Enemy
     {
         public CharMover hitAdvanceMover;
         public SurroundRange.Setup surround;
+        public SurroundRange.Setup surroundAttack;
         public SurroundRange.Setup closeIn;
         public float attackDelayMin = .25f;
         public float attackDelayMax= 1;

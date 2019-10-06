@@ -22,7 +22,7 @@ namespace SamuraiGame.Enemy.States
 
         public override void Update()
         {
-            if(SurroundCoordinates > 0 && SurroundCoordinates < 1)
+            if(SurroundAttackCoordinates > 0 && SurroundAttackCoordinates < 1)
             {
                 if(!isInrange)
                 {
