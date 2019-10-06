@@ -20,6 +20,7 @@ namespace SamuraiGame
         {
             var seq = DOTween.Sequence();
             AudioManager.Instance.Play("intro");
+            TriggerManager.Trigger(EventName.OnIntroStarted);
 
             seq.Append(startOverlay.DOFade(1, .01f));
             seq.AppendInterval(4);

@@ -51,8 +51,10 @@ MonoBehaviour:
   - Trigger: on-first-scene
     snapshot: {fileID: -2130137015406622774, guid: feeaca2e8dc95dc4f80ead021704df43,
       type: 2}
-  - Trigger: on-intro-played
+    transitionTime: 0.01
+  - Trigger: on-intro-started
     snapshot: {fileID: 24500006, guid: feeaca2e8dc95dc4f80ead021704df43, type: 2}
+    transitionTime: 1
   mixer: {fileID: 24100000, guid: feeaca2e8dc95dc4f80ead021704df43, type: 2}
 --- !u!1 &5021751384105680480
 GameObject:
@@ -96,7 +98,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 5045050767100948515, guid: feeaca2e8dc95dc4f80ead021704df43,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 8a0d2f5385a89fc40acf71f7fe4f5023, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 635848d9b81e9044aa5c65a22a817d0e, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

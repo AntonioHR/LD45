@@ -25,13 +25,14 @@ namespace Common.Audio
         {
             public string Trigger;
             public AudioMixerSnapshot snapshot;
+            public float transitionTime = .2f;
 
             [NonSerialized]
             public AudioMixer mixer;
 
             public void Start()
             {
-                mixer.TransitionToSnapshots(new [] { snapshot}, new[] { 1.0f }, .5f);
+                mixer.TransitionToSnapshots(new [] { snapshot}, new[] { 1.0f }, transitionTime);
             }
         }
 
