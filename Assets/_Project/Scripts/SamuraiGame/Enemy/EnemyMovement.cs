@@ -1,17 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EnemyMovement : MonoBehaviour
+namespace SamuraiGame.Enemy
 {
-    // Use this for initialization
-    void Start()
-    {
+	public class EnemyMovement : MonoBehaviour
+	{
+		// Use this for initialization
+		void Start()
+		{
 
-    }
+		}
 
-    // Update is called once per frame
-    void Update()
-    {
+		// Update is called once per frame
+		void Update()
+		{
 
-    }
+		}
+	}
 }
