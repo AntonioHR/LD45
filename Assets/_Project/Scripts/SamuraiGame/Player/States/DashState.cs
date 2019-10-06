@@ -10,6 +10,7 @@ namespace SamuraiGame.Player.States
         public class Configs
         {
             public float dashDistance = 3;
+            public float recoverInvicibility = .3f;
             public float recoverTime = 1;
 
             public float dashVel = 10;
@@ -65,7 +66,7 @@ namespace SamuraiGame.Player.States
 
         public override bool IsDashing()
         {
-            return true;
+            return recoverTimer.ElapsedSeconds < configs.recoverInvicibility;
         }
     }
 }

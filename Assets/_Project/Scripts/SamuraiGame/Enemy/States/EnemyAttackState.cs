@@ -22,7 +22,8 @@ namespace SamuraiGame.Enemy.States {
         }
         protected override void End()
         {
-            Enemy.Rigidbody.isKinematic = false;
+            if(Enemy != null)
+                Enemy.Rigidbody.isKinematic = false;
         }
 
         private void PlayAttackAnimations()

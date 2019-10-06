@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dash:
     dashDistance: 1
+    recoverInvicibility: 0.2
     recoverTime: 0.4
     dashVel: 16
     driftVel: 0.2
