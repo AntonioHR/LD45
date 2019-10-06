@@ -153,5 +153,10 @@ namespace SamuraiGame.Enemy.States {
                 Enemy.riposteIndicator.gameObject.SetActive(false);
             }
         }
+
+        public override void FacePlayer()
+        {
+            //Enemy.FacingDirection = Enemy.TargetDirection;
+        }
     }
 }

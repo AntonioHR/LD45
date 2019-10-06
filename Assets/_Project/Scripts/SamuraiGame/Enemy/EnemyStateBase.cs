@@ -5,6 +5,7 @@ using SamuraiGame.Player;
 using System;
 using SamuraiGame.Enemy.States;
 using Common.Audio;
+using SamuraiGame.Managers;
 
 namespace SamuraiGame.Enemy
 {
@@ -40,10 +41,10 @@ namespace SamuraiGame.Enemy
 
         }
 
-        protected void FacePlayer()
+        public virtual void LateUpdate()
         {
-            Enemy.FacingDirection = Enemy.TargetDirection;
         }
+
         protected void RemovePlayerListener()
         {
             Enemy.target.Died -= Enemy.OnPlayerDead;
@@ -60,10 +61,24 @@ namespace SamuraiGame.Enemy
         {
             SoundEffectAsset[] hitSounds = Enemy.configs.hitSounds;
 
-            if(hitSounds.Length > 0)
+            if (hitSounds.Length > 0)
                 hitSounds[UnityEngine.Random.Range(0, hitSounds.Length)].Play();
 
+        }
+        public virtual void FacePlayer() {
+            Enemy.FacingDirection = Enemy.TargetDirection;
 
+            PlayerController player = GameManager.Instance.CurrentScene.Player;
+
+            bool shouldFlip = player.transform.position.x < Enemy.transform.position.x;
+
+            if (shouldFlip && !Enemy.sprite.flipX)
+            {
+                Enemy.sprite.flipX = true;
+            } else if(!shouldFlip && Enemy.sprite.flipX)
+            {
+                Enemy.sprite.flipX = false;
+            }
         }
     }
 }

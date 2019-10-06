@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 using DG.Tweening;
+using SamuraiGame.Player;
+using SamuraiGame.Managers;
+using System.Threading.Tasks;
 
 namespace SamuraiGame.Enemy.States {
 
@@ -13,19 +16,24 @@ namespace SamuraiGame.Enemy.States {
 
         protected override void Begin()
         {
-            RemovePlayerListener();
-            var invi = new Color(1, 1, 1, 0);
-            Enemy.Rigidbody.velocity = -Enemy.TargetDirection * .5f;
+            Collider2D collider = Enemy.GetComponent<Collider2D>();
+            collider.enabled = false;
 
-            var seq = DOTween.Sequence();
-            seq.Append(Enemy.sprite.DOColor(invi, .05f));
-            seq.Append(Enemy.sprite.DOColor(Color.white, .05f));
-            seq.AppendInterval(.05f);
-            seq.SetLoops(4);
+            RemovePlayerListener();
+            //var invi = new Color(1, 1, 1, 0);
+            Enemy.Rigidbody.velocity = -Enemy.TargetDirection * .5f;
+            Enemy.Rigidbody.velocity = Vector2.zero;
+
+            //var seq = DOTween.Sequence();
+            //seq.Append(Enemy.sprite.DOColor(invi, .05f));
+            //seq.Append(Enemy.sprite.DOColor(Color.white, .05f));
+            //seq.AppendInterval(.05f);
+            //seq.SetLoops(4);
 
             TrySpawnPickup();
-            
-            seq.OnComplete(Destroy);
+
+            _ = StartDropWeaponAnimation();
+            //seq.OnComplete(Destroy);
         }
 
         private void Destroy()
@@ -33,5 +41,39 @@ namespace SamuraiGame.Enemy.States {
             GameObject.Destroy(Enemy.gameObject);
         }
         public override void OnPlayerDead() { }
+
+        private async Task StartDropWeaponAnimation()
+        {
+            string animationId = GameConstants.ENEMY_ANIMATION_DISARM;
+            Enemy.animationPlayable.PlayOnce(animationId, DoFade);
+        }
+
+        private async void DoFade()
+        {
+            Vector3 scale = Enemy.transform.localScale;
+            scale.x = -scale.x;
+            Enemy.transform.localScale = scale;
+
+            string animationId = GameConstants.ENEMY_ANIMATION_ESCAPING;
+            Enemy.animationPlayable.PlayLooped(animationId, () => { });
+
+            PlayerController player = GameManager.Instance.CurrentScene.Player;
+
+            Vector2 direction = Enemy.transform.position - player.transform.position;
+
+            Enemy.Rigidbody.velocity = direction * 3;
+
+            var invi = new Color(1, 1, 1, 0);
+
+            await Wait.For(0.7f);
+
+            var seq = DOTween.Sequence();
+            seq.Append(Enemy.sprite.DOColor(invi, .1f));
+            seq.Append(Enemy.sprite.DOColor(Color.white, .1f));
+            seq.AppendInterval(.1f);
+            seq.SetLoops(4);
+
+            seq.OnComplete(Destroy);
+        }
     }
 }

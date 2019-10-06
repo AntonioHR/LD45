@@ -10,6 +10,7 @@ namespace SamuraiGame.Enemy.States
         
         protected override void Begin()
         {
+            Enemy.animationPlayable.PlayLooped(GameConstants.ENEMY_ANIMATION_RUN, () => { });
             Enemy.sprite.color = Enemy.configs.CloseInColor;
         }
         
