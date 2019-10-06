@@ -12,6 +12,8 @@ namespace Common.Audio
 
         [SerializeField]
         private SoundEffect playerPrefab;
+        [SerializeField]
+        private AudioDatabase audioDatabase;
 
         public static AudioManager Instance { get; private set; }
 
@@ -29,9 +31,8 @@ namespace Common.Audio
 
         private void Init()
         {
-            var audioAssets = Resources.FindObjectsOfTypeAll<SoundEffectAsset>();
 
-            soundEffects = audioAssets.ToDictionary(a => a, a => BuildAudioPlayer(a));
+            soundEffects = audioDatabase.soundEffects.ToDictionary(a => a, a => BuildAudioPlayer(a));
             soundEffectsById = soundEffects.Where(s => s.Key.HasValidID).ToDictionary(s => s.Key.id, s => s.Value);
         }
 

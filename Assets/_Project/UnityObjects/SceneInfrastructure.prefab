@@ -29,7 +29,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3588101288852633438}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1459097262
 MonoBehaviour:
@@ -43,11 +43,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce1142c42c0494854b9b73da4b9c508b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnConfigs:
-  - enemySpawns:
-    - SpawnPoint: {x: 0, y: 0}
-      enemyPrefab: []
-    totalEnemies: 0
+  currentRoomConfig: {fileID: 0}
+  roomSpawner:
+    spawners: []
 --- !u!1 &3588101288852633409
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,3 +323,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 863797940823787016, guid: 9d2aee12b6a4b2c4482f8225b47b275c,
     type: 3}
+  audioDatabase: {fileID: 11400000, guid: 130cf2f54821b4d458600873df9ec5d0, type: 2}
