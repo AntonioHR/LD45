@@ -58,6 +58,12 @@ namespace SamuraiGame.Room
         private void EnableGate() {
             gateObject.SetActive(true);
         }
-        
+
+        public void ReloadRoom()
+		{
+            string sceneName = SceneManager.GetActiveScene().name;
+
+            SceneManager.LoadScene(sceneName);
+		}
     }
 }
