@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f4dd455364ac450c9a5d857d5b9727e, type: 3}
-  m_Name: wave01_02
+  m_Name: wave01_03
   m_EditorClassIdentifier: 
   enemySpawns:
   - SpawnerId: a
@@ -19,4 +19,4 @@ MonoBehaviour:
   - SpawnerId: b
     enemyPrefab:
     - {fileID: 1040177797947906758, guid: 0d972a66dd74a49f9afe104969e41c97, type: 3}
-  totalEnemies: 1
+  totalEnemies: 2
