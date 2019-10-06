@@ -37,7 +37,8 @@ namespace SamuraiGame.Enemy.States {
         {
             Enemy.emoteSprite.color = Color.white;
             await Wait.For(3);
-            Enemy.emoteSprite.color = new Color(1,1,1, 0);
+            if(Enemy != null)
+                Enemy.emoteSprite.color = new Color(1,1,1, 0);
         }
     }
 }
