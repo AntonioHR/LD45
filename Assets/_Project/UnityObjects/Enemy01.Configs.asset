@@ -24,3 +24,4 @@ MonoBehaviour:
     max: 1.5
   attackDelayMin: 0.25
   attackDelayMax: 3.5
+  CloseInColor: {r: 0.754717, g: 0.73234, b: 0.4805981, a: 1}

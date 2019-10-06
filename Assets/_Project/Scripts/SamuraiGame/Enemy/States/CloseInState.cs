@@ -10,7 +10,7 @@ namespace SamuraiGame.Enemy.States
         
         protected override void Begin()
         {
-            Enemy.sprite.color = Color.magenta;
+            Enemy.sprite.color = Enemy.configs.CloseInColor;
         }
         
         protected override void End()
@@ -21,7 +21,7 @@ namespace SamuraiGame.Enemy.States
         public override void FixedUpdate()
         {
             FacePlayer();
-            
+
             if(CloseInCoordinates < 0 )
             {
                 Context.pursueMove.DoFixedUpdate(Enemy, -Enemy.TargetDirection);
