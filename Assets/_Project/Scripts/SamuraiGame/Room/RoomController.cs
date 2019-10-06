@@ -10,8 +10,6 @@ namespace SamuraiGame.Room
 	public class RoomController : MonoBehaviour
 	{
         [SerializeField]
-        private GameObject gateObject;
-        [SerializeField]
         private string nextSceneName;
         [SerializeField]
         private RoomConfig config;
@@ -33,10 +31,8 @@ namespace SamuraiGame.Room
 
         private void Start()
         {
-            TriggerManager.StartListening(EventName.RoomCompleted, OnRoomCompleted);
             TriggerManager.StartListening(EventName.OnGateEnter, OnGateEnter);
-
-            gateObject.SetActive(false);
+            
 
             StartRoom();
         }
@@ -48,17 +44,10 @@ namespace SamuraiGame.Room
         private void OnGateEnter()
         {
             SceneManager.LoadScene(nextSceneName);
-            gateObject.SetActive(false);
         }
-
         private void OnRoomCompleted() {
-            EnableGate();
         }
             
-        private void EnableGate() {
-            gateObject.SetActive(true);
-        }
-
         public void ReloadRoom()
 		{
             string sceneName = SceneManager.GetActiveScene().name;
