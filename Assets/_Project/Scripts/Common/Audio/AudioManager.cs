@@ -31,6 +31,8 @@ namespace Common.Audio
 
         private void Init()
         {
+            transform.parent = null;
+            DontDestroyOnLoad(this);
 
             soundEffects = audioDatabase.soundEffects.ToDictionary(a => a, a => BuildAudioPlayer(a));
             soundEffectsById = soundEffects.Where(s => s.Key.HasValidID).ToDictionary(s => s.Key.id, s => s.Value);
@@ -48,11 +50,11 @@ namespace Common.Audio
         
         public void Play(string id)
         {
-            //soundEffectsById[id].Play();
+            soundEffectsById[id].Play();
         }
         public void Play(SoundEffectAsset soundEffect)
         {
-            //soundEffects[soundEffect].Play();
+            soundEffects[soundEffect].Play();
         }
     }
 }
