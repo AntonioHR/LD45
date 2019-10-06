@@ -20,6 +20,7 @@ namespace SamuraiGame.Managers
             if(Instance == null)
             {
                 Instance = this;
+                transform.parent = null;
                 DontDestroyOnLoad(gameObject);
             } else
             {
