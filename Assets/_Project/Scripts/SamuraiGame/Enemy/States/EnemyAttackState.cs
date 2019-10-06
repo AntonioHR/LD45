@@ -8,6 +8,8 @@ namespace SamuraiGame.Enemy.States {
         private int animationIndex = 0;
         private GameObject currentDamageArea;
 
+        private IEnumerator waitAttackCoroutine;
+
         protected override void Begin()
         {
             PlayAttackAnimations();
@@ -17,16 +19,29 @@ namespace SamuraiGame.Enemy.States {
 
         private void PlayAttackAnimations()
         {
-            AnimationClip[] animations = GetAttackAnimationsClips();
+            animationIndex = 0;
 
-            Enemy.animationPlayable.StartPlaying(animations, OnNextAnimation);
-
-            animationIndex = -1;
+            TryPlayNextAnimation();
         }
 
-        private void OnNextAnimation()
+        private void OnAnimationFinished()
+        {
+            Debug.Log("startWaiting");
+            currentDamageArea?.SetActive(false);
+            waitAttackCoroutine = WaitAttackAnimation(Enemy.attackAnimations[animationIndex].WaitTime);
+
+            Enemy.StartCoroutine(waitAttackCoroutine);
+        }
+
+        private void StartNextAttack()
         {
             animationIndex++;
+
+            TryPlayNextAnimation();
+        }
+
+        private void TryPlayNextAnimation()
+        {
             if (animationIndex >= Enemy.attackAnimations.Length)
             {
                 FinishAttack();
@@ -38,23 +53,14 @@ namespace SamuraiGame.Enemy.States {
             }
         }
 
-        private AnimationClip[] GetAttackAnimationsClips()
-        {
-            AnimationClip[] animations = new AnimationClip[Enemy.attackAnimations.Length];
-
-            for (int i = 0; i < Enemy.attackAnimations.Length; i++)
-            {
-                animations[i] = Enemy.attackAnimations[i].Animation;
-            }
-            return animations;
-        }
-
         private void StartNextAnimation()
         {
-            currentDamageArea?.SetActive(false);
+            Debug.Log("finish waiting");
+
+            string animationId = Enemy.attackAnimations[animationIndex].AnimationId;
+            Enemy.animationPlayable.PlayOnce(animationId, OnAnimationFinished);
             currentDamageArea = Enemy.attackAnimations[animationIndex].DamageHitBox;
             currentDamageArea.SetActive(true);
-            Debug.Log(currentDamageArea.name);
         }
 
         private void FinishAttack()
@@ -67,7 +73,7 @@ namespace SamuraiGame.Enemy.States {
         private void StopAllAnimations()
         {
             currentDamageArea.SetActive(false);
-            Enemy.animationPlayable.Stop();
+            Enemy.StopCoroutine(waitAttackCoroutine);
         }
 
         public override void OnDamageTaken()
@@ -80,6 +86,12 @@ namespace SamuraiGame.Enemy.States {
         {
             StopAllAnimations();
             ExitTo(new EnemyStaggerState());
+        }
+
+        public IEnumerator WaitAttackAnimation(float seconds)
+        {
+            yield return new WaitForSeconds(seconds);
+            StartNextAttack();
         }
     }
 }

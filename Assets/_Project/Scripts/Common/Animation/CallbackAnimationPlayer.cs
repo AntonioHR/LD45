@@ -52,6 +52,7 @@ namespace Common.Animation
         {
             clipPlayable.PlayOnce(id, callback);
         }
+
         public void PlayLooped(string id, Action callback)
         {
             clipPlayable.PlayLooped(id, callback);
@@ -69,7 +70,7 @@ namespace Common.Animation
 
         void IAnimationClipSource.GetAnimationClips(List<AnimationClip> results)
         {
-            if(setup == null || setup.entries == null)
+            if(setup == null)
             {
                 return;
             }

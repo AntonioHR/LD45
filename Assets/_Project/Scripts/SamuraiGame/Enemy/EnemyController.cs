@@ -1,39 +1,33 @@
 ﻿using UnityEngine;
 using System.Collections;
-using Common.AnimationHelpers;
-using System;
+using Common.Animation;
+
 
 namespace SamuraiGame.Enemy
 {
-    [RequireComponent(typeof(AnimationDynamicQueuePlayable))]
+    [RequireComponent(typeof(CallbackAnimationPlayer))]
     public class EnemyController : MonoBehaviour
     {
+        [SerializeField]
+        private AnimationSetup animationSetup;
         [SerializeField]
         public EnemyAttackAnimation[] attackAnimations;
 
         [System.NonSerialized]
-        public AnimationDynamicQueuePlayable animationPlayable;
+        public CallbackAnimationPlayer animationPlayable;
 
         private EnemyStateMachine stateMachine = new EnemyStateMachine();
 
         private void Start()
         {
+            animationPlayable = GetComponent<CallbackAnimationPlayer>();
+            animationPlayable.Init(animationSetup);
+            
             stateMachine.Begin(this);
-            animationPlayable = GetComponent<AnimationDynamicQueuePlayable>();
 
             SetAllDamageHitBox();
 
             TryAttack();
-        }
-
-        private void OnDestroy()
-        {
-            StopAllCoroutines();
-        }
-
-        public void HitParried()
-        {
-            Destroy(this);
         }
 
         public bool TryAttack()
