@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1d92a2cb633a7f147aa1c9cb99fa70c6, type: 3}
-  m_Name: intro
+  m_Name: enemy_death
   m_EditorClassIdentifier: 
-  id: intro
+  id: death
   playerCount: 2
   minPlayInterval: 0.1
   volume: 1
-  clip: {fileID: 8300000, guid: 6e92fee51ce65ca4ab1d3c82ccc8799b, type: 3}
+  clip: {fileID: 8300000, guid: 9d0df36e7aad69f40bceeed219c20d45, type: 3}
   output: {fileID: 2633876314786439601, guid: feeaca2e8dc95dc4f80ead021704df43, type: 2}

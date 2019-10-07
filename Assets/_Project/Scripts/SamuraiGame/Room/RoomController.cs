@@ -34,13 +34,17 @@ namespace SamuraiGame.Room
         }
         private void OnDestroy()
         {
-            if(Instance == this)
+            if (Instance == this)
+            {
                 TriggerManager.StopListening(EventName.OnTransitionOver, OnGateEnter);
+                TriggerManager.StopListening(EventName.OnTransitionOverDead, ReloadRoom);
+            }
         }
 
         private void Start()
         {
             TriggerManager.StartListening(EventName.OnTransitionOver, OnGateEnter);
+            TriggerManager.StartListening(EventName.OnTransitionOverDead, ReloadRoom);
 
             if (autoStart)
                 StartRoom();
@@ -50,6 +54,7 @@ namespace SamuraiGame.Room
                 TriggerManager.StartListening(startTrigger, StopListening);
             }
         }
+
 
         private void StopListening()
         {

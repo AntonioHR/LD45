@@ -20,6 +20,9 @@ namespace SamuraiGame.Scenes
             if(IsFirstScene)
             {
                 TriggerManager.Trigger(EventName.OnFirstScene);
+            } else
+            {
+                TriggerManager.Trigger(EventName.OnNormalScene);
             }
             GameManager.Instance.OnEnteredScene(this);
         }

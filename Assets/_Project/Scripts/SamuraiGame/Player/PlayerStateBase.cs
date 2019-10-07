@@ -1,5 +1,6 @@
 using System;
 using Common.StateMachines;
+using SamuraiGame.Player.States;
 using UnityEngine;
 
 namespace SamuraiGame.Player
@@ -15,8 +16,7 @@ namespace SamuraiGame.Player
 
         public virtual void OnNoHealth()
         {
-            UnityEngine.GameObject.Destroy(Context.gameObject);
-            Player.OnDead();
+            ExitTo(new DeadState());
         }
 
         public virtual void OnHit(Transform source)
@@ -38,5 +38,7 @@ namespace SamuraiGame.Player
             scale.x = Player.FacingDirection.x < 0 ? -1 : 1;
             Player.foot.localScale = scale;
         }
+
+        public virtual void OnHitAnimationOver() { }
     }
 }

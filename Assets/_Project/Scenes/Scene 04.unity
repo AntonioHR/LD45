@@ -866,7 +866,7 @@ PrefabInstance:
       objectReference: {fileID: 168356595}
     - target: {fileID: 1279245592, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
       propertyPath: roomSpawner.spawners.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1279245592, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
       propertyPath: roomSpawner.spawners.Array.data[0].spawner
@@ -901,6 +901,14 @@ PrefabInstance:
       propertyPath: nextSceneName
       value: Scene 05
       objectReference: {fileID: 0}
+    - target: {fileID: 1279245592, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
+      propertyPath: roomSpawner.spawners.Array.data[3].spawnerId
+      value: d
+      objectReference: {fileID: 0}
+    - target: {fileID: 1279245592, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
+      propertyPath: roomSpawner.spawners.Array.data[3].spawner
+      value: 
+      objectReference: {fileID: 1988619442}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
 --- !u!1 &502551579
@@ -953,7 +961,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.24401852, y: -0.2708009}
   serializedVersion: 2
-  m_Radius: 0.1665858
+  m_Radius: 0.11
 --- !u!114 &502551582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1823,7 +1831,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.24401852, y: -0.2708009}
   serializedVersion: 2
-  m_Radius: 0.1665858
+  m_Radius: 0.11
 --- !u!114 &558791404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4280,7 +4288,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.24401852, y: -0.2708009}
   serializedVersion: 2
-  m_Radius: 0.1665858
+  m_Radius: 0.11
 --- !u!114 &1382634269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6572,7 +6580,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.23578563, y: 0.32720017}
+  m_Size: {x: 0.18, y: 0.21}
   m_EdgeRadius: 0
 --- !u!212 &2055614512
 SpriteRenderer:
@@ -7240,7 +7248,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.24401852, y: -0.2708009}
   serializedVersion: 2
-  m_Radius: 0.1665858
+  m_Radius: 0.11
 --- !u!212 &7474367139605153583
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9295,7 +9303,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.23578563, y: 0.32720017}
+  m_Size: {x: 0.18, y: 0.21}
   m_EdgeRadius: 0
 --- !u!114 &7474367140822073220
 MonoBehaviour:
