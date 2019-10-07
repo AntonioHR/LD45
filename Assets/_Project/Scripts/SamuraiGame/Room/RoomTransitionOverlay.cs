@@ -17,6 +17,8 @@ namespace SamuraiGame.Room
         private Image left;
         [SerializeField]
         private Image right;
+        [SerializeField]
+        private Image announce;
 
         [SerializeField]
         private float openDistance;
@@ -64,6 +66,22 @@ namespace SamuraiGame.Room
             var seq = DOTween.Sequence();
             seq.Join(left.transform.DOMoveX(-openDistance, openTime).SetRelative());
             seq.Join(right.transform.DOMoveX(openDistance, openTime).SetRelative());
+
+            if (announce != null)
+            {
+                seq.AppendInterval(2f);
+                var size = announce.rectTransform.sizeDelta;
+                size.x = 0;
+                seq.Append(announce.rectTransform.DOSizeDelta(size, 1f).SetEase(Ease.OutExpo));
+
+                seq.AppendCallback(OnNameShown);
+                //seq.AppendCallback(() => announce.gameObject.SetActive(false));
+            }
+        }
+
+        private void OnNameShown()
+        {
+            TriggerManager.Trigger(EventName.OnNameShown);
         }
     }
 }

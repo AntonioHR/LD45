@@ -90,6 +90,8 @@ MonoBehaviour:
   config: {fileID: 11400000, guid: d1547d76d95e044b9801fa7f049084b8, type: 2}
   roomSpawner:
     spawners: []
+  autoStart: 0
+  startTrigger: on-name-shown
 --- !u!1 &1459097260
 GameObject:
   m_ObjectHideFlags: 0

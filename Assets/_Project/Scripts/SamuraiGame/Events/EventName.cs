@@ -10,5 +10,6 @@ namespace SamuraiGame.Events
         public static readonly string OnFirstScene= "on-first-scene";
         public static readonly string OnIntroStarted = "on-intro-started";
         public static readonly string OnIntroPlayed = "on-intro-played";
+        public static readonly string OnNameShown = "on-name-shown";
     }
 }
