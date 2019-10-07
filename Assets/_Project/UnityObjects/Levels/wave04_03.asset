@@ -10,18 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f4dd455364ac450c9a5d857d5b9727e, type: 3}
-  m_Name: wave03_03
+  m_Name: wave04_03
   m_EditorClassIdentifier: 
   enemySpawns:
   - SpawnerId: a
     enemyPrefab:
-    - {fileID: 1040177797947906758, guid: 0d972a66dd74a49f9afe104969e41c97, type: 3}
+    - {fileID: 1040177797947906758, guid: d1e73aa74f9bd4255af5bbe2670259b8, type: 3}
   - SpawnerId: b
     enemyPrefab:
     - {fileID: 1040177797947906758, guid: 0d972a66dd74a49f9afe104969e41c97, type: 3}
   - SpawnerId: c
     enemyPrefab:
-    - {fileID: 1040177797947906758, guid: d1e73aa74f9bd4255af5bbe2670259b8, type: 3}
     - {fileID: 1040177797947906758, guid: 0d972a66dd74a49f9afe104969e41c97, type: 3}
-  totalEnemies: 4
+  - SpawnerId: d
+    enemyPrefab:
+    - {fileID: 1040177797947906758, guid: 0d972a66dd74a49f9afe104969e41c97, type: 3}
+  totalEnemies: 5
   startDelay: 2
