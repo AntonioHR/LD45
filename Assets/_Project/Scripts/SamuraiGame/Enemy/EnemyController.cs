@@ -6,6 +6,7 @@ using SamuraiGame.Enemy.Triggers;
 using SamuraiGame.Player;
 using Common.Movement;
 using SamuraiGame.Managers;
+using DG.Tweening;
 
 namespace SamuraiGame.Enemy
 {
@@ -79,6 +80,10 @@ namespace SamuraiGame.Enemy
             CloseIn = new SurroundRange(transform, configs.closeIn);
             Surround = new SurroundRange(transform, configs.surround);
             SurroundAttack = new SurroundRange(transform, configs.surroundAttack);
+        }
+        private void OnDestroy()
+        {
+            DOTween.Kill(this);
         }
 
         private void SetupTriggers()

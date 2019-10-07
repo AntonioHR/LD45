@@ -75,7 +75,7 @@ namespace SamuraiGame.Managers
 
         private void TriggerEvent(string triggerEvent)
         {
-            if(triggerEvent != "")
+            if (triggerEvent != null && triggerEvent != "")
             {
                 TriggerManager.Trigger(triggerEvent);
             }

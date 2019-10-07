@@ -62,7 +62,8 @@ namespace SamuraiGame.Room
             TriggerManager.StopListening(startTrigger, StopListening);
         }
 
-        private void StartRoom(){
+        private void StartRoom()
+        {
             _ = EnemyManager.Instance.StartRoom(config, roomSpawner);
         }
 
