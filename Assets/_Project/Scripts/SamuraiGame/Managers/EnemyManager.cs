@@ -146,6 +146,8 @@ namespace SamuraiGame.Managers
             {
                 TryStartNextWave();
             }
+
+            TriggerManager.Trigger(EventName.EnemyOutOfCombat);
         }
 
         private void TryStartNextWave()
