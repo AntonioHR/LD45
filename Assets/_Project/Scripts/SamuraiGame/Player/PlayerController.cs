@@ -162,5 +162,9 @@ namespace SamuraiGame.Player
         {
             stateMachine.OnHitAnimationOver();
         }
+        public void OnDeathKeyframe()
+        {
+            deathParticle.Emit(1);
+        }
     }
 }

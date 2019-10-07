@@ -22,7 +22,6 @@ namespace SamuraiGame.Player.States
                 TriggerManager.Trigger(EventName.PlayerDeathAnimationStart);
                 AudioManager.Instance.Play("player_dead");
                 Player.animator.SetBool("dead", true);
-                Player.deathParticle.Emit(1);
             }
         }
 
