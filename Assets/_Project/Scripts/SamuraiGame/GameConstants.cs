@@ -19,5 +19,7 @@ namespace SamuraiGame
         public const float BOSS_WAIT_TIME = 5;
         public const float BOSS_WALKING_TIME = 3;
         public const float BOSS_WALKING_Y_DISTANCE = -3;
+
+        public const float BOSS_KILLED_WAIT_TIME = 3;
     }
 }
