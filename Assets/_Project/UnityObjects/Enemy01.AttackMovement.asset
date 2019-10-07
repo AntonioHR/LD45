@@ -18,5 +18,5 @@ MonoBehaviour:
   setDirection: 0
   frictionSettings:
     brakeForce: 100
-    speedCap: 4
+    speedCap: 2
     speedCapFrictionPower: 100

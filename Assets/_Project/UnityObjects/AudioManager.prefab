@@ -54,7 +54,7 @@ MonoBehaviour:
     transitionTime: 0.01
   - Trigger: on-intro-started
     snapshot: {fileID: 24500006, guid: feeaca2e8dc95dc4f80ead021704df43, type: 2}
-    transitionTime: 1
+    transitionTime: 0.2
   mixer: {fileID: 24100000, guid: feeaca2e8dc95dc4f80ead021704df43, type: 2}
 --- !u!1 &5021751384105680480
 GameObject:

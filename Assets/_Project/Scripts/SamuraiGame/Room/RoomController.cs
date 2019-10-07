@@ -32,6 +32,11 @@ namespace SamuraiGame.Room
                 Destroy(this);
             }
         }
+        private void OnDestroy()
+        {
+            if(Instance == this)
+                TriggerManager.StopListening(EventName.OnTransitionOver, OnGateEnter);
+        }
 
         private void Start()
         {

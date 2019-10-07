@@ -12,6 +12,8 @@ public class TriggerManager : MonoBehaviour
     {
         if(Instance == null)
         {
+            transform.parent = null;
+            DontDestroyOnLoad(this);
             Instance = this;
         }
         else

@@ -37,6 +37,11 @@ namespace SamuraiGame.Room
             Open();
         }
 
+        private void OnDestroy()
+        {
+            TriggerManager.StopListening(EventName.OnGateEnter, Close);
+        }
+
         private void Close()
         {
             left.enabled = true;

@@ -25,6 +25,11 @@ namespace SamuraiGame.Room
         {
             TriggerManager.StartListening(EventName.RoomCompleted, Open);
         }
+        public void OnDestroy()
+        {
+            TriggerManager.StopListening(EventName.RoomCompleted, Open);
+        }
+
 
         private void Open()
         {
