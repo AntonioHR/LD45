@@ -52,9 +52,8 @@ MonoBehaviour:
     snapshot: {fileID: -2130137015406622774, guid: feeaca2e8dc95dc4f80ead021704df43,
       type: 2}
     transitionTime: 0.01
-  - Trigger: on-first-scene
-    snapshot: {fileID: -2130137015406622774, guid: feeaca2e8dc95dc4f80ead021704df43,
-      type: 2}
+  - Trigger: on-intro-started
+    snapshot: {fileID: 24500006, guid: feeaca2e8dc95dc4f80ead021704df43, type: 2}
     transitionTime: 0.01
   - Trigger: on-normal-scene
     snapshot: {fileID: 24500006, guid: feeaca2e8dc95dc4f80ead021704df43, type: 2}
