@@ -41,6 +41,10 @@ namespace SamuraiGame.Player.States
             dashDuration = configs.dashDistance / configs.dashVel;
 
             Player.animator.SetTrigger("dash");
+
+            CheckFootDirection();
+
+            Player.dashParticle.Emit(1);
             AudioManager.Instance.Play("dash");
             dashTimer.Reset();
 

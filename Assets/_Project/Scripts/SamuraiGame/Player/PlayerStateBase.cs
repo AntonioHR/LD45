@@ -31,5 +31,12 @@ namespace SamuraiGame.Player
         {
             return false;
         }
+
+        public void CheckFootDirection()
+        {
+            var scale = Player.foot.localScale;
+            scale.x = Player.FacingDirection.x < 0 ? -1 : 1;
+            Player.foot.localScale = scale;
+        }
     }
 }

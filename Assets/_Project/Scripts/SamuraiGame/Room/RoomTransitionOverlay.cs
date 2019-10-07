@@ -1,4 +1,5 @@
-﻿using DG.Tweening;
+﻿using Common.Audio;
+using DG.Tweening;
 using SamuraiGame.Events;
 using SamuraiGame.Managers;
 using System;
@@ -54,6 +55,8 @@ namespace SamuraiGame.Room
             seq.SetEase(Ease.OutBounce);
             seq.AppendInterval(.75f);
             seq.OnComplete(OnClosed);
+
+            AudioManager.Instance.Play("transition_start");
         }
 
         private void OnClosed()
@@ -63,6 +66,7 @@ namespace SamuraiGame.Room
 
         private void Open()
         {
+            AudioManager.Instance.Play("transition_end");
             var seq = DOTween.Sequence();
             seq.Join(left.transform.DOMoveX(-openDistance, openTime).SetRelative());
             seq.Join(right.transform.DOMoveX(openDistance, openTime).SetRelative());

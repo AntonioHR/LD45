@@ -19,7 +19,8 @@ namespace SamuraiGame.Player
 
         public PlayerConfigs configs;
         public Animator animator;
-
+        public ParticleSystem dashParticle;
+        public Transform foot;
 
         public CharMover defaultMover { get => configs.defaultMover; }
         public SpriteRenderer SpriteRenderer { get; private set; }
