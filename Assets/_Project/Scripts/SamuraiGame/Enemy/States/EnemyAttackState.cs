@@ -67,6 +67,8 @@ namespace SamuraiGame.Enemy.States {
 
             GettingReady(isDashable);
 
+            base.FacePlayer();
+
             waitAttackCoroutine = Wait(Enemy.attackAnimations[animationIndex].GettingReadyTime, StartNextAnimation);
 
             Enemy.StartCoroutine(waitAttackCoroutine);
