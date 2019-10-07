@@ -13,7 +13,7 @@ public class FacePlayer : MonoBehaviour
         enemyController = GetComponentInParent<EnemyController>();
 
     }
-    private void Update()
+    private void LateUpdate()
     {
         var scale = transform.localScale;
         float abs = Mathf.Abs(scale.x);
