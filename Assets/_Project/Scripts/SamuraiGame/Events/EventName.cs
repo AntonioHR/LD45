@@ -12,5 +12,7 @@ namespace SamuraiGame.Events
         public static readonly string OnIntroPlayed = "on-intro-played";
         public static readonly string OnNameShown = "on-name-shown";
         public static readonly string EnemyOutOfCombat = "on-enemy-out-of-combat";
+        public static readonly string OnBossSpawn = "on-boss-spawn";
+        public static readonly string OnBossKilled = "on-boss-killed";
     }
 }

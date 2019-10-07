@@ -54,6 +54,8 @@ namespace SamuraiGame.Managers
         {
 			await Wait.For(spawnConfig.startDelay);
 
+            TriggerEvent(spawnConfig.triggerEvent);
+
             List<List<EnemyWithPosition>> enemies = CreateSpawnEnemiesStructure(spawnConfig);
 
             numberOfEnemiesAlive = 0;
@@ -68,6 +70,14 @@ namespace SamuraiGame.Managers
                 EnemyController controller = enemyObject.GetComponent<EnemyController>();
 
                 KeepTrackOfWave(controller);
+            }
+        }
+
+        private void TriggerEvent(string triggerEvent)
+        {
+            if(triggerEvent != "")
+            {
+                TriggerManager.Trigger(triggerEvent);
             }
         }
 

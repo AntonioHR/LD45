@@ -3,6 +3,7 @@ using System.Linq;
 using Common.Audio;
 using Common.Input;
 using Common.Movement;
+using SamuraiGame.Events;
 using SamuraiGame.Managers;
 using UnityEngine;
 
@@ -37,6 +38,8 @@ namespace SamuraiGame.Player
         public int CurrentHealth{ get => health.Current; }
         public bool CanHeal { get => health.CanHeal; }
 
+        private bool disableInteractions;
+
         private void Awake()
         {
             Rigidbody = GetComponent<Rigidbody2D>();
@@ -50,13 +53,42 @@ namespace SamuraiGame.Player
         private void Start()
         {
             stateMachine.Begin(this);
+            TriggerManager.StartListening(EventName.OnBossSpawn, OnBossSpawn);
         }
+
+        private void OnDestroy()
+        {
+            TriggerManager.StopListening(EventName.OnBossSpawn, OnBossSpawn);
+        }
+
+        private void DisableInsteractions()
+        {
+            disableInteractions = true;
+            //GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        }
+
+        private async void OnBossSpawn()
+        {
+            disableInteractions = true;
+            await Wait.For(GameConstants.BOSS_WAIT_TIME);
+            disableInteractions = false;
+        }
+
         private void FixedUpdate()
         {
+            if(disableInteractions)
+            {
+                defaultMover.DoFixedUpdate(this, -GetComponent<Rigidbody2D>().velocity);
+                return;
+            }
             stateMachine.FixedUpdate();
         }
         private void Update()
         {
+            if(disableInteractions)
+            {
+                return;
+            }
             UpdateFacingDirection();
             stateMachine.Update();
 
@@ -65,6 +97,8 @@ namespace SamuraiGame.Player
                 stateMachine.OnDashPressed();
             }
         }
+
+        
 
         private void UpdateFacingDirection()
         {

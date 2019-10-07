@@ -16,5 +16,8 @@ namespace SamuraiGame
         public static readonly string ENEMY_ANIMATION_IDLE = "idle";
 
         public const float ENEMY_WALK_ANIMATION_THRESHOLD = 0.005f;
+        public const float BOSS_WAIT_TIME = 5;
+        public const float BOSS_WALKING_TIME = 3;
+        public const float BOSS_WALKING_Y_DISTANCE = -3;
     }
 }
