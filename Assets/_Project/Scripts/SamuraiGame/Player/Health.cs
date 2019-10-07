@@ -10,6 +10,7 @@ namespace SamuraiGame.Player
         public int max{ get; private set; }
         public int Current{ get; private set; }
         public bool CanHeal { get => Current < max; }
+        public bool Dead { get; private set; }
 
         public Health(int max)
         {
@@ -21,6 +22,8 @@ namespace SamuraiGame.Player
 
         public void Hit(int damage = 1)
         {
+            if (Dead)
+                return;
             Current--;
 
             OnValueChanged();
@@ -33,6 +36,7 @@ namespace SamuraiGame.Player
 
         private void Die()
         {
+            Dead = true;
             if(Died!=null)
                 Died();
         }

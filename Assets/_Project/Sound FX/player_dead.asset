@@ -17,4 +17,4 @@ MonoBehaviour:
   minPlayInterval: 0.1
   volume: 1
   clip: {fileID: 8300000, guid: 34f77c3bc30405c409537f66aee29a2b, type: 3}
-  output: {fileID: 0}
+  output: {fileID: -2118599406613971395, guid: feeaca2e8dc95dc4f80ead021704df43, type: 2}

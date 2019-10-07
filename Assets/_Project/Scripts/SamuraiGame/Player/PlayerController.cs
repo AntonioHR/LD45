@@ -3,6 +3,7 @@ using System.Linq;
 using Common.Audio;
 using Common.Input;
 using Common.Movement;
+using SamuraiGame.Events;
 using SamuraiGame.Managers;
 using UnityEngine;
 
@@ -82,6 +83,7 @@ namespace SamuraiGame.Player
 
         public void OnHit(Transform source)
         {
+            animator.SetTrigger("hurt");
             AudioManager.Instance.Play("take_hit");
             stateMachine.OnHit(source);
             health.Hit();
@@ -93,7 +95,8 @@ namespace SamuraiGame.Player
         }
         public void OnDead()
         {
-            AudioManager.Instance.Play("player_dead");
+            TriggerManager.Trigger(EventName.PlayerDeathAnimationEnd);
+
             if (Died != null)
                 Died();
         }
@@ -120,6 +123,10 @@ namespace SamuraiGame.Player
         public bool IsDashing()
         {
             return stateMachine.IsDashing();
+        }
+        public void OnHitAnimationOver()
+        {
+            stateMachine.OnHitAnimationOver();
         }
     }
 }

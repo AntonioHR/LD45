@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 using System.Collections.Generic;
+using System;
 
 public class TriggerManager : MonoBehaviour
 {
@@ -56,4 +57,5 @@ public class TriggerManager : MonoBehaviour
             thisEvent.Invoke();
         }
     }
+
 }

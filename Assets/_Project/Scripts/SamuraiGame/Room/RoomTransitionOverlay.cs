@@ -25,12 +25,14 @@ namespace SamuraiGame.Room
         private float openDistance;
         [SerializeField]
         private float openTime;
+        private bool dead;
 
         public void Start()
         {
 
 
             TriggerManager.StartListening(EventName.OnGateEnter, Close);
+            TriggerManager.StartListening(EventName.PlayerDeathAnimationEnd, CloseOnDeath);
 
             if (!GameManager.Instance.CurrentScene.IsFirstScene)
             {
@@ -43,6 +45,13 @@ namespace SamuraiGame.Room
         private void OnDestroy()
         {
             TriggerManager.StopListening(EventName.OnGateEnter, Close);
+            TriggerManager.StopListening(EventName.PlayerDeathAnimationEnd, CloseOnDeath);
+        }
+
+        private void CloseOnDeath()
+        {
+            dead = true;
+            Close();
         }
 
         private void Close()
@@ -61,7 +70,10 @@ namespace SamuraiGame.Room
 
         private void OnClosed()
         {
-            TriggerManager.Trigger(EventName.OnTransitionOver);
+            if(!dead)
+                TriggerManager.Trigger(EventName.OnTransitionOver);
+            else
+                TriggerManager.Trigger(EventName.OnTransitionOverDead);
         }
 
         private void Open()

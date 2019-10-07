@@ -37,5 +37,10 @@ namespace SamuraiGame.Player
         {
             return CurrentState.IsDashing();
         }
+
+        public void OnHitAnimationOver()
+        {
+            CurrentState.OnHitAnimationOver();
+        }
     }
 }

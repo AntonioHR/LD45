@@ -10,15 +10,7 @@ namespace SamuraiGame.Room
         // Use this for initialization
         void Start()
         {
-            PlayerController player = GameManager.Instance.CurrentScene.Player;
-			player.Died += OnPlayerDeath;
         }
 
-
-        void OnPlayerDeath()
-        {
-            //play death cutscene
-            RoomController.Instance.ReloadRoom();
-        }
     }
 }
