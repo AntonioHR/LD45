@@ -26,6 +26,8 @@ namespace SamuraiGame.Enemy
         public CharMover pursueMove;
         public EnemyConfigs configs;
 
+        public ParticleSystem swordParticles;
+
         [System.NonSerialized]
         public CallbackAnimationPlayer animationPlayable;
 

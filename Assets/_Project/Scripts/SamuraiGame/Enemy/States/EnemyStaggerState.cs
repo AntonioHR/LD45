@@ -17,6 +17,7 @@ namespace SamuraiGame.Enemy.States {
 
         protected override void Begin()
         {
+            Enemy.swordParticles.Play();
             Collider2D collider = Enemy.GetComponent<Collider2D>();
             collider.enabled = false;
 

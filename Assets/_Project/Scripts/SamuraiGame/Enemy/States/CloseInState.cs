@@ -11,13 +11,11 @@ namespace SamuraiGame.Enemy.States
         protected override void Begin()
         {
             Enemy.animationPlayable.PlayLooped(GameConstants.ENEMY_ANIMATION_RUN, () => { });
-            Enemy.sprite.color = Enemy.configs.CloseInColor;
         }
         
         protected override void End()
         {
             Enemy.Rigidbody.velocity = Vector2.zero;
-            Enemy.sprite.color = Color.white;
         }
         public override void FixedUpdate()
         {

@@ -68,6 +68,7 @@ namespace SamuraiGame.Player.States
         }
         protected override void End()
         {
+            Player.animator.ResetTrigger("blocked");
             Player.dashHitbox.enabled = false;
             Player.Rigidbody.velocity = Vector2.zero;
         }

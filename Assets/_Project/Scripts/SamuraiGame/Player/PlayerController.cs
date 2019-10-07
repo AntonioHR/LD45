@@ -22,6 +22,7 @@ namespace SamuraiGame.Player
         public Animator animator;
         public ParticleSystem dashParticle;
         public ParticleSystem deathParticle;
+        public ParticleSystem[] hitParticles;
         public Transform foot;
 
         public Collider2D dashHitbox;
@@ -152,6 +153,11 @@ namespace SamuraiGame.Player
         private void OnBlock()
         {
             AudioManager.Instance.Play("dash_block");
+            animator.SetTrigger("blocked");
+            foreach(var ps in hitParticles)
+            {
+                ps.Play();
+            }
         }
 
         public bool IsDashing()
