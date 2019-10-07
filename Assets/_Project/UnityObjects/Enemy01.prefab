@@ -196,7 +196,9 @@ MonoBehaviour:
   pursueMove: {fileID: 11400000, guid: b45fee9525d21b443bb41dde837b8722, type: 2}
   configs: {fileID: 11400000, guid: 32ffee3f5aeb493478e7ed1f1f5a960d, type: 2}
   riposteIndicator: {fileID: 0}
+  isBoss: 0
   idleSprite: {fileID: 21300000, guid: df43a1960a18a495ea90f85713cfe1a5, type: 3}
+  disableInteractions: 0
 --- !u!50 &1040177797947906756
 Rigidbody2D:
   serializedVersion: 4
