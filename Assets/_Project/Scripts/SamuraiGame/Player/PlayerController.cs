@@ -21,6 +21,7 @@ namespace SamuraiGame.Player
         public PlayerConfigs configs;
         public Animator animator;
         public ParticleSystem dashParticle;
+        public ParticleSystem deathParticle;
         public Transform foot;
 
         public Collider2D dashHitbox;
