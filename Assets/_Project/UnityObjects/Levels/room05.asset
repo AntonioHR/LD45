@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 99b8d714634c54e48a0b9a7fc9cdf8ac, type: 3}
-  m_Name: room03
+  m_Name: room05
   m_EditorClassIdentifier: 
   waves:
-  - {fileID: 11400000, guid: 88e841e333b8742c1851f43c8a2c78e5, type: 2}
-  - {fileID: 11400000, guid: a66ed39bb31a443518c8a24106539e98, type: 2}
-  - {fileID: 11400000, guid: 73fea12aaca5f498ba1e22c2270a8b21, type: 2}
+  - {fileID: 11400000, guid: ad3119e82c17947dfb61f0d0f8daa8db, type: 2}
+  - {fileID: 11400000, guid: ad3119e82c17947dfb61f0d0f8daa8db, type: 2}
+  - {fileID: 11400000, guid: 10b1833ad580e47b1a7faa73b33445c7, type: 2}
