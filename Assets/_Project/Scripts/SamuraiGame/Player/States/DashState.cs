@@ -40,6 +40,8 @@ namespace SamuraiGame.Player.States
             startPosition = Player.transform.position;
             dashDuration = configs.dashDistance / configs.dashVel;
 
+            Player.dashHitbox.enabled = true;
+
             Player.animator.SetTrigger("dash");
 
             CheckFootDirection();
@@ -66,7 +68,8 @@ namespace SamuraiGame.Player.States
         }
         protected override void End()
         {
-                Player.Rigidbody.velocity = Vector2.zero;
+            Player.dashHitbox.enabled = false;
+            Player.Rigidbody.velocity = Vector2.zero;
         }
 
         public override bool IsDashing()

@@ -22,6 +22,8 @@ namespace SamuraiGame.Player
         public ParticleSystem dashParticle;
         public Transform foot;
 
+        public Collider2D dashHitbox;
+
         public CharMover defaultMover { get => configs.defaultMover; }
         public SpriteRenderer SpriteRenderer { get; private set; }
 

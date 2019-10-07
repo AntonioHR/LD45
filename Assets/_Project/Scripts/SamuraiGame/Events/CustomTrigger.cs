@@ -13,12 +13,18 @@ namespace SamuraiGame.Events
         public UnityEvent unityEvent;
         public string id;
 
-
+        bool started;
         public void Start()
         {
+            started = true;
             TriggerManager.StartListening(id, unityEvent.Invoke);
         }
-        public void DontDestroy()
+        public void OnEnable()
+        {
+            if(started)
+                TriggerManager.StartListening(id, unityEvent.Invoke);
+        }
+        public void OnDisable()
         {
             TriggerManager.StopListening(id, unityEvent.Invoke);
         }
