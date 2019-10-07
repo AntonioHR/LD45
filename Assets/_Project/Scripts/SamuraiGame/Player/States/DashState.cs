@@ -68,7 +68,7 @@ namespace SamuraiGame.Player.States
         }
         protected override void End()
         {
-            Player.dashHitbox.enabled = true;
+            Player.dashHitbox.enabled = false;
             Player.Rigidbody.velocity = Vector2.zero;
         }
 
