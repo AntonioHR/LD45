@@ -9,7 +9,6 @@ namespace SamuraiGame.Enemy.States {
     public class EnemyAttackState : EnemyStateBase
     {
         private int animationIndex = 0;
-        private GameObject currentDamageArea;
 
         private IEnumerator waitAttackCoroutine;
         private bool attacking;
@@ -34,7 +33,6 @@ namespace SamuraiGame.Enemy.States {
 
         private void OnAnimationFinished()
         {
-            currentDamageArea?.SetActive(false);
             attacking = false;
             waitAttackCoroutine = Wait(Enemy.attackAnimations[animationIndex].WaitTime, StartNextAttack);
 
@@ -81,9 +79,7 @@ namespace SamuraiGame.Enemy.States {
             string animationId = Enemy.attackAnimations[animationIndex].AnimationId;
             attacking = true;
             Enemy.animationPlayable.PlayOnce(animationId, OnAnimationFinished);
-            currentDamageArea = Enemy.attackAnimations[animationIndex].DamageHitBox;
             PlayAttackSound();
-            currentDamageArea.SetActive(true);
         }
 
         private void FinishAttack()
@@ -94,7 +90,6 @@ namespace SamuraiGame.Enemy.States {
 
         private void StopAllAnimations()
         {
-            currentDamageArea.SetActive(false);
             Enemy.StopCoroutine(waitAttackCoroutine);
         }
 
