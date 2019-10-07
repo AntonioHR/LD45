@@ -16,7 +16,7 @@ MonoBehaviour:
   - id: empty
     clip: {fileID: 7400000, guid: 2aa241e201c4349ce91860d4ede3de26, type: 2}
   - id: hit_0
-    clip: {fileID: 7400000, guid: 2887045e07c5c4e619f2e8e4902e5dfe, type: 2}
+    clip: {fileID: 7400000, guid: b5c17a56ef9fd4c46b3d22878c62a764, type: 2}
   - id: prep_0
     clip: {fileID: 7400000, guid: 5617a31a427024e1f882bb701610575a, type: 2}
   - id: run
