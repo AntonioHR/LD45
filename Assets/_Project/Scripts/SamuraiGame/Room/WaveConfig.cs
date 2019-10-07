@@ -10,6 +10,7 @@ namespace SamuraiGame.Room
         public EnemySpawn[] enemySpawns;
         public int totalEnemies;
 		public float startDelay;
+        public string triggerEvent;
     }
 
     [Serializable]
