@@ -18,5 +18,6 @@ namespace SamuraiGame.Events
         public static readonly string PlayerDeathAnimationStart = "on-player-death-animation-start";
         public static readonly string OnBossSpawn = "on-boss-spawn";
         public static readonly string OnBossKilled = "on-boss-killed";
+        public static readonly string OnEndingCutscen = "on-ending-cutscene";
     }
 }
