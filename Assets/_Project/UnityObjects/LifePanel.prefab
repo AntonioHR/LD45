@@ -35,7 +35,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 70.45, y: 70.45}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &4916593045003880519
 CanvasRenderer:
@@ -63,10 +63,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4874670517748926331, guid: 2eef4f64a0546974db2a78b9ef2b0dcd,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0ec58416b5aaf144992611c8afafa51a, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -109,7 +108,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 70.45, y: 70.45}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &4812292327000042316
 CanvasRenderer:
@@ -137,10 +136,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4874670517748926331, guid: 2eef4f64a0546974db2a78b9ef2b0dcd,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0ec58416b5aaf144992611c8afafa51a, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -183,7 +181,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 70.45, y: 70.45}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &8180433881837439020
 CanvasRenderer:
@@ -211,10 +209,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4874670517748926331, guid: 2eef4f64a0546974db2a78b9ef2b0dcd,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0ec58416b5aaf144992611c8afafa51a, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -276,12 +273,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 0
+    m_Left: 50
     m_Right: 0
-    m_Top: 0
+    m_Top: 50
     m_Bottom: 0
   m_ChildAlignment: 0
-  m_Spacing: 0
+  m_Spacing: 5
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
@@ -314,9 +311,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8aa6b37922c0274f931f9c440ad6a28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: {fileID: 4874670517748926331, guid: 2eef4f64a0546974db2a78b9ef2b0dcd, type: 3}
-  inactive: {fileID: 1494081808457854641, guid: 2eef4f64a0546974db2a78b9ef2b0dcd,
-    type: 3}
+  active: {fileID: 21300000, guid: 0ec58416b5aaf144992611c8afafa51a, type: 3}
+  inactive: {fileID: 21300000, guid: 9c6184f66a4c5214b87dda404c068da4, type: 3}
   items:
   - {fileID: 8180433881837439021}
   - {fileID: 5741969105857024171}
