@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3911747296136902482}
   - component: {fileID: 3911747296136902485}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: IngameUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -341,46 +341,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8180433881837439022, guid: c725974f77c424b479beda9e5b692d4e,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8180433881837439022, guid: c725974f77c424b479beda9e5b692d4e,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2446450389035657982, guid: c725974f77c424b479beda9e5b692d4e,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2446450389035657982, guid: c725974f77c424b479beda9e5b692d4e,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2446450389035657982, guid: c725974f77c424b479beda9e5b692d4e,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2247514667608142842, guid: c725974f77c424b479beda9e5b692d4e,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2247514667608142842, guid: c725974f77c424b479beda9e5b692d4e,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2247514667608142842, guid: c725974f77c424b479beda9e5b692d4e,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c725974f77c424b479beda9e5b692d4e, type: 3}
