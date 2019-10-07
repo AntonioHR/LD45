@@ -164,6 +164,7 @@ namespace SamuraiGame.Player
         }
         public void OnDeathKeyframe()
         {
+            AudioManager.Instance.Play("player_death_keyframe");
             deathParticle.Emit(1);
         }
     }
