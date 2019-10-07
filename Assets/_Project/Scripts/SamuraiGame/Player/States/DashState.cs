@@ -40,9 +40,9 @@ namespace SamuraiGame.Player.States
             startPosition = Player.transform.position;
             dashDuration = configs.dashDistance / configs.dashVel;
 
+            Player.animator.SetTrigger("dash");
             AudioManager.Instance.Play("dash");
             dashTimer.Reset();
-            Player.SpriteRenderer.color = Color.red;
 
             Player.Rigidbody.velocity = directionInput * configs.dashVel;
             // Player.Rigidbody.velocity = Vector2.zero;
@@ -54,7 +54,6 @@ namespace SamuraiGame.Player.States
             {
                 dashOver = true;
                 recoverTimer = Stopwatch.CreateAndStart();
-                Player.SpriteRenderer.color = Color.magenta;
 
                 Player.Rigidbody.velocity = directionInput * configs.driftVel;
             }
@@ -63,7 +62,6 @@ namespace SamuraiGame.Player.States
         }
         protected override void End()
         {
-            Player.SpriteRenderer.color = Color.white;
                 Player.Rigidbody.velocity = Vector2.zero;
         }
 

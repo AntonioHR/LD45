@@ -18,6 +18,7 @@ namespace SamuraiGame.Player
         private PlayerStateMachine stateMachine = new PlayerStateMachine();
 
         public PlayerConfigs configs;
+        public Animator animator;
 
 
         public CharMover defaultMover { get => configs.defaultMover; }
