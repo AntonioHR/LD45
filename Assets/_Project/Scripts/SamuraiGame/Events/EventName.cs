@@ -16,5 +16,7 @@ namespace SamuraiGame.Events
         public static readonly string EnemyOutOfCombat = "on-enemy-out-of-combat";
         public static readonly string PlayerDeathAnimationEnd = "on-player-death-animation-end";
         public static readonly string PlayerDeathAnimationStart = "on-player-death-animation-start";
+        public static readonly string OnBossSpawn = "on-boss-spawn";
+        public static readonly string OnBossKilled = "on-boss-killed";
     }
 }

@@ -4,6 +4,7 @@ using DG.Tweening;
 using SamuraiGame.Player;
 using SamuraiGame.Managers;
 using System.Threading.Tasks;
+using SamuraiGame.Events;
 
 namespace SamuraiGame.Enemy.States {
 
@@ -51,29 +52,37 @@ namespace SamuraiGame.Enemy.States {
         private async void DoFade()
         {
             Vector3 scale = Enemy.transform.localScale;
-            scale.x = -scale.x;
-            Enemy.transform.localScale = scale;
 
-            string animationId = GameConstants.ENEMY_ANIMATION_ESCAPING;
-            Enemy.animationPlayable.PlayLooped(animationId, () => { });
+            if(!Enemy.isBoss) {
+                string animationId = GameConstants.ENEMY_ANIMATION_ESCAPING;
+                Enemy.animationPlayable.PlayLooped(animationId, () => { });
 
-            PlayerController player = GameManager.Instance.CurrentScene.Player;
+                scale.x = -scale.x;
+                Enemy.transform.localScale = scale;
 
-            Vector2 direction = Enemy.transform.position - player.transform.position;
+                PlayerController player = GameManager.Instance.CurrentScene.Player;
 
-            Enemy.Rigidbody.velocity = direction * 3;
+                Vector2 direction = Enemy.transform.position - player.transform.position;
 
-            var invi = new Color(1, 1, 1, 0);
+                Enemy.Rigidbody.velocity = direction * 3;
 
-            await Wait.For(0.7f);
+                var invi = new Color(1, 1, 1, 0);
 
-            var seq = DOTween.Sequence();
-            seq.Append(Enemy.sprite.DOColor(invi, .1f));
-            seq.Append(Enemy.sprite.DOColor(Color.white, .1f));
-            seq.AppendInterval(.1f);
-            seq.SetLoops(4);
+                await Wait.For(0.7f);
 
-            seq.OnComplete(Destroy);
+                var seq = DOTween.Sequence();
+                seq.Append(Enemy.sprite.DOColor(invi, .1f));
+                seq.Append(Enemy.sprite.DOColor(Color.white, .1f));
+                seq.AppendInterval(.1f);
+                seq.SetLoops(4);
+
+                seq.OnComplete(Destroy);
+            } else {
+                string animationId = GameConstants.ENEMY_ANIMATION_ESCAPING;
+                Enemy.animationPlayable.PlayOnce(animationId, () => { });
+
+                TriggerManager.Trigger(EventName.OnBossKilled);
+            }
         }
     }
 }

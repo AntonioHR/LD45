@@ -36,6 +36,9 @@ namespace SamuraiGame.Enemy
 
         private event Action onEnemyOutOfCombat;
 
+        [SerializeField]
+        public bool isBoss;
+
         public Vector2 TargetDirection {
             get
             {
@@ -64,6 +67,8 @@ namespace SamuraiGame.Enemy
         public SurroundRange Surround;
 
         public SurroundRange SurroundAttack;
+
+        public bool disableInteractions;
 
         private void Awake()
         {
@@ -97,6 +102,9 @@ namespace SamuraiGame.Enemy
         }
         private void Update()
         {
+            if(disableInteractions) {
+                return;
+            }
             stateMachine.Update();
 
             FacePlayer();
@@ -109,6 +117,9 @@ namespace SamuraiGame.Enemy
 
         private void FixedUpdate()
         {
+            if(disableInteractions) {
+                return;
+            }
             stateMachine.FixedUpdate();
         }
 
