@@ -63,21 +63,6 @@ namespace SamuraiGame.Enemy.States
 
         }
 
-        public override void LateUpdate()
-        {
-            float distance = Vector3.Distance(Enemy.transform.position, lastPosition);
-            lastPosition = preLastPosition;
-            preLastPosition = Enemy.transform.position;
-
-            if (distance > GameConstants.ENEMY_WALK_ANIMATION_THRESHOLD && !isRunning)
-            {
-                StartRunAnimation();
-            } else if(distance <= GameConstants.ENEMY_WALK_ANIMATION_THRESHOLD && isRunning)
-            {
-                StartIdleAnimation();
-            }
-        }
-
 
         public override void FixedUpdate()
         {
@@ -91,6 +76,23 @@ namespace SamuraiGame.Enemy.States
             } else
             {
                 Context.pursueMove.DoFixedUpdate(Enemy, Vector2.zero);
+            }
+            UpdateAnimation();
+        }
+
+        private void UpdateAnimation()
+        {
+            float distance = Vector3.Distance(Enemy.transform.position, lastPosition);
+            lastPosition = preLastPosition;
+            preLastPosition = Enemy.transform.position;
+
+            if (distance > GameConstants.ENEMY_WALK_ANIMATION_THRESHOLD && !isRunning)
+            {
+                StartRunAnimation();
+            }
+            else if (distance <= GameConstants.ENEMY_WALK_ANIMATION_THRESHOLD && isRunning)
+            {
+                StartIdleAnimation();
             }
         }
     }
