@@ -2494,12 +2494,6 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5169897118244434240, guid: 19b543e929183a7408aa9a510ad3e216,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: d8a25ceda24e54963913c481565e9678,
-        type: 3}
     - target: {fileID: 5597608772576540498, guid: 19b543e929183a7408aa9a510ad3e216,
         type: 3}
       propertyPath: m_Sprite
@@ -2516,6 +2510,12 @@ PrefabInstance:
       propertyPath: m_FlipX
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5169897118244434240, guid: 19b543e929183a7408aa9a510ad3e216,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d8a25ceda24e54963913c481565e9678,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19b543e929183a7408aa9a510ad3e216, type: 3}
 --- !u!1001 &448149997
@@ -2654,7 +2654,7 @@ PrefabInstance:
       objectReference: {fileID: 543457410}
     - target: {fileID: 1279245592, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
       propertyPath: nextSceneName
-      value: Cutscene_Final_1
+      value: Ending
       objectReference: {fileID: 0}
     - target: {fileID: 1279245592, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
       propertyPath: roomSpawner.spawners.Array.data[3].spawnerId
@@ -6531,7 +6531,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1073091567
 GameObject:
@@ -8026,7 +8026,7 @@ Transform:
   - {fileID: 497167720}
   - {fileID: 1582490931}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1444012377
 GameObject:
@@ -9044,7 +9044,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1529674739
 MonoBehaviour:
