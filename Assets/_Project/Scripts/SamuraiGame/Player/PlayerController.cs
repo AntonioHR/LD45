@@ -94,13 +94,42 @@ namespace SamuraiGame.Player
             UpdateFacingDirection();
             stateMachine.Update();
 
-            if(configs.dashKeys.Any(k=>Input.GetKeyDown(k)))
+            if(HasDashed())
             {
                 stateMachine.OnDashPressed();
             }
         }
 
-        
+        private bool HasDashed()
+        {
+            return HasDashedJoystick() || HasDashedKeyboard();
+        }
+
+        private bool HasDashedJoystick()
+        {
+            string baseJoystickKey = "joystick button ";
+            int size = 4;
+
+            for(int i = 0; i < size; i ++)
+            {
+                string key = baseJoystickKey + i;
+                bool hasPressed = Input.GetKey(key);
+                if(hasPressed)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private bool HasDashedKeyboard()
+        {
+            if (configs.dashKeys.Any(k => Input.GetKeyDown(k)))
+            {
+                return true;
+            }
+            return false;
+        }
 
         private void UpdateFacingDirection()
         {
