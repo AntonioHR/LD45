@@ -6,12 +6,14 @@ using UnityEngine.UI;
 
 public class TutorialUI : MonoBehaviour
 {
+    public bool autoFade = true;
     private bool executed;
     public Text text;
     // Use this for initialization
     void Start()
     {
-        TriggerManager.StartListening(EventName.EnemyOutOfCombat, FadeOut);
+        if(autoFade)
+            TriggerManager.StartListening(EventName.EnemyOutOfCombat, FadeOut);
     }
 
     public void FadeOut()
