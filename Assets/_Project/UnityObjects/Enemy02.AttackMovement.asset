@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cdc255c28d7b5b43a923837213b9d7a, type: 3}
   m_Name: Enemy02.AttackMovement
   m_EditorClassIdentifier: 
-  moveForce: 50
+  moveForce: 200
   useSpeedCapFriction: 1
   useBraking: 1
   setDirection: 0
   frictionSettings:
-    brakeForce: 50
-    speedCap: 1
-    speedCapFrictionPower: 50
+    brakeForce: 100
+    speedCap: 2.5
+    speedCapFrictionPower: 200

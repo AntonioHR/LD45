@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Player.Configs
   m_EditorClassIdentifier: 
   dash:
-    dashDistance: 1
+    dashDistance: 1.6
     recoverInvicibility: 0.2
     recoverTime: 0.4
     dashVel: 16

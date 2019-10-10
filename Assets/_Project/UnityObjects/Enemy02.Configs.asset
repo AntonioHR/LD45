@@ -12,18 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dfb5123edde83f4d8e3c5ec11a545ae, type: 3}
   m_Name: Enemy02.Configs
   m_EditorClassIdentifier: 
-  hitAdvanceMover: {fileID: 11400000, guid: ef6bd68230c11ca4f8302d180247b5e0, type: 2}
+  hitAdvanceMover: {fileID: 11400000, guid: 634838b6f049bb942a463c27aced962c, type: 2}
   surround:
     min: 3
     max: 3.5
   surroundAttack:
-    min: 2.5
-    max: 4
+    min: 0
+    max: 4.5
   closeIn:
-    min: 1
-    max: 1.5
+    min: 2
+    max: 2.5
   attackDelayMin: 0.25
-  attackDelayMax: 3.5
+  attackDelayMax: 2
   CloseInColor: {r: 0.754717, g: 0.73234, b: 0.4805981, a: 1}
   healthDrop: {fileID: 5340488198108731901, guid: 15f6513bbf337a346a151930fa773a4d,
     type: 3}
