@@ -54,7 +54,6 @@ MonoBehaviour:
   left: {fileID: 1644406874611206313}
   right: {fileID: 2568693068116836863}
   announce: {fileID: 3085187154264565103}
-  openDistance: 960
   openTime: 1
 --- !u!1 &1591346577633636266
 GameObject:

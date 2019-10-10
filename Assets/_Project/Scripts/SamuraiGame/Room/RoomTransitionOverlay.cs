@@ -21,15 +21,16 @@ namespace SamuraiGame.Room
         [SerializeField]
         private Image announce;
 
-        [SerializeField]
-        private float openDistance;
+
+        private float openDistance { get { return rectTransf.rect.width; } }
         [SerializeField]
         private float openTime;
         private bool dead;
+        private RectTransform rectTransf;
 
         public void Start()
         {
-
+            rectTransf = GetComponent<RectTransform>();
 
             TriggerManager.StartListening(EventName.OnGateEnter, Close);
             TriggerManager.StartListening(EventName.PlayerDeathAnimationEnd, CloseOnDeath);
