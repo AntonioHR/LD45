@@ -19,4 +19,4 @@ MonoBehaviour:
     dashVel: 16
     driftVel: 0.2
   defaultMover: {fileID: 11400000, guid: 660dfd131925b584eaa6267390fcc2f3, type: 2}
-  dashKeys: 200000007a000000
+  dashKeys: 200000007a0000006a0000006b0000006c0000000d000000
