@@ -14810,11 +14810,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   configs: {fileID: 11400000, guid: b37fe734eaf27eb4d87c7ff9749823db, type: 2}
   animator: {fileID: 5805275858296463306}
-  dashParticle: {fileID: 3732209156562909690}
   deathParticle: {fileID: 8274435012994231562}
-  hitParticles:
-  - {fileID: 1483619304851303488}
+  dashParticles:
+  - {fileID: 3732209156562909690}
+  blockParticles:
   - {fileID: 116745758730847013}
+  - {fileID: 1483619304851303488}
   foot: {fileID: 807024131761023512}
   dashHitbox: {fileID: 4152396975334800466}
 --- !u!114 &108497727035554311
@@ -14862,7 +14863,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5805275858296463310}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0

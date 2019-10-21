@@ -46,7 +46,10 @@ namespace SamuraiGame.Player.States
 
             CheckFootDirection();
 
-            Player.dashParticle.Emit(1);
+            foreach(ParticleSystem ps in Player.dashParticles)
+            {
+                ps.Emit(1);
+            }
             AudioManager.Instance.Play("dash");
             dashTimer.Reset();
 

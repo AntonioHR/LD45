@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using Common.Audio;
 using Common.Input;
@@ -20,9 +21,9 @@ namespace SamuraiGame.Player
 
         public PlayerConfigs configs;
         public Animator animator;
-        public ParticleSystem dashParticle;
         public ParticleSystem deathParticle;
-        public ParticleSystem[] hitParticles;
+        public ParticleSystem[] dashParticles;
+        public ParticleSystem[] blockParticles;
         public Transform foot;
 
         public Collider2D dashHitbox;
@@ -183,9 +184,9 @@ namespace SamuraiGame.Player
         {
             AudioManager.Instance.Play("dash_block");
             animator.SetTrigger("blocked");
-            foreach(var ps in hitParticles)
+            foreach(ParticleSystem ps in blockParticles)
             {
-                ps.Play();
+                ps.Emit(1);
             }
         }
 
