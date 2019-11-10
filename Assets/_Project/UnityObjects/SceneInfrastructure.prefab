@@ -171,6 +171,7 @@ Transform:
   - {fileID: 3529064372378888451}
   - {fileID: 1279245593}
   - {fileID: 787947059}
+  - {fileID: 5218260959752152144}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -414,6 +415,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10c42a852e207af4aab3fecc89e4d66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &7642964549627867487
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5218260959752152144}
+  - component: {fileID: 6904026244464387221}
+  m_Layer: 0
+  m_Name: SwordManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5218260959752152144
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7642964549627867487}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3588101288852633438}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6904026244464387221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7642964549627867487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fb5d95bd5d9c4de9b5194f3466eb528, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  swordLayer: {fileID: 0}
+  swordFallPrefab: {fileID: 2924308163178689841, guid: 8bc22872b8dda4742800d7fd9c1144b0,
+    type: 3}
 --- !u!1001 &5076864276197432497
 PrefabInstance:
   m_ObjectHideFlags: 0
