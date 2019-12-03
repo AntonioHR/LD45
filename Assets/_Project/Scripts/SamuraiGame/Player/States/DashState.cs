@@ -12,7 +12,7 @@ namespace SamuraiGame.Player.States
         {
             public float dashDistance = 3;
             public float recoverInvicibility = .3f;
-            public float recoverTime = 1;
+            public float recoverTime = 1.2f;
 
             public float dashVel = 10;
             public float driftVel = 2;
