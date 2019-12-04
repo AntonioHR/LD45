@@ -84,8 +84,7 @@ namespace SamuraiGame.Enemy.States {
 
         private void FinishAttack()
         {
-            StopAllAnimations();
-            ExitTo(new PursueState());
+            PlaySheatheAnimation();
         }
 
         private void StopAllAnimations()
@@ -154,6 +153,16 @@ namespace SamuraiGame.Enemy.States {
         public override void FacePlayer()
         {
             //Enemy.FacingDirection = Enemy.TargetDirection;
+        }
+
+        private void PlaySheatheAnimation() {
+            Enemy.animationPlayable.PlayOnce(GameConstants.ENEMY_ANIMATION_SHEATHE, FinishSheatheAnimation);
+        }
+
+        private async void FinishSheatheAnimation() {
+            await FrameWaiterHelper.WaitTime(GameConstants.ENEMY_SHEATHE_COOLDOWN);
+            StopAllAnimations();
+            ExitTo(new PursueState());
         }
     }
 }
