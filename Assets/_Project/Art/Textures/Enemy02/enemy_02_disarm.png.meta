@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: f783d219d317c4b76ab5215d7580c733
+guid: f51f9b8dca233431a8848e466f0d359c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8748792347127288932
-    second: enemy_01_disarm_0
+      213: -4438473617846255295
+    second: enemy_02_disarm_0
   - first:
-      213: 5977188066176798344
-    second: enemy_01_disarm_1
+      213: 4533164782822305731
+    second: enemy_02_disarm_1
   - first:
-      213: 3674701352058622182
-    second: enemy_01_disarm_2
+      213: -2444434128219724347
+    second: enemy_02_disarm_2
   - first:
-      213: -3255580008363717069
-    second: enemy_01_disarm_3
+      213: 2804820161393859060
+    second: enemy_02_disarm_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -134,7 +134,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: enemy_01_disarm_0
+      name: enemy_02_disarm_0
       rect:
         serializedVersion: 2
         x: 0
@@ -148,14 +148,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 786e1eccf20d54f388bb9ce6934debf7
-      internalID: -8748792347127288932
+      spriteID: 0fc18933257ce4170bfb4ddfa90c3858
+      internalID: -4438473617846255295
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_01_disarm_1
+      name: enemy_02_disarm_1
       rect:
         serializedVersion: 2
         x: 100
@@ -169,14 +169,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1910e26f04f754ccca02859ffb9a5785
-      internalID: 5977188066176798344
+      spriteID: 6f92bd7f9ed7544fdbf21ffdb7b64ae8
+      internalID: 4533164782822305731
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_01_disarm_2
+      name: enemy_02_disarm_2
       rect:
         serializedVersion: 2
         x: 200
@@ -190,14 +190,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee3bc36e0b26142c9887b5ef4bd9e175
-      internalID: 3674701352058622182
+      spriteID: daecc9975dc804c16837c50a3bb64ef6
+      internalID: -2444434128219724347
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_01_disarm_3
+      name: enemy_02_disarm_3
       rect:
         serializedVersion: 2
         x: 300
@@ -211,8 +211,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 995ba70a65972417fa88c50f3b9d6e7c
-      internalID: -3255580008363717069
+      spriteID: be14959cd35b044f79782b18de68a40c
+      internalID: 2804820161393859060
       vertices: []
       indices: 
       edges: []
