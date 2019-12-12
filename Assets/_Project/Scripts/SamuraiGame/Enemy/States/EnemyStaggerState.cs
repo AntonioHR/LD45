@@ -10,13 +10,9 @@ namespace SamuraiGame.Enemy.States {
 
     public class EnemyStaggerState : EnemyStateBase
     {
-        public override void OnDamageTaken()
-        {
-            ExitTo(new EnemyDamageTakenState());
-        }
-
         protected override void Begin()
-        {
+        {   
+            Enemy.TriggerOnOutOfCombat();
             Enemy.swordParticles.Play();
             Collider2D collider = Enemy.GetComponent<Collider2D>();
             collider.enabled = false;

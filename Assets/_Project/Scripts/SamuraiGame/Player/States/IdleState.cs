@@ -16,7 +16,7 @@ namespace SamuraiGame.Player.States
         }
         public override void OnDashPressed()
         {
-            ExitTo(new DashState(Player.FacingDirection));
+            ExitTo(new DashState(Player.configs.canDashInPlace? Player.DirectionInput : Player.FacingDirection));
         }
 
     }

@@ -92,12 +92,6 @@ namespace SamuraiGame.Enemy.States {
             Enemy.StopCoroutine(waitAttackCoroutine);
         }
 
-        public override void OnDamageTaken()
-        {
-            StopAllAnimations();
-            ExitTo(new EnemyDamageTakenState());
-        }
-
         public override void OnStagger()
         {
             StopAllAnimations();

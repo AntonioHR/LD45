@@ -16,6 +16,7 @@ namespace SamuraiGame.Player.States
 
             public float dashVel = 10;
             public float driftVel = 2;
+            public float stillDashTime = .2f;
         }
 
         private Vector2 directionInput;
@@ -38,7 +39,10 @@ namespace SamuraiGame.Player.States
         {
             configs = Player.configs.dash;
             startPosition = Player.transform.position;
-            dashDuration = configs.dashDistance / configs.dashVel;
+            if(directionInput.magnitude > 0)
+                dashDuration = configs.dashDistance / configs.dashVel;
+            else
+                dashDuration = configs.stillDashTime;
 
             Player.dashHitbox.enabled = true;
 
@@ -65,12 +69,17 @@ namespace SamuraiGame.Player.States
                 recoverTimer = Stopwatch.CreateAndStart();
 
                 Player.Rigidbody.velocity = directionInput * configs.driftVel;
+
+                
             }
+            if(recoverTimer.ElapsedSeconds > configs.recoverInvicibility)
+                Player.animator.SetTrigger("dash_stop");
             if(recoverTimer.ElapsedSeconds > configs.recoverTime)
                 ExitTo(new IdleState());
         }
         protected override void End()
         {
+            Player.animator.ResetTrigger("dash_stop");
             Player.animator.ResetTrigger("blocked");
             Player.dashHitbox.enabled = false;
             Player.Rigidbody.velocity = Vector2.zero;

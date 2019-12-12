@@ -16,11 +16,6 @@ namespace SamuraiGame.Enemy
             return CurrentState.TryAttack();
         }
 
-        public void OnDamageTaken()
-        {
-            this.CurrentState.OnDamageTaken();
-        }
-
         public void OnStagger()
         {
             CurrentState.OnStagger();

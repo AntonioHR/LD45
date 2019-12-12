@@ -9,6 +9,7 @@ namespace SamuraiGame.Player
         public States.DashState.Configs dash;
         public CharMover defaultMover;
 
+        public bool canDashInPlace = false;
         public KeyCode[] dashKeys;
     }
 }

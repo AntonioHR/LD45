@@ -16,9 +16,6 @@ namespace SamuraiGame.Enemy.States
 
         Stopwatch stopwatch = new Stopwatch();
 
-        public override void OnDamageTaken()
-        {
-        }
         protected override void Begin()
         {
             Enemy.animationPlayable.PlayLooped(GameConstants.ENEMY_ANIMATION_RUN, () => { });

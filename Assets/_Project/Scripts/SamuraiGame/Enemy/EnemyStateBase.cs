@@ -26,9 +26,9 @@ namespace SamuraiGame.Enemy
         }
         public virtual void Update() { }
         public virtual void FixedUpdate() { }
-        public virtual void OnStagger() { }
+        public virtual void OnStagger() { 
+        }
 
-        public abstract void OnDamageTaken();
 
         public virtual void OnHitParried()
         {

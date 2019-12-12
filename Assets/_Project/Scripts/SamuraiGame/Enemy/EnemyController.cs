@@ -93,7 +93,6 @@ namespace SamuraiGame.Enemy
 
         internal void HitParried()
         {
-            TriggerOnOutOfCombat();
             stateMachine.OnStagger();
         }
 
@@ -148,9 +147,9 @@ namespace SamuraiGame.Enemy
                 bool isDashable = attack.IsDashable;
                 GameObject hitBox = attack.DamageHitBox;
 
-                hitBox.AddComponent<DamageHitBox>();
-                DamageHitBox hitBoxComponent = hitBox.GetComponent<DamageHitBox>();
-                hitBoxComponent.isDashable = isDashable;
+                hitBox.AddComponent<EnemyAttackHitbox>();
+                EnemyAttackHitbox hitBoxComponent = hitBox.GetComponent<EnemyAttackHitbox>();
+                hitBoxComponent.isHitbox = isDashable;
                 hitBoxComponent.enemy = this;
             }
         }
@@ -163,7 +162,7 @@ namespace SamuraiGame.Enemy
         {
             onEnemyOutOfCombat -= deathAction;
         }
-        private void TriggerOnOutOfCombat()
+        public void TriggerOnOutOfCombat()
         {
             onEnemyOutOfCombat?.Invoke();
         }

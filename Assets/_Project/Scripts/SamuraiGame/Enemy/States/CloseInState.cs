@@ -4,9 +4,6 @@ namespace SamuraiGame.Enemy.States
 {
     public class CloseInState : EnemyStateBase
     {
-        public override void OnDamageTaken()
-        {
-        }
         
         protected override void Begin()
         {

@@ -18,5 +18,7 @@ MonoBehaviour:
     recoverTime: 0.4
     dashVel: 16
     driftVel: 0.2
+    stillDashTime: 0
   defaultMover: {fileID: 11400000, guid: 660dfd131925b584eaa6267390fcc2f3, type: 2}
+  canDashInPlace: 1
   dashKeys: 200000007a0000006a0000006b0000006c0000000d000000
