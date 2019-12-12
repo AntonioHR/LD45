@@ -103,7 +103,12 @@ namespace SamuraiGame.Player
 
         private bool HasDashed()
         {
-            return HasDashedJoystick() || HasDashedKeyboard();
+            return HasDashedJoystick() || HasDashedKeyboard() || HasDashedVirtualButton();
+        }
+
+        private bool HasDashedVirtualButton()
+        {
+            return LeoLuz.PlugAndPlayJoystick.Input.GetButtonDown("Submit");
         }
 
         private bool HasDashedJoystick()
