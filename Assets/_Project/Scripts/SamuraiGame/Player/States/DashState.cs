@@ -40,13 +40,18 @@ namespace SamuraiGame.Player.States
             configs = Player.configs.dash;
             startPosition = Player.transform.position;
             if(directionInput.magnitude > 0)
+            {
                 dashDuration = configs.dashDistance / configs.dashVel;
+                Player.animator.SetTrigger("dash");
+            }
             else
+            {
                 dashDuration = configs.stillDashTime;
+                Player.animator.SetTrigger("dash_still");
+            }
 
             Player.dashHitbox.enabled = true;
 
-            Player.animator.SetTrigger("dash");
 
             CheckFootDirection();
 
