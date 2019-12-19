@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 4464215901086768860}
   - component: {fileID: 1445462173862431143}
   - component: {fileID: 1048101342195763184}
+  - component: {fileID: 7382946883251009687}
   m_Layer: 8
   m_Name: Enemy01
   m_TagString: Untagged
@@ -202,7 +203,7 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.006366548, y: 0.023344181}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.20115702
 --- !u!114 &1445462173862431143
@@ -247,11 +248,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 2
   radius: 0.2
-  height: 2
-  repathRate: 0.5
+  height: 0.2
+  repathRate: 0.2
   canSearch: 1
-  canMove: 1
-  maxSpeed: 1
+  canMove: 0
+  maxSpeed: 0.1
   gravity: {x: NaN, y: NaN, z: NaN}
   groundMask:
     serializedVersion: 2
@@ -263,12 +264,26 @@ MonoBehaviour:
   maxAcceleration: -2.5
   rotationSpeed: 360
   slowdownDistance: 0.6
-  pickNextWaypointDist: 2
+  pickNextWaypointDist: 0.4
   endReachedDistance: 0.2
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 1
-  whenCloseToDestination: 0
+  whenCloseToDestination: 1
   constrainInsideGraph: 0
+--- !u!114 &7382946883251009687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040177797947906758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9679e68a0f1144e79c664d9a11ca121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  target: {fileID: 0}
 --- !u!1 &1526585004915287171
 GameObject:
   m_ObjectHideFlags: 0

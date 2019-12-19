@@ -229,7 +229,7 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.006366548, y: 0.023344181}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.20115702
 --- !u!114 &1808509240675490917
@@ -246,7 +246,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   drawGizmos: 1
-  detailedGizmos: 0
+  detailedGizmos: 1
   startEndModifier:
     addPoints: 0
     exactStartPoint: 3
@@ -274,11 +274,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 2
   radius: 0.2
-  height: 2
-  repathRate: 0.5
+  height: 0.2
+  repathRate: 0.2
   canSearch: 1
   canMove: 0
-  maxSpeed: 0.01
+  maxSpeed: 0.1
   gravity: {x: NaN, y: NaN, z: NaN}
   groundMask:
     serializedVersion: 2
@@ -290,11 +290,11 @@ MonoBehaviour:
   maxAcceleration: -2.5
   rotationSpeed: 360
   slowdownDistance: 0.6
-  pickNextWaypointDist: 2
+  pickNextWaypointDist: 0.4
   endReachedDistance: 0.2
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 1
-  whenCloseToDestination: 0
+  whenCloseToDestination: 1
   constrainInsideGraph: 0
 --- !u!114 &-1835942520710914977
 MonoBehaviour:
