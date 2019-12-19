@@ -130,12 +130,12 @@ GameObject:
   m_Component:
   - component: {fileID: 18999609}
   - component: {fileID: 18999610}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_ground-2 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &18999609
 Transform:
@@ -214,12 +214,12 @@ GameObject:
   - component: {fileID: 26102002}
   - component: {fileID: 26102001}
   - component: {fileID: 26102000}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_sign-1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &26101999
 Transform:
@@ -364,12 +364,12 @@ GameObject:
   - component: {fileID: 62708636}
   - component: {fileID: 62708635}
   - component: {fileID: 62708634}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_sign-2 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &62708633
 Transform:
@@ -532,10 +532,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1681454151}
     m_Modifications:
-    - target: {fileID: 8738597895497113919, guid: 9ccf4e3c60170da4b9c54d78d67d0e09,
+    - target: {fileID: 1551163706033361338, guid: 9ccf4e3c60170da4b9c54d78d67d0e09,
         type: 3}
-      propertyPath: m_Name
-      value: rock_01
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c05b8a03b0c5a45d598c07c9073a7465,
+        type: 3}
+    - target: {fileID: 3273437243431839491, guid: 9ccf4e3c60170da4b9c54d78d67d0e09,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3273437243431839491, guid: 9ccf4e3c60170da4b9c54d78d67d0e09,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 3273437243431839491, guid: 9ccf4e3c60170da4b9c54d78d67d0e09,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.32
       objectReference: {fileID: 0}
     - target: {fileID: 4334176906102715698, guid: 9ccf4e3c60170da4b9c54d78d67d0e09,
         type: 3}
@@ -607,26 +623,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1551163706033361338, guid: 9ccf4e3c60170da4b9c54d78d67d0e09,
+    - target: {fileID: 8738597895497113919, guid: 9ccf4e3c60170da4b9c54d78d67d0e09,
         type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: c05b8a03b0c5a45d598c07c9073a7465,
-        type: 3}
-    - target: {fileID: 3273437243431839491, guid: 9ccf4e3c60170da4b9c54d78d67d0e09,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
+      propertyPath: m_Name
+      value: rock_01
       objectReference: {fileID: 0}
-    - target: {fileID: 3273437243431839491, guid: 9ccf4e3c60170da4b9c54d78d67d0e09,
+    - target: {fileID: 8738597895497113919, guid: 9ccf4e3c60170da4b9c54d78d67d0e09,
         type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.32
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 3273437243431839491, guid: 9ccf4e3c60170da4b9c54d78d67d0e09,
+    - target: {fileID: 8738597895497113919, guid: 9ccf4e3c60170da4b9c54d78d67d0e09,
         type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 0.32
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ccf4e3c60170da4b9c54d78d67d0e09, type: 3}
@@ -649,12 +659,12 @@ GameObject:
   - component: {fileID: 127534888}
   - component: {fileID: 127534887}
   - component: {fileID: 127534886}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &127534885
 Transform:
@@ -781,12 +791,12 @@ GameObject:
   - component: {fileID: 130280983}
   - component: {fileID: 130280982}
   - component: {fileID: 130280981}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &130280980
 Transform:
@@ -928,7 +938,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &170015246
 GameObject:
@@ -943,12 +953,12 @@ GameObject:
   - component: {fileID: 170015250}
   - component: {fileID: 170015249}
   - component: {fileID: 170015248}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &170015247
 Transform:
@@ -1076,12 +1086,12 @@ GameObject:
   - component: {fileID: 214971905}
   - component: {fileID: 214971904}
   - component: {fileID: 214971903}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-corner(l) (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &214971902
 Transform:
@@ -1231,12 +1241,12 @@ GameObject:
   m_Component:
   - component: {fileID: 228917717}
   - component: {fileID: 228917718}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: deco1 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &228917717
 Transform:
@@ -1311,12 +1321,12 @@ GameObject:
   m_Component:
   - component: {fileID: 263574953}
   - component: {fileID: 263574954}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_ground-2 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &263574953
 Transform:
@@ -1391,12 +1401,12 @@ GameObject:
   m_Component:
   - component: {fileID: 263768433}
   - component: {fileID: 263768434}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_ground-1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &263768433
 Transform:
@@ -1475,12 +1485,12 @@ GameObject:
   - component: {fileID: 267589724}
   - component: {fileID: 267589723}
   - component: {fileID: 267589722}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: env-tree (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &267589721
 Transform:
@@ -1634,12 +1644,12 @@ GameObject:
   - component: {fileID: 278525525}
   - component: {fileID: 278525524}
   - component: {fileID: 278525523}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-vertical(l) (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &278525522
 Transform:
@@ -1792,12 +1802,12 @@ GameObject:
   - component: {fileID: 286376953}
   - component: {fileID: 286376952}
   - component: {fileID: 286376951}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &286376950
 Transform:
@@ -1925,12 +1935,12 @@ GameObject:
   - component: {fileID: 295378905}
   - component: {fileID: 295378904}
   - component: {fileID: 295378903}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_collum (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &295378902
 Transform:
@@ -2075,12 +2085,12 @@ GameObject:
   - component: {fileID: 308563182}
   - component: {fileID: 308563181}
   - component: {fileID: 308563180}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_sign-2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &308563179
 Transform:
@@ -2243,10 +2253,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1681454151}
     m_Modifications:
-    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_Name
-      value: tree_01 (3)
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.28
       objectReference: {fileID: 0}
     - target: {fileID: 6019630434353949059, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
@@ -2329,20 +2349,20 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_Enabled
-      value: 0
+      propertyPath: m_Name
+      value: tree_01 (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.28
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.28
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 051ab41bb9559c242ab2ea9087147479, type: 3}
@@ -2414,10 +2434,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6850060870939295220, guid: 19b543e929183a7408aa9a510ad3e216,
+    - target: {fileID: 2160784873095812227, guid: 19b543e929183a7408aa9a510ad3e216,
         type: 3}
-      propertyPath: m_Name
-      value: Gate
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3707738723152521897, guid: 19b543e929183a7408aa9a510ad3e216,
         type: 3}
@@ -2457,7 +2477,7 @@ PrefabInstance:
     - target: {fileID: 3707738723152521897, guid: 19b543e929183a7408aa9a510ad3e216,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3707738723152521897, guid: 19b543e929183a7408aa9a510ad3e216,
         type: 3}
@@ -2474,6 +2494,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5169897118244434240, guid: 19b543e929183a7408aa9a510ad3e216,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d8a25ceda24e54963913c481565e9678,
+        type: 3}
     - target: {fileID: 5350013178332995279, guid: 19b543e929183a7408aa9a510ad3e216,
         type: 3}
       propertyPath: m_IsTrigger
@@ -2488,11 +2514,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.y
       value: 0.03796017
-      objectReference: {fileID: 0}
-    - target: {fileID: 2160784873095812227, guid: 19b543e929183a7408aa9a510ad3e216,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5597608772576540498, guid: 19b543e929183a7408aa9a510ad3e216,
         type: 3}
@@ -2510,12 +2531,11 @@ PrefabInstance:
       propertyPath: m_FlipX
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5169897118244434240, guid: 19b543e929183a7408aa9a510ad3e216,
+    - target: {fileID: 6850060870939295220, guid: 19b543e929183a7408aa9a510ad3e216,
         type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: d8a25ceda24e54963913c481565e9678,
-        type: 3}
+      propertyPath: m_Name
+      value: Gate
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19b543e929183a7408aa9a510ad3e216, type: 3}
 --- !u!1001 &448149997
@@ -2525,100 +2545,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3588101288852633409, guid: 4c43b1438bac140439424e9ab7a4f84a,
-        type: 3}
-      propertyPath: m_Name
-      value: SceneInfrastructure
-      objectReference: {fileID: 0}
-    - target: {fileID: 3588101288852633438, guid: 4c43b1438bac140439424e9ab7a4f84a,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -6.36
-      objectReference: {fileID: 0}
-    - target: {fileID: 3588101288852633438, guid: 4c43b1438bac140439424e9ab7a4f84a,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.22000003
-      objectReference: {fileID: 0}
-    - target: {fileID: 3588101288852633438, guid: 4c43b1438bac140439424e9ab7a4f84a,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3588101288852633438, guid: 4c43b1438bac140439424e9ab7a4f84a,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3588101288852633438, guid: 4c43b1438bac140439424e9ab7a4f84a,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3588101288852633438, guid: 4c43b1438bac140439424e9ab7a4f84a,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3588101288852633438, guid: 4c43b1438bac140439424e9ab7a4f84a,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3588101288852633438, guid: 4c43b1438bac140439424e9ab7a4f84a,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3588101288852633438, guid: 4c43b1438bac140439424e9ab7a4f84a,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3588101288852633438, guid: 4c43b1438bac140439424e9ab7a4f84a,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3588101288852633438, guid: 4c43b1438bac140439424e9ab7a4f84a,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3588101290373803660, guid: 4c43b1438bac140439424e9ab7a4f84a,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1124431131}
-    - target: {fileID: 1459097261, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 1459097262, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
-      propertyPath: roomSpawner.spawners.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1459097262, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
-      propertyPath: currentRoomConfig
-      value: 
-      objectReference: {fileID: 11400000, guid: d1547d76d95e044b9801fa7f049084b8,
-        type: 2}
-    - target: {fileID: 1459097262, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
-      propertyPath: roomSpawner.spawners.Array.data[0].spawner
-      value: 
-      objectReference: {fileID: 1456344372}
-    - target: {fileID: 1459097262, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
-      propertyPath: roomSpawner.spawners.Array.data[0].spawnerId
-      value: a
-      objectReference: {fileID: 0}
-    - target: {fileID: 1459097262, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
-      propertyPath: roomSpawner.spawners.Array.data[1].spawnerId
-      value: b
-      objectReference: {fileID: 0}
-    - target: {fileID: 1459097262, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
-      propertyPath: roomSpawner.spawners.Array.data[1].spawner
-      value: 
-      objectReference: {fileID: 168356595}
     - target: {fileID: 1279245592, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
       propertyPath: roomSpawner.spawners.Array.size
       value: 4
@@ -2664,6 +2590,100 @@ PrefabInstance:
       propertyPath: roomSpawner.spawners.Array.data[3].spawner
       value: 
       objectReference: {fileID: 996735765}
+    - target: {fileID: 1459097261, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 1459097262, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
+      propertyPath: roomSpawner.spawners.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1459097262, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
+      propertyPath: currentRoomConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: d1547d76d95e044b9801fa7f049084b8,
+        type: 2}
+    - target: {fileID: 1459097262, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
+      propertyPath: roomSpawner.spawners.Array.data[0].spawner
+      value: 
+      objectReference: {fileID: 1456344372}
+    - target: {fileID: 1459097262, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
+      propertyPath: roomSpawner.spawners.Array.data[0].spawnerId
+      value: a
+      objectReference: {fileID: 0}
+    - target: {fileID: 1459097262, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
+      propertyPath: roomSpawner.spawners.Array.data[1].spawnerId
+      value: b
+      objectReference: {fileID: 0}
+    - target: {fileID: 1459097262, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
+      propertyPath: roomSpawner.spawners.Array.data[1].spawner
+      value: 
+      objectReference: {fileID: 168356595}
+    - target: {fileID: 3588101288852633409, guid: 4c43b1438bac140439424e9ab7a4f84a,
+        type: 3}
+      propertyPath: m_Name
+      value: SceneInfrastructure
+      objectReference: {fileID: 0}
+    - target: {fileID: 3588101288852633438, guid: 4c43b1438bac140439424e9ab7a4f84a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 3588101288852633438, guid: 4c43b1438bac140439424e9ab7a4f84a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.22000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 3588101288852633438, guid: 4c43b1438bac140439424e9ab7a4f84a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3588101288852633438, guid: 4c43b1438bac140439424e9ab7a4f84a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3588101288852633438, guid: 4c43b1438bac140439424e9ab7a4f84a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3588101288852633438, guid: 4c43b1438bac140439424e9ab7a4f84a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3588101288852633438, guid: 4c43b1438bac140439424e9ab7a4f84a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3588101288852633438, guid: 4c43b1438bac140439424e9ab7a4f84a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3588101288852633438, guid: 4c43b1438bac140439424e9ab7a4f84a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3588101288852633438, guid: 4c43b1438bac140439424e9ab7a4f84a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3588101288852633438, guid: 4c43b1438bac140439424e9ab7a4f84a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3588101290373803660, guid: 4c43b1438bac140439424e9ab7a4f84a,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1124431131}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
 --- !u!1 &456805087
@@ -2676,12 +2696,12 @@ GameObject:
   m_Component:
   - component: {fileID: 456805088}
   - component: {fileID: 456805089}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_ground-2 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &456805088
 Transform:
@@ -2761,7 +2781,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &497167720
 Transform:
@@ -2814,12 +2834,12 @@ GameObject:
   - component: {fileID: 507859114}
   - component: {fileID: 507859116}
   - component: {fileID: 507859115}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: rock_01 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &507859114
 Transform:
@@ -2917,10 +2937,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1681454151}
     m_Modifications:
-    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_Name
-      value: tree_01 (4)
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.28
       objectReference: {fileID: 0}
     - target: {fileID: 6019630434353949059, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
@@ -3003,20 +3033,20 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_Enabled
-      value: 0
+      propertyPath: m_Name
+      value: tree_01 (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.28
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.28
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 051ab41bb9559c242ab2ea9087147479, type: 3}
@@ -3095,12 +3125,12 @@ GameObject:
   - component: {fileID: 520013135}
   - component: {fileID: 520013134}
   - component: {fileID: 520013133}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horiz-sword (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &520013132
 Transform:
@@ -3247,10 +3277,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1681454151}
     m_Modifications:
-    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_Name
-      value: tree_01 (2)
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.28
       objectReference: {fileID: 0}
     - target: {fileID: 6019630434353949059, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
@@ -3333,20 +3373,20 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_Enabled
-      value: 0
+      propertyPath: m_Name
+      value: tree_01 (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.28
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.28
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 051ab41bb9559c242ab2ea9087147479, type: 3}
@@ -3439,7 +3479,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &560215493
 PrefabInstance:
@@ -3448,10 +3488,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2020614932}
     m_Modifications:
-    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_Name
-      value: tree_01 (2)
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.28
       objectReference: {fileID: 0}
     - target: {fileID: 6019630434353949059, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
@@ -3534,20 +3584,20 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_Enabled
-      value: 0
+      propertyPath: m_Name
+      value: tree_01 (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.28
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.28
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 051ab41bb9559c242ab2ea9087147479, type: 3}
@@ -3626,12 +3676,12 @@ GameObject:
   - component: {fileID: 620779253}
   - component: {fileID: 620779252}
   - component: {fileID: 620779251}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_tree (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &620779250
 Transform:
@@ -3771,12 +3821,12 @@ GameObject:
   m_Component:
   - component: {fileID: 649349762}
   - component: {fileID: 649349763}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: deco1 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &649349762
 Transform:
@@ -3851,12 +3901,12 @@ GameObject:
   m_Component:
   - component: {fileID: 655054149}
   - component: {fileID: 655054150}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_ground-1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &655054149
 Transform:
@@ -3935,12 +3985,12 @@ GameObject:
   - component: {fileID: 667764468}
   - component: {fileID: 667764467}
   - component: {fileID: 667764466}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: env-tree-2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &667764465
 Transform:
@@ -4093,12 +4143,12 @@ GameObject:
   - component: {fileID: 671642463}
   - component: {fileID: 671642462}
   - component: {fileID: 671642461}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &671642460
 Transform:
@@ -4225,12 +4275,12 @@ GameObject:
   - component: {fileID: 688567159}
   - component: {fileID: 688567158}
   - component: {fileID: 688567157}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &688567156
 Transform:
@@ -4354,12 +4404,12 @@ GameObject:
   m_Component:
   - component: {fileID: 709324996}
   - component: {fileID: 709324997}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_ground-2 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &709324996
 Transform:
@@ -4437,12 +4487,12 @@ GameObject:
   - component: {fileID: 730879855}
   - component: {fileID: 730879854}
   - component: {fileID: 730879853}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &730879852
 Transform:
@@ -4566,12 +4616,12 @@ GameObject:
   m_Component:
   - component: {fileID: 743511453}
   - component: {fileID: 743511454}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_ground-2 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &743511453
 Transform:
@@ -4649,12 +4699,12 @@ GameObject:
   - component: {fileID: 766765461}
   - component: {fileID: 766765460}
   - component: {fileID: 766765459}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &766765458
 Transform:
@@ -4782,12 +4832,12 @@ GameObject:
   - component: {fileID: 786508434}
   - component: {fileID: 786508433}
   - component: {fileID: 786508432}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_collum (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &786508431
 Transform:
@@ -4924,10 +4974,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2020614932}
     m_Modifications:
-    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_Name
-      value: tree_01 (1)
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.28
       objectReference: {fileID: 0}
     - target: {fileID: 6019630434353949059, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
@@ -5010,20 +5070,20 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_Enabled
-      value: 0
+      propertyPath: m_Name
+      value: tree_01 (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.28
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.28
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 051ab41bb9559c242ab2ea9087147479, type: 3}
@@ -5098,12 +5158,12 @@ GameObject:
   m_Component:
   - component: {fileID: 837846369}
   - component: {fileID: 837846370}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_ground-2 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &837846369
 Transform:
@@ -5182,12 +5242,12 @@ GameObject:
   - component: {fileID: 838219707}
   - component: {fileID: 838219706}
   - component: {fileID: 838219705}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-corner(l)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &838219704
 Transform:
@@ -5337,12 +5397,12 @@ GameObject:
   m_Component:
   - component: {fileID: 859774211}
   - component: {fileID: 859774212}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: deco1 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &859774211
 Transform:
@@ -5417,12 +5477,12 @@ GameObject:
   m_Component:
   - component: {fileID: 872531096}
   - component: {fileID: 872531097}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_ground-2 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &872531096
 Transform:
@@ -5500,12 +5560,12 @@ GameObject:
   - component: {fileID: 887650362}
   - component: {fileID: 887650361}
   - component: {fileID: 887650360}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &887650359
 Transform:
@@ -5632,12 +5692,12 @@ GameObject:
   - component: {fileID: 896479717}
   - component: {fileID: 896479716}
   - component: {fileID: 896479715}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &896479714
 Transform:
@@ -5765,12 +5825,12 @@ GameObject:
   - component: {fileID: 898795167}
   - component: {fileID: 898795166}
   - component: {fileID: 898795165}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_sign-1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &898795164
 Transform:
@@ -5914,12 +5974,12 @@ GameObject:
   - component: {fileID: 920448454}
   - component: {fileID: 920448453}
   - component: {fileID: 920448452}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_collum (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &920448451
 Transform:
@@ -6059,7 +6119,7 @@ GameObject:
   m_Component:
   - component: {fileID: 927065291}
   - component: {fileID: 927065290}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Colliders-Walls1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6104,7 +6164,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &927205734
 GameObject:
@@ -6119,12 +6179,12 @@ GameObject:
   - component: {fileID: 927205738}
   - component: {fileID: 927205737}
   - component: {fileID: 927205736}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &927205735
 Transform:
@@ -6252,12 +6312,12 @@ GameObject:
   - component: {fileID: 930344367}
   - component: {fileID: 930344366}
   - component: {fileID: 930344365}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horiz-sword (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &930344364
 Transform:
@@ -6407,12 +6467,12 @@ GameObject:
   m_Component:
   - component: {fileID: 995664428}
   - component: {fileID: 995664429}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_ground-1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &995664428
 Transform:
@@ -6505,7 +6565,53 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &997006161
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 997006163}
+  - component: {fileID: 997006162}
+  m_Layer: 0
+  m_Name: _pathFinderHelper
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &997006162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997006161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ca853bb0bb884b4e88cf73991ee02cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneNavmeshData: {fileID: 0}
+  _areInit: 1
+  gameObjectLibrary: []
+--- !u!4 &997006163
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997006161}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1073091567
 GameObject:
@@ -6520,12 +6626,12 @@ GameObject:
   - component: {fileID: 1073091571}
   - component: {fileID: 1073091570}
   - component: {fileID: 1073091569}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1073091568
 Transform:
@@ -6651,6 +6757,92 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08624942cefb4914c93ee8c328603142, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1127425136
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1127425138}
+  - component: {fileID: 1127425137}
+  m_Layer: 0
+  m_Name: PathFinder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1127425137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127425136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78396926cbbfc4ac3b48fc5fc34a87d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  data:
+    dataString: UEsDBBQAAAgIAACon+st4ZPrTwIAAPUEAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VE1z2jAQ/SuMzk3HBlpCb61DSA+ETGgnF1+EtMYaZMmjj/CR4b93JdvYpdOT5bdvV2/frv1BhLI1MKfN0gi+0hzItxEJZ/Jp1Aef4Eh3Wm3EGTrOm+CuDCQaOa/UCY14GtKsrsAZwb6rnQzkBEGvRKFNteA7yLR1FuGCSgsYMtqFbIXQx4gc8XE3DyknPI1n4XTG0zwZXfDIQDkwPbUjdrSG5RWTtKqBB8k9edyx04amsJmWkXweh+paSmFbLcSd6thrRmvrsRMkcEGxtygg8EsQu9K1L9fkdVFYcK0oQ08PwqBFTVXyQze+VdTuG2XvVHqI6qb3UVZTdfUP4S6N4cLo6qm7OE3CJa4UbP9KT4xaN3B2CD/0ytPo0IHKPd1KeCtBPeul0V5xDDrjQ6q3MH7oX6+9ZSWwfY83Um9AX/9/PqGHS2z/mElRbaP10wbYSB0Nj9MHg8P5iYLjbti2BKJBxW8Lv+huuERt4FEY6zDUdqmCvK32JlDJInoWuvEu00ZBhFvRNSgq3ekFy7jbGd7EBtfeRB5p+Fzay9tY9xXcpES45yfJTehFH67DsqU+rMCWa++kUNCLDoFn9CnTSjUrNvSkS9t4U1A2SNt5wf9eLfIlmdDk64xN5wAwnSR3bMo4vZ/M5nQ8SVM+I3H3hMI+qXxphLb24NRUX1zhnnV/kdHS0DquOzf0sBTnSg8sF6rQG2YA1LqpcBUOBi/BD5MvuECDNuCcUHHe5CMnUrM98PxaKI+dLo7O0LyvkpNavGsXkJxk8beRkwu5/AFQSwMEFAAACAgAAKif63nEnfpsAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSMzTUUVBKL0osyCgGioA5pZkpIHa0kqmBcaKBmXmyiWVqaqqJsYFusklySqKFsbllopGxoWGKuVIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAAqJ/rLeGT608CAAD1BAAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAAqJ/recSd+mwAAAB4AAAACQAkAAAAAAAAAAAAAACcAgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAFMDAAAAAA==
+    upgradeData: 
+    file_cachedStartup: {fileID: 0}
+    data_cachedStartup: 
+    cacheStartup: 0
+  showNavGraphs: 1
+  showUnwalkableNodes: 1
+  debugMode: 0
+  debugFloor: 0
+  debugRoof: 1
+  manualDebugFloorRoof: 0
+  showSearchTree: 0
+  unwalkableNodeDebugSize: 0.3
+  logPathResults: 1
+  maxNearestNodeDistance: 100
+  scanOnStartup: 1
+  fullGetNearestSearch: 0
+  prioritizeGraphs: 0
+  prioritizeGraphsLimit: 1
+  colorSettings:
+    _SolidColor: {r: 0.11764706, g: 0.4, b: 0.7882353, a: 0.9}
+    _UnwalkableNode: {r: 1, g: 0, b: 0, a: 0.5}
+    _BoundsHandles: {r: 0.29, g: 0.454, b: 0.741, a: 0.9}
+    _ConnectionLowLerp: {r: 0, g: 1, b: 0, a: 0.5}
+    _ConnectionHighLerp: {r: 1, g: 0, b: 0, a: 0.5}
+    _MeshEdgeColor: {r: 0, g: 0, b: 0, a: 0.5}
+    _AreaColors:
+    - {r: 0, g: 0, b: 0, a: 0}
+  tagNames: []
+  heuristic: 2
+  heuristicScale: 1
+  threadCount: 1
+  maxFrameTime: 1
+  batchGraphUpdates: 0
+  graphUpdateBatchingInterval: 0.2
+  euclideanEmbedding:
+    mode: 0
+    seed: 0
+    pivotPointRoot: {fileID: 0}
+    spreadOutCount: 1
+  showGraphs: 1
+--- !u!4 &1127425138
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127425136}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.02000004, y: 0.35000002, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1149096354
 GameObject:
   m_ObjectHideFlags: 0
@@ -6664,12 +6856,12 @@ GameObject:
   - component: {fileID: 1149096358}
   - component: {fileID: 1149096357}
   - component: {fileID: 1149096356}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1149096355
 Transform:
@@ -6794,12 +6986,12 @@ GameObject:
   - component: {fileID: 1161266032}
   - component: {fileID: 1161266034}
   - component: {fileID: 1161266033}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: rock_01 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1161266032
 Transform:
@@ -6900,12 +7092,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1212007289}
   - component: {fileID: 1212007290}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: deco_grass-3 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1212007289
 Transform:
@@ -6977,10 +7169,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1681454151}
     m_Modifications:
-    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_Name
-      value: tree_01 (1)
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.28
       objectReference: {fileID: 0}
     - target: {fileID: 6019630434353949059, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
@@ -7063,20 +7265,20 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_Enabled
-      value: 0
+      propertyPath: m_Name
+      value: tree_01 (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.28
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.28
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 051ab41bb9559c242ab2ea9087147479, type: 3}
@@ -7151,12 +7353,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1264261339}
   - component: {fileID: 1264261340}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: deco1 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1264261339
 Transform:
@@ -7234,12 +7436,12 @@ GameObject:
   - component: {fileID: 1267708493}
   - component: {fileID: 1267708492}
   - component: {fileID: 1267708491}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1267708490
 Transform:
@@ -7367,12 +7569,12 @@ GameObject:
   - component: {fileID: 1270002920}
   - component: {fileID: 1270002919}
   - component: {fileID: 1270002918}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_collum (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1270002917
 Transform:
@@ -7516,12 +7718,12 @@ GameObject:
   - component: {fileID: 1291640875}
   - component: {fileID: 1291640874}
   - component: {fileID: 1291640873}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-vertical(l)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1291640872
 Transform:
@@ -7668,10 +7870,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2020614932}
     m_Modifications:
-    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_Name
-      value: tree_01 (3)
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.28
       objectReference: {fileID: 0}
     - target: {fileID: 6019630434353949059, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
@@ -7754,20 +7966,20 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_Enabled
-      value: 0
+      propertyPath: m_Name
+      value: tree_01 (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.28
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.28
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 051ab41bb9559c242ab2ea9087147479, type: 3}
@@ -7842,12 +8054,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1326499068}
   - component: {fileID: 1326499069}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_ground-1 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1326499068
 Transform:
@@ -7927,7 +8139,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1401990041
 Transform:
@@ -7979,7 +8191,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1406892592}
   - component: {fileID: 1406892591}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Colliders-Walls1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8024,7 +8236,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1441682530
 GameObject:
@@ -8057,7 +8269,7 @@ Transform:
   - {fileID: 497167720}
   - {fileID: 1582490931}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1444012377
 GameObject:
@@ -8072,12 +8284,12 @@ GameObject:
   - component: {fileID: 1444012381}
   - component: {fileID: 1444012380}
   - component: {fileID: 1444012379}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1444012378
 Transform:
@@ -8204,12 +8416,12 @@ GameObject:
   - component: {fileID: 1452726651}
   - component: {fileID: 1452726650}
   - component: {fileID: 1452726649}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1452726648
 Transform:
@@ -8351,7 +8563,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1468740644
 GameObject:
@@ -8366,12 +8578,12 @@ GameObject:
   - component: {fileID: 1468740648}
   - component: {fileID: 1468740647}
   - component: {fileID: 1468740646}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1468740645
 Transform:
@@ -8495,12 +8707,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1470136609}
   - component: {fileID: 1470136608}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Colliders-Walls1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!61 &1470136608
 BoxCollider2D:
@@ -8540,7 +8752,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1472753717
 GameObject:
@@ -8552,12 +8764,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1472753718}
   - component: {fileID: 1472753719}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: deco1 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1472753718
 Transform:
@@ -8632,12 +8844,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1477413505}
   - component: {fileID: 1477413506}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: deco1 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1477413505
 Transform:
@@ -8715,12 +8927,12 @@ GameObject:
   - component: {fileID: 1483148464}
   - component: {fileID: 1483148463}
   - component: {fileID: 1483148462}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1483148461
 Transform:
@@ -8847,12 +9059,12 @@ GameObject:
   - component: {fileID: 1505701983}
   - component: {fileID: 1505701982}
   - component: {fileID: 1505701981}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1505701980
 Transform:
@@ -8976,12 +9188,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1513468929}
   - component: {fileID: 1513468930}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: deco1 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1513468929
 Transform:
@@ -9075,7 +9287,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1529674739
 MonoBehaviour:
@@ -9102,12 +9314,12 @@ GameObject:
   - component: {fileID: 1549714891}
   - component: {fileID: 1549714890}
   - component: {fileID: 1549714889}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1549714888
 Transform:
@@ -9235,12 +9447,12 @@ GameObject:
   - component: {fileID: 1559145428}
   - component: {fileID: 1559145427}
   - component: {fileID: 1559145426}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_collum (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1559145425
 Transform:
@@ -9380,12 +9592,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1580841931}
   - component: {fileID: 1580841932}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: deco1 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1580841931
 Transform:
@@ -9465,7 +9677,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1582490931
 Transform:
@@ -9520,12 +9732,12 @@ GameObject:
   - component: {fileID: 1596972371}
   - component: {fileID: 1596972370}
   - component: {fileID: 1596972369}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1596972368
 Transform:
@@ -9646,10 +9858,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2020614932}
     m_Modifications:
-    - target: {fileID: 8738597895497113919, guid: 9ccf4e3c60170da4b9c54d78d67d0e09,
+    - target: {fileID: 1551163706033361338, guid: 9ccf4e3c60170da4b9c54d78d67d0e09,
         type: 3}
-      propertyPath: m_Name
-      value: rock_01
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c05b8a03b0c5a45d598c07c9073a7465,
+        type: 3}
+    - target: {fileID: 3273437243431839491, guid: 9ccf4e3c60170da4b9c54d78d67d0e09,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3273437243431839491, guid: 9ccf4e3c60170da4b9c54d78d67d0e09,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 3273437243431839491, guid: 9ccf4e3c60170da4b9c54d78d67d0e09,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.32
       objectReference: {fileID: 0}
     - target: {fileID: 4334176906102715698, guid: 9ccf4e3c60170da4b9c54d78d67d0e09,
         type: 3}
@@ -9721,26 +9949,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1551163706033361338, guid: 9ccf4e3c60170da4b9c54d78d67d0e09,
+    - target: {fileID: 8738597895497113919, guid: 9ccf4e3c60170da4b9c54d78d67d0e09,
         type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: c05b8a03b0c5a45d598c07c9073a7465,
-        type: 3}
-    - target: {fileID: 3273437243431839491, guid: 9ccf4e3c60170da4b9c54d78d67d0e09,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
+      propertyPath: m_Name
+      value: rock_01
       objectReference: {fileID: 0}
-    - target: {fileID: 3273437243431839491, guid: 9ccf4e3c60170da4b9c54d78d67d0e09,
+    - target: {fileID: 8738597895497113919, guid: 9ccf4e3c60170da4b9c54d78d67d0e09,
         type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.32
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 3273437243431839491, guid: 9ccf4e3c60170da4b9c54d78d67d0e09,
+    - target: {fileID: 8738597895497113919, guid: 9ccf4e3c60170da4b9c54d78d67d0e09,
         type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 0.32
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ccf4e3c60170da4b9c54d78d67d0e09, type: 3}
@@ -9760,12 +9982,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1681454151}
   - component: {fileID: 1681454152}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall-Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 0
 --- !u!4 &1681454151
 Transform:
@@ -9823,10 +10045,51 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3911747296136902484, guid: bd9a655a52f0a384d870fd8b7422d6cb,
+    - target: {fileID: 1709917440546249318, guid: bd9a655a52f0a384d870fd8b7422d6cb,
         type: 3}
-      propertyPath: m_Name
-      value: IngameUI
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1709917440546249318, guid: bd9a655a52f0a384d870fd8b7422d6cb,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1709917440546249318, guid: bd9a655a52f0a384d870fd8b7422d6cb,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1709917440546249318, guid: bd9a655a52f0a384d870fd8b7422d6cb,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2766240657239781639, guid: bd9a655a52f0a384d870fd8b7422d6cb,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 07fd13a2809d3ba47bc3c994fc1c1569,
+        type: 3}
+    - target: {fileID: 2988586808923931490, guid: bd9a655a52f0a384d870fd8b7422d6cb,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2988586808923931490, guid: bd9a655a52f0a384d870fd8b7422d6cb,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2988586808923931490, guid: bd9a655a52f0a384d870fd8b7422d6cb,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2988586808923931490, guid: bd9a655a52f0a384d870fd8b7422d6cb,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3911747296136902480, guid: bd9a655a52f0a384d870fd8b7422d6cb,
         type: 3}
@@ -9866,7 +10129,7 @@ PrefabInstance:
     - target: {fileID: 3911747296136902480, guid: bd9a655a52f0a384d870fd8b7422d6cb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 3911747296136902480, guid: bd9a655a52f0a384d870fd8b7422d6cb,
         type: 3}
@@ -9933,6 +10196,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3911747296136902484, guid: bd9a655a52f0a384d870fd8b7422d6cb,
+        type: 3}
+      propertyPath: m_Name
+      value: IngameUI
+      objectReference: {fileID: 0}
     - target: {fileID: 5174614217494018230, guid: bd9a655a52f0a384d870fd8b7422d6cb,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -9953,52 +10221,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1709917440546249318, guid: bd9a655a52f0a384d870fd8b7422d6cb,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1709917440546249318, guid: bd9a655a52f0a384d870fd8b7422d6cb,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1709917440546249318, guid: bd9a655a52f0a384d870fd8b7422d6cb,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1709917440546249318, guid: bd9a655a52f0a384d870fd8b7422d6cb,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2988586808923931490, guid: bd9a655a52f0a384d870fd8b7422d6cb,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2988586808923931490, guid: bd9a655a52f0a384d870fd8b7422d6cb,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2988586808923931490, guid: bd9a655a52f0a384d870fd8b7422d6cb,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2988586808923931490, guid: bd9a655a52f0a384d870fd8b7422d6cb,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2766240657239781639, guid: bd9a655a52f0a384d870fd8b7422d6cb,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 07fd13a2809d3ba47bc3c994fc1c1569,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd9a655a52f0a384d870fd8b7422d6cb, type: 3}
 --- !u!1001 &1802725091
@@ -10008,10 +10230,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2020614932}
     m_Modifications:
-    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_Name
-      value: tree_01 (4)
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.28
       objectReference: {fileID: 0}
     - target: {fileID: 6019630434353949059, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
@@ -10094,20 +10326,20 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_Enabled
-      value: 0
+      propertyPath: m_Name
+      value: tree_01 (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.28
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.28
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 051ab41bb9559c242ab2ea9087147479, type: 3}
@@ -10182,12 +10414,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1805533375}
   - component: {fileID: 1805533374}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Colliders-Walls1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!61 &1805533374
 BoxCollider2D:
@@ -10227,7 +10459,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1825318010
 GameObject:
@@ -10239,12 +10471,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1825318011}
   - component: {fileID: 1825318012}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_ground-2 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1825318011
 Transform:
@@ -10316,10 +10548,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2020614932}
     m_Modifications:
-    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_Name
-      value: tree_01 (5)
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.28
       objectReference: {fileID: 0}
     - target: {fileID: 6019630434353949059, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
@@ -10402,20 +10644,20 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_Enabled
-      value: 0
+      propertyPath: m_Name
+      value: tree_01 (5)
       objectReference: {fileID: 0}
-    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.28
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 2944494862373558017, guid: 051ab41bb9559c242ab2ea9087147479,
+    - target: {fileID: 8171394243942499940, guid: 051ab41bb9559c242ab2ea9087147479,
         type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.28
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 051ab41bb9559c242ab2ea9087147479, type: 3}
@@ -10494,12 +10736,12 @@ GameObject:
   - component: {fileID: 1947763014}
   - component: {fileID: 1947763013}
   - component: {fileID: 1947763012}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horiz-sword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1947763011
 Transform:
@@ -10721,12 +10963,12 @@ GameObject:
   - component: {fileID: 1962465758}
   - component: {fileID: 1962465757}
   - component: {fileID: 1962465756}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1962465755
 Transform:
@@ -10853,12 +11095,12 @@ GameObject:
   - component: {fileID: 1995973304}
   - component: {fileID: 1995973303}
   - component: {fileID: 1995973302}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1995973301
 Transform:
@@ -11029,7 +11271,7 @@ Transform:
   - {fileID: 2045680268}
   - {fileID: 730879852}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2008747280
 GameObject:
@@ -11041,12 +11283,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2008747281}
   - component: {fileID: 2008747282}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_ground-2 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2008747281
 Transform:
@@ -11125,12 +11367,12 @@ GameObject:
   - component: {fileID: 2010525284}
   - component: {fileID: 2010525283}
   - component: {fileID: 2010525282}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horiz-sword (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2010525281
 Transform:
@@ -11280,12 +11522,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2017813238}
   - component: {fileID: 2017813239}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: deco_mud-2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2017813238
 Transform:
@@ -11360,12 +11602,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2020614932}
   - component: {fileID: 2020614933}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall-Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 0
 --- !u!4 &2020614932
 Transform:
@@ -11432,12 +11674,12 @@ GameObject:
   - component: {fileID: 2045680271}
   - component: {fileID: 2045680270}
   - component: {fileID: 2045680269}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2045680268
 Transform:
@@ -11564,12 +11806,12 @@ GameObject:
   - component: {fileID: 2054037488}
   - component: {fileID: 2054037487}
   - component: {fileID: 2054037486}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2054037485
 Transform:
@@ -11692,12 +11934,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2112469951}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Environment-Details-items
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2112469951
 Transform:
@@ -11731,12 +11973,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2139408362}
   - component: {fileID: 2139408363}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_ground-2 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2139408362
 Transform:
@@ -11815,12 +12057,12 @@ GameObject:
   - component: {fileID: 2106807389445579599}
   - component: {fileID: 2106807389445579598}
   - component: {fileID: 2106807389445579593}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: env-tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!114 &2106807389445579593
 MonoBehaviour:
@@ -11895,12 +12137,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2687948701150076412}
   - component: {fileID: 2687948701150076415}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_ground-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &2687948701150076415
 SpriteRenderer:
@@ -11989,12 +12231,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2687948701415248822}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Environment-Details-items (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &4596884140347339636
 SpriteRenderer:
@@ -12146,7 +12388,7 @@ Transform:
   - {fileID: 295378902}
   - {fileID: 620779250}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &5133944262056077544
 Transform:
@@ -12221,12 +12463,12 @@ GameObject:
   m_Component:
   - component: {fileID: 5133944262056077544}
   - component: {fileID: 5133944262056077545}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: deco_mud-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &5133944262096166610
 SpriteRenderer:
@@ -12291,12 +12533,12 @@ GameObject:
   - component: {fileID: 5133944262096166620}
   - component: {fileID: 5133944262096166623}
   - component: {fileID: 5133944262096166622}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: env-tree-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5133944262096166617
 Transform:
@@ -12397,12 +12639,12 @@ GameObject:
   m_Component:
   - component: {fileID: 5133944262133328414}
   - component: {fileID: 5133944262133328415}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_collum-broken-det1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5133944262133328414
 Transform:
@@ -12477,12 +12719,12 @@ GameObject:
   m_Component:
   - component: {fileID: 5133944262196709713}
   - component: {fileID: 5133944262196709718}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: deco_grass-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5133944262196709713
 Transform:
@@ -12598,12 +12840,12 @@ GameObject:
   - component: {fileID: 5133944262209390592}
   - component: {fileID: 5133944262209390598}
   - component: {fileID: 5133944262209390593}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: deco_rock-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &5133944262209390598
 SpriteRenderer:
@@ -12664,12 +12906,12 @@ GameObject:
   m_Component:
   - component: {fileID: 5133944262254401182}
   - component: {fileID: 5133944262254401183}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: deco_grass-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5133944262254401182
 Transform:
@@ -12793,12 +13035,12 @@ GameObject:
   m_Component:
   - component: {fileID: 5133944262266269283}
   - component: {fileID: 5133944262266269280}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_collum-broken-det1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5133944262266269283
 Transform:
@@ -12887,12 +13129,12 @@ GameObject:
   m_Component:
   - component: {fileID: 5133944262416966648}
   - component: {fileID: 5133944262416966649}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: deco_grass-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5133944262431869794
 Transform:
@@ -12967,12 +13209,12 @@ GameObject:
   m_Component:
   - component: {fileID: 5133944262431869794}
   - component: {fileID: 5133944262431869795}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: deco_mud-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &5133944262546006329
 GameObject:
@@ -12984,12 +13226,12 @@ GameObject:
   m_Component:
   - component: {fileID: 5133944262546006334}
   - component: {fileID: 5133944262546006335}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_collum-broken-det1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5133944262546006334
 Transform:
@@ -13064,12 +13306,12 @@ GameObject:
   m_Component:
   - component: {fileID: 5133944262725660809}
   - component: {fileID: 5133944262725660814}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_collum-broken-det1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5133944262725660809
 Transform:
@@ -13178,12 +13420,12 @@ GameObject:
   - component: {fileID: 5133944262734717217}
   - component: {fileID: 5133944262734717216}
   - component: {fileID: 5133944262734717221}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_collum-broken
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5133944262734717219
 Transform:
@@ -13327,12 +13569,12 @@ GameObject:
   - component: {fileID: 5133944263071645253}
   - component: {fileID: 5133944263071645252}
   - component: {fileID: 5133944263071645256}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5133944263071645255
 Transform:
@@ -13442,12 +13684,12 @@ GameObject:
   m_Component:
   - component: {fileID: 5133944263104779230}
   - component: {fileID: 5133944263104779231}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: deco_grass-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5133944263104779230
 Transform:
@@ -13522,12 +13764,12 @@ GameObject:
   m_Component:
   - component: {fileID: 5133944263191815854}
   - component: {fileID: 5133944263191815855}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: deco_grass-5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5133944263191815854
 Transform:
@@ -13602,12 +13844,12 @@ GameObject:
   m_Component:
   - component: {fileID: 5133944263207463466}
   - component: {fileID: 5133944263207463467}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: deco_mud-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5133944263207463466
 Transform:
@@ -13731,12 +13973,12 @@ GameObject:
   m_Component:
   - component: {fileID: 5133944263978458205}
   - component: {fileID: 5133944263978458194}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: deco_mud-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5133944263978458205
 Transform:
@@ -13762,12 +14004,12 @@ GameObject:
   m_Component:
   - component: {fileID: 5133944263999974330}
   - component: {fileID: 5133944263999974331}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: deco_grass-6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5133944263999974330
 Transform:
@@ -13887,7 +14129,7 @@ PrefabInstance:
     - target: {fileID: 1040177797947906761, guid: 0d972a66dd74a49f9afe104969e41c97,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1040177797947906761, guid: 0d972a66dd74a49f9afe104969e41c97,
         type: 3}
@@ -13913,11 +14155,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5805275858296463310, guid: 4d815253784580f4f99f864ef67d5129,
-        type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 5805275858296463304, guid: 4d815253784580f4f99f864ef67d5129,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13956,7 +14193,7 @@ PrefabInstance:
     - target: {fileID: 5805275858296463304, guid: 4d815253784580f4f99f864ef67d5129,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5805275858296463304, guid: 4d815253784580f4f99f864ef67d5129,
         type: 3}
@@ -13972,6 +14209,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5805275858296463310, guid: 4d815253784580f4f99f864ef67d5129,
+        type: 3}
+      propertyPath: m_Name
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d815253784580f4f99f864ef67d5129, type: 3}
