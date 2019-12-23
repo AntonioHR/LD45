@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7cdc255c28d7b5b43a923837213b9d7a, type: 3}
-  m_Name: Enemy02.AttackMovement
+  m_Name: Samurai-02.AttackMovement
   m_EditorClassIdentifier: 
   moveForce: 200
   useSpeedCapFriction: 1

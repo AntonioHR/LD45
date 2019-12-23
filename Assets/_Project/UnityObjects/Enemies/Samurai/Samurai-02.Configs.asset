@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3dfb5123edde83f4d8e3c5ec11a545ae, type: 3}
-  m_Name: Enemy01.Configs
+  m_Name: Samurai-02.Configs
   m_EditorClassIdentifier: 
-  hitAdvanceMover: {fileID: 11400000, guid: ef6bd68230c11ca4f8302d180247b5e0, type: 2}
+  hitAdvanceMover: {fileID: 11400000, guid: 634838b6f049bb942a463c27aced962c, type: 2}
   surround:
     min: 3
     max: 3.5

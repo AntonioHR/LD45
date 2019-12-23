@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 1048101342195763184}
   - component: {fileID: 7382946883251009687}
   m_Layer: 8
-  m_Name: Enemy01
+  m_Name: SamuraiEnemyBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41,8 +41,6 @@ Transform:
   - {fileID: 3381065538942137639}
   - {fileID: 7552516770014436380}
   - {fileID: 4799522782757982777}
-  - {fileID: 1464077562391122493}
-  - {fileID: 5288796622634526146}
   - {fileID: 4299001044528495146}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -122,7 +120,8 @@ MonoBehaviour:
   pursueMove: {fileID: 11400000, guid: b45fee9525d21b443bb41dde837b8722, type: 2}
   configs: {fileID: 11400000, guid: 32ffee3f5aeb493478e7ed1f1f5a960d, type: 2}
   swordParticles: {fileID: 7500332095256554363}
-  lightAttackTellParticles: {fileID: 0}
+  lightAttackTellParticles: {fileID: 2012364520610313110}
+  flippables: {fileID: 4299001044528495146}
   riposteIndicator: {fileID: 0}
   isBoss: 0
   idleSprite: {fileID: 21300000, guid: df43a1960a18a495ea90f85713cfe1a5, type: 3}
@@ -208,7 +207,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.20115702
+  m_Radius: 0.1
 --- !u!114 &1445462173862431143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,7 +249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 2
-  radius: 0.2
+  radius: 0.1
   height: 0.2
   repathRate: 0.2
   canSearch: 1
@@ -373,12 +372,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1903200781315411491}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.185, y: -0.006, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.18499994, y: -0.0060000005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1040177797947906761}
-  m_RootOrder: 5
+  m_Father: {fileID: 4299001044528495146}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!198 &2012364520610313110
 ParticleSystem:
@@ -453,7 +452,7 @@ ParticleSystem:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  moveWithTransform: 0
+  moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
   randomSeed: 0
@@ -5136,9 +5135,11 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 5288796622634526146}
+  - {fileID: 1464077562391122493}
   m_Father: {fileID: 1040177797947906761}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4116246719582388410
 GameObject:
@@ -5383,7 +5384,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1040177797947906761}
+    m_TransformParent: {fileID: 4299001044528495146}
     m_Modifications:
     - target: {fileID: 3741218157183756430, guid: f3fdea919eff2e44a8c57a0b20541ddd,
         type: 3}
@@ -5428,7 +5429,7 @@ PrefabInstance:
     - target: {fileID: 4317416941762886561, guid: f3fdea919eff2e44a8c57a0b20541ddd,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4317416941762886561, guid: f3fdea919eff2e44a8c57a0b20541ddd,
         type: 3}
@@ -5445,7 +5446,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5401016381497490019, guid: f3fdea919eff2e44a8c57a0b20541ddd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f3fdea919eff2e44a8c57a0b20541ddd, type: 3}
 --- !u!4 &1464077562391122493 stripped
 Transform:

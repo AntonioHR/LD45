@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7cdc255c28d7b5b43a923837213b9d7a, type: 3}
-  m_Name: Enemy01.Movement
+  m_Name: Samurai-01.AttackMovement
   m_EditorClassIdentifier: 
-  moveForce: 15
+  moveForce: 100
   useSpeedCapFriction: 1
   useBraking: 1
   setDirection: 0
   frictionSettings:
-    brakeForce: 15
-    speedCap: 2.4
-    speedCapFrictionPower: 25
+    brakeForce: 100
+    speedCap: 2
+    speedCapFrictionPower: 100

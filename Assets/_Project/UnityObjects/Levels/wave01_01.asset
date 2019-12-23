@@ -15,9 +15,10 @@ MonoBehaviour:
   enemySpawns:
   - SpawnerId: a
     enemyPrefab:
-    - {fileID: 1040177797947906758, guid: 0d972a66dd74a49f9afe104969e41c97, type: 3}
+    - {fileID: 2661965287912576222, guid: 0d972a66dd74a49f9afe104969e41c97, type: 3}
   - SpawnerId: b
     enemyPrefab:
-    - {fileID: 1040177797947906758, guid: 0d972a66dd74a49f9afe104969e41c97, type: 3}
+    - {fileID: 2661965287912576222, guid: 0d972a66dd74a49f9afe104969e41c97, type: 3}
   totalEnemies: 1
   startDelay: 3
+  triggerEvent: 

@@ -163,6 +163,9 @@ namespace SamuraiGame.Enemy
                 bool isDashable = attack.IsDashable;
                 GameObject hitBox = attack.DamageHitBox;
 
+                if (hitBox.GetComponent<EnemyAttackHitbox>() != null)
+                    continue;
+
                 hitBox.AddComponent<EnemyAttackHitbox>();
                 EnemyAttackHitbox hitBoxComponent = hitBox.GetComponent<EnemyAttackHitbox>();
                 hitBoxComponent.isHitbox = isDashable;
