@@ -42,6 +42,7 @@ namespace SamuraiGame.Player
         public bool CanHeal { get => health.CanHeal; }
 
         private bool disableInteractions;
+        private bool invulnerable;
 
         private void Awake()
         {
@@ -153,11 +154,36 @@ namespace SamuraiGame.Player
 
         public void OnHit(Transform source)
         {
+            if(invulnerable) {
+                return;
+            }
             animator.SetTrigger("hurt");
             AudioManager.Instance.Play("take_hit");
             stateMachine.OnHit(source);
             health.Hit();
+
+            SetInvulnerable();
         }
+
+        private async void SetInvulnerable()
+        {
+            try {
+                invulnerable = true;
+                animator.SetBool("invulnerability", true);
+
+                await Wait.For(GameConstants.INVULNERABLE_TIME);
+
+                if(gameObject == null) {
+                    return;
+                }
+
+                animator.SetBool("invulnerability", false);
+                invulnerable = false;
+            } catch(Exception e) {
+                Debug.Log(e);
+            }
+        }
+
         public void Heal()
         {
             AudioManager.Instance.Play("recover");
