@@ -111,7 +111,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -155,13 +155,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e37b8329bbd047d0925620383efdd17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationSetup: {fileID: 0}
   attackAnimations:
   - isDashable: 1
     damageHitBox: {fileID: 7066919360646996171}
-    animation: {fileID: 7400000, guid: 4c40270243cae4faeacb8ceb2917f8e1, type: 2}
+    animationId: 
+    waitTime: 0
+    gettingReadyTime: 0
+    prepAnimationId: 
   - isDashable: 1
     damageHitBox: {fileID: 7066919360646996171}
-    animation: {fileID: 7400000, guid: 4c40270243cae4faeacb8ceb2917f8e1, type: 2}
+    animationId: 
+    waitTime: 0
+    gettingReadyTime: 0
+    prepAnimationId: 
+  aggroTrigger: {fileID: 0}
+  sprite: {fileID: 0}
+  emoteSprite: {fileID: 0}
+  pursueMove: {fileID: 0}
+  configs: {fileID: 0}
+  swordParticles: {fileID: 0}
+  riposteIndicator: {fileID: 0}
+  isBoss: 0
+  idleSprite: {fileID: 0}
+  disableInteractions: 0
 --- !u!50 &7066919360801545992
 Rigidbody2D:
   serializedVersion: 4
