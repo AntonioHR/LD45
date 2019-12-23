@@ -218,6 +218,36 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: ce56be7e61d6d7d48be6f81c5861ab49,
         type: 2}
+    - target: {fileID: 1040177797947906763, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: attackAnimations.Array.data[1].prepFxId
+      value: attack-tell-light
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040177797947906763, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: attackAnimations.Array.data[0].prepFxId
+      value: attack-tell-heavy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077111672625903367, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.245
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077111672625903367, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 5288796622634526146, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.044
+      objectReference: {fileID: 0}
+    - target: {fileID: 5288796622634526146, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.027
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 807242109d57dce44a9872e7db58b930, type: 3}
 --- !u!4 &2661965287912576209 stripped

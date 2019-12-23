@@ -8,6 +8,7 @@ using Common.Movement;
 using SamuraiGame.Managers;
 using DG.Tweening;
 using Pathfinding;
+using SamuraiGame.Util;
 
 namespace SamuraiGame.Enemy
 {
@@ -28,6 +29,7 @@ namespace SamuraiGame.Enemy
 
         public CharMover pursueMove;
         public EnemyConfigs configs;
+        public ParticleTriggerer particleTriggerer;
 
         public ParticleSystem swordParticles;
         public ParticleSystem lightAttackTellParticles;

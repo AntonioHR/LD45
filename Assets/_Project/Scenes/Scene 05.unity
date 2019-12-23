@@ -11256,6 +11256,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8926045941865655876, guid: c47dfefee79226b48a84725c260fca34,
+        type: 3}
+      propertyPath: orthographic size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8926045941865655876, guid: c47dfefee79226b48a84725c260fca34,
+        type: 3}
+      propertyPath: m_NormalizedViewPortRect.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8926045941865655876, guid: c47dfefee79226b48a84725c260fca34,
+        type: 3}
+      propertyPath: m_NormalizedViewPortRect.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8926045941865655876, guid: c47dfefee79226b48a84725c260fca34,
+        type: 3}
+      propertyPath: m_NormalizedViewPortRect.width
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8926045941865655876, guid: c47dfefee79226b48a84725c260fca34,
+        type: 3}
+      propertyPath: m_NormalizedViewPortRect.height
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8926045941865655876, guid: c47dfefee79226b48a84725c260fca34,
+        type: 3}
+      propertyPath: m_ForceIntoRT
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8926045941865655879, guid: c47dfefee79226b48a84725c260fca34,
         type: 3}
       propertyPath: m_Name

@@ -136,12 +136,20 @@ namespace SamuraiGame.Enemy.States {
         private void GettingReady(bool isDashable)
         {
             SetRiposteSprite();
+            TriggerTellParticles();
         }
 
         private void SetRiposteSprite()
         {
-            string animationId = Enemy.attackAnimations[animationIndex].PrepAnimationId;
+            string animationId = CurrentAttackAnimation.PrepAnimationId;
             Enemy.animationPlayable.PlayLooped(animationId, ()=> { });
+        }
+
+        private void TriggerTellParticles()
+        {
+            var fx = CurrentAttackAnimation.PrepFxId;
+            if (fx.Length > 0)
+                Enemy.particleTriggerer.FireParticles(fx);
         }
 
         private void UnsetRiposte()
