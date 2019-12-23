@@ -10,7 +10,7 @@ namespace SamuraiGame.Managers
         private Vector2Int bgSize = Vector2Int.zero;
         [SerializeField]
         private float nodeSize = 0.2f;
-        void Awake() {
+        void Start() {
             // CreatePath();
 
             AstarData data = AstarPath.active.data;
