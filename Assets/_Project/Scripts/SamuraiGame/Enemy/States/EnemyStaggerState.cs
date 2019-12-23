@@ -5,6 +5,7 @@ using SamuraiGame.Player;
 using SamuraiGame.Managers;
 using System.Threading.Tasks;
 using SamuraiGame.Events;
+using System;
 
 namespace SamuraiGame.Enemy.States {
 
@@ -13,7 +14,8 @@ namespace SamuraiGame.Enemy.States {
         protected override void Begin()
         {   
             Enemy.TriggerOnOutOfCombat();
-            Enemy.swordParticles.Play();
+            RandomSwordAnimation();
+
             Collider2D collider = Enemy.GetComponent<Collider2D>();
             collider.enabled = false;
 
@@ -30,8 +32,17 @@ namespace SamuraiGame.Enemy.States {
 
             TrySpawnPickup();
 
-            _ = StartDropWeaponAnimation();
+            StartDropWeaponAnimation();
             //seq.OnComplete(Destroy);
+        }
+
+        private void RandomSwordAnimation()
+        {
+            if(UnityEngine.Random.Range(0f, 1f) < 0.5f) {
+                SwordManager.Instance.AnimateSword(Enemy.transform.position);
+            } else {
+                Enemy.swordParticles.Play();
+            }
         }
 
         private void Destroy()
@@ -40,7 +51,7 @@ namespace SamuraiGame.Enemy.States {
         }
         public override void OnPlayerDead() { }
 
-        private async Task StartDropWeaponAnimation()
+        private void StartDropWeaponAnimation()
         {
             string animationId = GameConstants.ENEMY_ANIMATION_DISARM;
             Enemy.animationPlayable.PlayOnce(animationId, DoFade);

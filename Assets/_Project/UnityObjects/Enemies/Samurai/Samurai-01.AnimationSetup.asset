@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361b2e28862f3e54dbd8562e41249491, type: 3}
+  m_Name: Samurai-01.AnimationSetup
+  m_EditorClassIdentifier: 
+  entries:
+  - id: empty
+    clip: {fileID: 7400000, guid: 2aa241e201c4349ce91860d4ede3de26, type: 2}
+  - id: hit_0
+    clip: {fileID: 7400000, guid: 66efdad541ce445c29f1e5a50df7152a, type: 2}
+  - id: prep_0
+    clip: {fileID: 7400000, guid: 5617a31a427024e1f882bb701610575a, type: 2}
+  - id: run
+    clip: {fileID: 7400000, guid: 071af5ca570f242af95977f9afb6930e, type: 2}
+  - id: idle
+    clip: {fileID: 7400000, guid: 2aa241e201c4349ce91860d4ede3de26, type: 2}
+  - id: disarm
+    clip: {fileID: 7400000, guid: d131fe38e006443feab15010ca14a21c, type: 2}
+  - id: escaping
+    clip: {fileID: 7400000, guid: fdf01f98501ed4193a835aae521dbaa7, type: 2}
+  - id: dying
+    clip: {fileID: 7400000, guid: 162aa4b83db4b40558740dab4e43c38d, type: 2}
+  - id: recoverying
+    clip: {fileID: 7400000, guid: ec3bb15662d9345109c1580215df4a34, type: 2}
