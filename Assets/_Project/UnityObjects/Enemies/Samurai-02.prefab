@@ -1,0 +1,174 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3070970479656160792
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1040177797947906758, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: m_Name
+      value: Samurai-02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040177797947906761, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040177797947906761, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040177797947906761, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040177797947906761, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040177797947906761, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040177797947906761, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040177797947906761, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040177797947906761, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040177797947906761, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040177797947906761, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040177797947906761, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040177797947906763, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: attackAnimations.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040177797947906763, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: attackAnimations.Array.data[0].isDashable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040177797947906763, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: attackAnimations.Array.data[0].waitTime
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040177797947906763, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: attackAnimations.Array.data[0].gettingReadyTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040177797947906763, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: animationSetup
+      value: 
+      objectReference: {fileID: 11400000, guid: f50d8ec67afdb4a9c9554813f7184761,
+        type: 2}
+    - target: {fileID: 1040177797947906763, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: attackAnimations.Array.data[0].damageHitBox
+      value: 
+      objectReference: {fileID: 4763586231869204011, guid: d1e73aa74f9bd4255af5bbe2670259b8,
+        type: 3}
+    - target: {fileID: 1040177797947906763, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: attackAnimations.Array.data[1].isDashable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040177797947906763, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: attackAnimations.Array.data[1].damageHitBox
+      value: 
+      objectReference: {fileID: 4955384016576754197, guid: d1e73aa74f9bd4255af5bbe2670259b8,
+        type: 3}
+    - target: {fileID: 1040177797947906763, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: attackAnimations.Array.data[1].animationId
+      value: hit_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040177797947906763, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: attackAnimations.Array.data[1].waitTime
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040177797947906763, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: attackAnimations.Array.data[1].gettingReadyTime
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040177797947906763, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: attackAnimations.Array.data[1].prepAnimationId
+      value: prep_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040177797947906763, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: aggroTrigger
+      value: 
+      objectReference: {fileID: 6317976589128720475, guid: d1e73aa74f9bd4255af5bbe2670259b8,
+        type: 3}
+    - target: {fileID: 1040177797947906763, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: 1040177797947906762, guid: d1e73aa74f9bd4255af5bbe2670259b8,
+        type: 3}
+    - target: {fileID: 1040177797947906763, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: emoteSprite
+      value: 
+      objectReference: {fileID: 8581068516057824095, guid: d1e73aa74f9bd4255af5bbe2670259b8,
+        type: 3}
+    - target: {fileID: 1040177797947906763, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: configs
+      value: 
+      objectReference: {fileID: 11400000, guid: ce56be7e61d6d7d48be6f81c5861ab49,
+        type: 2}
+    - target: {fileID: 1040177797947906763, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: swordParticles
+      value: 
+      objectReference: {fileID: 6161732324614805604, guid: d1e73aa74f9bd4255af5bbe2670259b8,
+        type: 3}
+    - target: {fileID: 1040177797947906763, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: lightAttackTellParticles
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040177797947906763, guid: 807242109d57dce44a9872e7db58b930,
+        type: 3}
+      propertyPath: flippables
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 807242109d57dce44a9872e7db58b930, type: 3}

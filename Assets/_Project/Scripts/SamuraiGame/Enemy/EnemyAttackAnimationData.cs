@@ -25,6 +25,7 @@ namespace SamuraiGame.Enemy
         private string prepAnimationId;
 
         public bool IsDashable { get => isDashable; }
+        public bool UseHeavyParticles { get => !IsDashable; }
         public string AnimationId { get => animationId; }
         public GameObject DamageHitBox { get => damageHitBox; }
         public float WaitTime { get => waitTime; }

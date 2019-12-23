@@ -30,6 +30,10 @@ namespace SamuraiGame.Enemy
         public EnemyConfigs configs;
 
         public ParticleSystem swordParticles;
+        public ParticleSystem lightAttackTellParticles;
+
+        //Child objects that need to be flipped when the sprite is flipped
+        public Transform flippables;
 
         [System.NonSerialized]
         public CallbackAnimationPlayer animationPlayable;

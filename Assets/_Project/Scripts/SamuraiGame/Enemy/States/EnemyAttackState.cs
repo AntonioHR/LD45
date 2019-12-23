@@ -60,8 +60,8 @@ namespace SamuraiGame.Enemy.States {
 
         private void StartAttack()
         {
-            float getReadyTime = Enemy.attackAnimations[animationIndex].GettingReadyTime;
-            bool isDashable = Enemy.attackAnimations[animationIndex].IsDashable;
+            float getReadyTime = CurrentAttackAnimation.GettingReadyTime;
+            bool isDashable = CurrentAttackAnimation.IsDashable;
 
             GettingReady(isDashable);
 
@@ -70,7 +70,15 @@ namespace SamuraiGame.Enemy.States {
             waitAttackCoroutine = Wait(Enemy.attackAnimations[animationIndex].GettingReadyTime, StartNextAnimation);
 
             Enemy.StartCoroutine(waitAttackCoroutine);
-		}
+        }
+
+        private EnemyAttackAnimation CurrentAttackAnimation
+        {
+            get
+            {
+                return Enemy.attackAnimations[animationIndex];
+            }
+        }
 
         private void StartNextAnimation()
         {
