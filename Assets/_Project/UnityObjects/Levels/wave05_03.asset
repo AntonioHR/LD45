@@ -13,6 +13,15 @@ MonoBehaviour:
   m_Name: wave05_03
   m_EditorClassIdentifier: 
   enemySpawns:
+  - SpawnerId: a
+    enemyPrefab:
+    - {fileID: 1040177797947906758, guid: 983d4b7baf794436fbc6b03b56839e64, type: 3}
+  - SpawnerId: b
+    enemyPrefab:
+    - {fileID: 1040177797947906758, guid: 983d4b7baf794436fbc6b03b56839e64, type: 3}
+  - SpawnerId: c
+    enemyPrefab:
+    - {fileID: 1040177797947906758, guid: 983d4b7baf794436fbc6b03b56839e64, type: 3}
   - SpawnerId: d
     enemyPrefab:
     - {fileID: 1040177797947906758, guid: 983d4b7baf794436fbc6b03b56839e64, type: 3}

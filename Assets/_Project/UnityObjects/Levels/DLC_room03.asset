@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99b8d714634c54e48a0b9a7fc9cdf8ac, type: 3}
+  m_Name: DLC_room03
+  m_EditorClassIdentifier: 
+  waves:
+  - {fileID: 11400000, guid: 18dba7ca6052a406aaf93eb692008e35, type: 2}
+  - {fileID: 11400000, guid: 6e318c9ff42d347789618d3bf97f4ee4, type: 2}
+  - {fileID: 11400000, guid: 9ee7868a7348a40bdb3dfc8ea5370b82, type: 2}
+  - {fileID: 11400000, guid: eac34c24004304749a28ccc377620a7f, type: 2}
