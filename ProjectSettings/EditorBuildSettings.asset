@@ -20,8 +20,8 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/_Project/Scenes/Scene 05.unity
     guid: f63e7f8dd39ce4b5e9c64dd3bd5e7051
-  - enabled: 0
-    path: Assets/_Project/Scenes/Ending.unity
+  - enabled: 1
+    path: Assets/_Project/Scenes/Cutscenes/Ending.unity
     guid: 272dc89211ba7478da36c4c2bb9c8db6
   - enabled: 1
     path: Assets/_Project/Scenes/DLC_01.unity

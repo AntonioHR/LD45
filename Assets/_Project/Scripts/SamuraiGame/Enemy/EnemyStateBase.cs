@@ -75,9 +75,11 @@ namespace SamuraiGame.Enemy
             if (shouldFlip && !Enemy.sprite.flipX)
             {
                 Enemy.sprite.flipX = true;
+                Enemy.flippables.transform.localScale = new Vector3(-1, 1, 1);
             } else if(!shouldFlip && Enemy.sprite.flipX)
             {
                 Enemy.sprite.flipX = false;
+                Enemy.flippables.transform.localScale = new Vector3(1, 1, 1);
             }
         }
     }

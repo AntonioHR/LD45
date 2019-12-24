@@ -7,9 +7,12 @@ using SamuraiGame.Player;
 using Common.Movement;
 using SamuraiGame.Managers;
 using DG.Tweening;
+using Pathfinding;
+using SamuraiGame.Util;
 
 namespace SamuraiGame.Enemy
 {
+    [RequireComponent(typeof(AIPath))]
     [RequireComponent(typeof(Rigidbody2D))]
     [RequireComponent(typeof(CallbackAnimationPlayer))]
     public class EnemyController : MonoBehaviour, IMovingChar
@@ -26,8 +29,13 @@ namespace SamuraiGame.Enemy
 
         public CharMover pursueMove;
         public EnemyConfigs configs;
+        public ParticleTriggerer particleTriggerer;
 
         public ParticleSystem swordParticles;
+        public ParticleSystem lightAttackTellParticles;
+
+        //Child objects that need to be flipped when the sprite is flipped
+        public Transform flippables;
 
         [System.NonSerialized]
         public CallbackAnimationPlayer animationPlayable;
@@ -38,6 +46,9 @@ namespace SamuraiGame.Enemy
         internal PlayerController target;
 
         private event Action onEnemyOutOfCombat;
+
+        private AIPath aIPath;
+        private AIDestinationSetter destinationSetter;
 
         [SerializeField]
         public bool isBoss;
@@ -51,11 +62,15 @@ namespace SamuraiGame.Enemy
         public Vector2 ToTarget
         {
             get{
-                if(target == null)
-                    return Vector2.zero;
-                else
-                    return (target.transform.position - transform.position);
+                SetTarget();
+                return aIPath.desiredVelocity;
+            }
+        }
 
+        private void SetTarget()
+        {
+            if(destinationSetter.target == null && target != null) {
+                destinationSetter.target = target.transform;
             }
         }
 
@@ -77,6 +92,9 @@ namespace SamuraiGame.Enemy
         {
             SetupTriggers();
             Rigidbody = GetComponent<Rigidbody2D>();
+            aIPath = GetComponent<AIPath>();
+            destinationSetter = GetComponent<AIDestinationSetter>();
+
             CloseIn = new SurroundRange(transform, configs.closeIn);
             Surround = new SurroundRange(transform, configs.surround);
             SurroundAttack = new SurroundRange(transform, configs.surroundAttack);
@@ -146,6 +164,9 @@ namespace SamuraiGame.Enemy
             {
                 bool isDashable = attack.IsDashable;
                 GameObject hitBox = attack.DamageHitBox;
+
+                if (hitBox.GetComponent<EnemyAttackHitbox>() != null)
+                    continue;
 
                 hitBox.AddComponent<EnemyAttackHitbox>();
                 EnemyAttackHitbox hitBoxComponent = hitBox.GetComponent<EnemyAttackHitbox>();

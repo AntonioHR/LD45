@@ -55,6 +55,10 @@ public static class Wait
 {
    public static async Task For(float seconds)
    {
-        await FrameWaiterHelper.WaitTime(seconds);
+       try {
+            await FrameWaiterHelper.WaitTime(seconds);
+       } catch (Exception e) {
+           Debug.LogError(e);
+       }
     }
 }

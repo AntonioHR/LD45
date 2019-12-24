@@ -24,7 +24,7 @@ MonoBehaviour:
     - {fileID: 1040177797947906758, guid: 983d4b7baf794436fbc6b03b56839e64, type: 3}
   - SpawnerId: d
     enemyPrefab:
-    - {fileID: 1040177797947906758, guid: 983d4b7baf794436fbc6b03b56839e64, type: 3}
+    - {fileID: 6847905271299457532, guid: ebfc78d70268df041a50b7848cd35158, type: 3}
   totalEnemies: 1
   startDelay: 3
   triggerEvent: on-boss-spawn
