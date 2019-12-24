@@ -191,6 +191,7 @@ namespace SamuraiGame.Player
         }
         public void OnDead()
         {
+
             TriggerManager.Trigger(EventName.PlayerDeathAnimationEnd);
 
             if (Died != null)

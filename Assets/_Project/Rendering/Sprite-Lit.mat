@@ -7,8 +7,9 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Sprite Dither
-  m_Shader: {fileID: 4800000, guid: 1d647772a78d1294e8a0965717d67cd3, type: 3}
+  m_Name: Sprite-Lit
+  m_Shader: {fileID: -6465566751694194690, guid: d1169339c1dcda04bbcb038aee33d87f,
+    type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -39,10 +40,6 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _DitherTex:
-        m_Texture: {fileID: 2800000, guid: 426c551dd9803c042a1897c33005c4f7, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -71,10 +68,6 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Texture2DAsset_7D55B6C6_Out_0:
-        m_Texture: {fileID: 2800000, guid: 29a131c5c24c8430f866a56abe5dcf54, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     m_Floats:
     - Vector1_6B396996: 0.498
     - Vector1_9DF8A771: 1.08
@@ -91,7 +84,6 @@ Material:
     - _DistortionEnabled: 0
     - _DistortionStrength: 1
     - _DistortionStrengthScaled: 0
-    - _DitherScale: 36
     - _DstBlend: 0
     - _EmissionEnabled: 0
     - _FlipbookMode: 0
