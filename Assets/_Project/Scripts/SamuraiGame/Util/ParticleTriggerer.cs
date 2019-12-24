@@ -15,12 +15,18 @@ namespace SamuraiGame.Util
             [SerializeField]
             private ParticleSystem system;
             [SerializeField]
+            private ParticleSystem[] extra;
+            [SerializeField]
             private int count = 1;
             public string id;
 
             public void Trigger()
             {
                 system.Emit(count);
+                foreach (var parts in extra)
+                {
+                    parts.Emit(count);
+                }
             }
         }
 
