@@ -955,7 +955,7 @@ GameObject:
   m_Component:
   - component: {fileID: 207666913}
   - component: {fileID: 207666912}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Colliders-Trees (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1340,7 +1340,7 @@ GameObject:
   - component: {fileID: 331580127}
   - component: {fileID: 331580126}
   - component: {fileID: 331580129}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_collum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2233,6 +2233,11 @@ PrefabInstance:
         type: 3}
       propertyPath: isFirstScene
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742728086722436600, guid: 4c43b1438bac140439424e9ab7a4f84a,
+        type: 3}
+      propertyPath: data.dataString
+      value: UEsDBBQAAAgIAACon+vXvbGJTwIAAPcEAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VE1z2jAQ/SuMzk3HBlpCb61DSA+ETGgnF1+EtMYaZMmjj/CR4b93JdvYpdMT4u3b1du3K38QoWwNzGmzNIKvNAfybUTCmXwa9cEnONKdVhtxho7zJrgrA4lGzit1QiOehjSrK3BGsO9qJwM5QdArUWhTLfgOMm2dRbig0gKGjHYhWyH0MSJH/Lmbh5QTnsazcDrjaZ6MLnhkoByYntoRO1rD8opJWtXAg+SePO7YaUNT2EzLSD6PQ3UtpbCtFuJOdew1o7X12AkSuKDYWxTQZJQgdqULtYfp66Kw4FpZhp4ehEGTmrrkh26cq6jdN9reqfQQ9U3vo7Cm6uofwl0aw4XR1VN3cZqES1wp2P6Vnhi1buDtEH7otafRowOVe7qV8FaCetZLo73iGHTGh1RvYfzQ/732lpXA9j3eSL0Bff3/CYUeLrH9YyZFtY1WThtgI3W0PM4fDI7nJwqO22HbEogGFb8t/KK74Rq1gUdhrMNQ26UK8rbam0Ali+hZ6Ma7TBsFEW5F16CodKcXLONuZ3gTG1x7E3mk4cG0l7ex7h3cpES45yfJTehFH67DsqU+rMCWa++kUNCLDoFn9CnTSjUrNvSkS9t4U1A2SNt5wf9eLfIlmdDk64xN5wAwnSR3bMo4vZ/M5nQ8SVM+I3H3hMI+qXxphLb24NRUX1zhnnXfkdHS0DquOzf0sBTnSg8sF6rQG2YA1LqpcBUOBi/Bp8kXXKBBG3BOqDhv8pETqdkeeH4tlMdOF0dnaN5XyUkt3rULSE6y+OHIyYVc/gBQSwMEFAAACAgAAKif63nEnfpsAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSMzTUUVBKL0osyCgGioA5pZkpIHa0kqmBcaKBmXmyiWVqaqqJsYFusklySqKFsbllopGxoWGKuVIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAAqJ/r172xiU8CAAD3BAAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAAqJ/recSd+mwAAAB4AAAACQAkAAAAAAAAAAAAAACcAgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAFMDAAAAAA==
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c43b1438bac140439424e9ab7a4f84a, type: 3}
@@ -5813,7 +5818,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1470136609}
   - component: {fileID: 1470136608}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Colliders-Walls1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5950,7 +5955,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1558479827}
   - component: {fileID: 1558479826}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Colliders-Trees
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6712,7 +6717,7 @@ GameObject:
   - component: {fileID: 1782216435}
   - component: {fileID: 1782216434}
   - component: {fileID: 1782216433}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_collum (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6857,7 +6862,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1805533375}
   - component: {fileID: 1805533374}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Colliders-Walls1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9026,6 +9031,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6560276393892580726, guid: bd9a655a52f0a384d870fd8b7422d6cb,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd9a655a52f0a384d870fd8b7422d6cb, type: 3}
 --- !u!224 &3911747296125711975 stripped
@@ -9174,6 +9184,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2661965287912576222, guid: 0d972a66dd74a49f9afe104969e41c97,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2661965287912576209, guid: 0d972a66dd74a49f9afe104969e41c97,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d972a66dd74a49f9afe104969e41c97, type: 3}

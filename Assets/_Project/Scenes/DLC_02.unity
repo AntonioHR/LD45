@@ -163,7 +163,7 @@ GameObject:
   - component: {fileID: 64697626}
   - component: {fileID: 64697625}
   - component: {fileID: 64697624}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -405,7 +405,7 @@ GameObject:
   - component: {fileID: 170015250}
   - component: {fileID: 170015249}
   - component: {fileID: 170015248}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -533,7 +533,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 190578876}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Dojo-Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -665,7 +665,7 @@ GameObject:
   - component: {fileID: 226294521}
   - component: {fileID: 226294520}
   - component: {fileID: 226294519}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: env-tree-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1006,7 +1006,7 @@ GameObject:
   - component: {fileID: 351446989}
   - component: {fileID: 351446988}
   - component: {fileID: 351446987}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1502,7 +1502,7 @@ GameObject:
   - component: {fileID: 509260489}
   - component: {fileID: 509260488}
   - component: {fileID: 509260487}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: env-tree-2 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1807,7 +1807,7 @@ GameObject:
   m_Component:
   - component: {fileID: 683975751}
   - component: {fileID: 683975750}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Colliders-Trees
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1874,7 +1874,7 @@ GameObject:
   - component: {fileID: 688567159}
   - component: {fileID: 688567158}
   - component: {fileID: 688567157}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2007,7 +2007,7 @@ GameObject:
   - component: {fileID: 723324117}
   - component: {fileID: 723324116}
   - component: {fileID: 723324115}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: env-tree-2 (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2155,7 +2155,7 @@ GameObject:
   - component: {fileID: 724247020}
   - component: {fileID: 724247019}
   - component: {fileID: 724247018}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2288,7 +2288,7 @@ GameObject:
   - component: {fileID: 754693713}
   - component: {fileID: 754693712}
   - component: {fileID: 754693711}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: env-tree-2 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2437,7 +2437,7 @@ GameObject:
   - component: {fileID: 785060863}
   - component: {fileID: 785060862}
   - component: {fileID: 785060861}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: env-tree-2 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2586,7 +2586,7 @@ GameObject:
   - component: {fileID: 800435852}
   - component: {fileID: 800435851}
   - component: {fileID: 800435850}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_collum (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2735,7 +2735,7 @@ GameObject:
   - component: {fileID: 818145505}
   - component: {fileID: 818145504}
   - component: {fileID: 818145503}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: env-tree-2 (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3181,7 +3181,7 @@ GameObject:
   - component: {fileID: 894974806}
   - component: {fileID: 894974805}
   - component: {fileID: 894974804}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: env-tree-2 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3409,7 +3409,7 @@ GameObject:
   - component: {fileID: 927205738}
   - component: {fileID: 927205737}
   - component: {fileID: 927205736}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3942,7 +3942,7 @@ GameObject:
   - component: {fileID: 1025940222}
   - component: {fileID: 1025940221}
   - component: {fileID: 1025940220}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: env-tree-2 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4361,7 +4361,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1091706225}
   - component: {fileID: 1091706224}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 'temple-roof '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4525,7 +4525,7 @@ GameObject:
   - component: {fileID: 1122847482}
   - component: {fileID: 1122847481}
   - component: {fileID: 1122847480}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: env-tree-2 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4753,7 +4753,7 @@ GameObject:
   - component: {fileID: 1136059117}
   - component: {fileID: 1136059116}
   - component: {fileID: 1136059115}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4886,7 +4886,7 @@ GameObject:
   - component: {fileID: 1146392953}
   - component: {fileID: 1146392952}
   - component: {fileID: 1146392951}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: env-tree-2 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5035,7 +5035,7 @@ GameObject:
   - component: {fileID: 1204317269}
   - component: {fileID: 1204317268}
   - component: {fileID: 1204317267}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: env-tree-2 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5381,7 +5381,7 @@ GameObject:
   - component: {fileID: 1313660817}
   - component: {fileID: 1313660816}
   - component: {fileID: 1313660815}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: env-tree-2 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5530,7 +5530,7 @@ GameObject:
   - component: {fileID: 1318592429}
   - component: {fileID: 1318592428}
   - component: {fileID: 1318592427}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: env-tree-2 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5760,7 +5760,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1369758013}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Trees
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5970,7 +5970,7 @@ GameObject:
   - component: {fileID: 1431607563}
   - component: {fileID: 1431607562}
   - component: {fileID: 1431607565}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_collum-broken
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6195,7 +6195,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1439385763}
   - component: {fileID: 1439385764}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_collum-broken-det1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6278,7 +6278,7 @@ GameObject:
   - component: {fileID: 1444012381}
   - component: {fileID: 1444012380}
   - component: {fileID: 1444012379}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6490,7 +6490,7 @@ GameObject:
   - component: {fileID: 1452726651}
   - component: {fileID: 1452726650}
   - component: {fileID: 1452726649}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6649,7 +6649,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1470136609}
   - component: {fileID: 1470136608}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Colliders-Walls1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6706,7 +6706,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1477712148}
   - component: {fileID: 1477712149}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_collum-broken-det1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6870,7 +6870,7 @@ GameObject:
   - component: {fileID: 1550359303}
   - component: {fileID: 1550359302}
   - component: {fileID: 1550359301}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: env-tree-2 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7098,7 +7098,7 @@ GameObject:
   - component: {fileID: 1596972371}
   - component: {fileID: 1596972370}
   - component: {fileID: 1596972369}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7367,7 +7367,7 @@ GameObject:
   - component: {fileID: 1635596437}
   - component: {fileID: 1635596436}
   - component: {fileID: 1635596435}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7749,6 +7749,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: d1296353395ea4445839802300ca04f4,
         type: 3}
+    - target: {fileID: 6560276393892580726, guid: bd9a655a52f0a384d870fd8b7422d6cb,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd9a655a52f0a384d870fd8b7422d6cb, type: 3}
 --- !u!224 &1646340212 stripped
@@ -8198,7 +8203,7 @@ GameObject:
   - component: {fileID: 1724410277}
   - component: {fileID: 1724410276}
   - component: {fileID: 1724410275}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: env-tree-2 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8423,7 +8428,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1755878985}
   - component: {fileID: 1755878986}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_collum-broken-det1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8670,7 +8675,7 @@ GameObject:
   - component: {fileID: 1813864726}
   - component: {fileID: 1813864725}
   - component: {fileID: 1813864724}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8802,7 +8807,7 @@ GameObject:
   - component: {fileID: 1825975053}
   - component: {fileID: 1825975052}
   - component: {fileID: 1825975051}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9249,7 +9254,7 @@ GameObject:
   - component: {fileID: 1885325831}
   - component: {fileID: 1885325830}
   - component: {fileID: 1885325829}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: env-tree-2 (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9394,7 +9399,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1891439156}
   - component: {fileID: 1891439157}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_collum-broken-det1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9477,7 +9482,7 @@ GameObject:
   - component: {fileID: 1917968413}
   - component: {fileID: 1917968412}
   - component: {fileID: 1917968411}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9690,7 +9695,7 @@ GameObject:
   - component: {fileID: 1951421532}
   - component: {fileID: 1951421531}
   - component: {fileID: 1951421530}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: env-tree-2 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10140,7 +10145,7 @@ GameObject:
   - component: {fileID: 2108858731}
   - component: {fileID: 2108858730}
   - component: {fileID: 2108858729}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10268,7 +10273,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2112469951}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pillars
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10308,7 +10313,7 @@ GameObject:
   - component: {fileID: 2112485741}
   - component: {fileID: 2112485740}
   - component: {fileID: 2112485739}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10441,7 +10446,7 @@ GameObject:
   - component: {fileID: 2130260031}
   - component: {fileID: 2130260030}
   - component: {fileID: 2130260029}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: env-tree-2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

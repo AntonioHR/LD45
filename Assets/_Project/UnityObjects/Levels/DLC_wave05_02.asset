@@ -15,12 +15,12 @@ MonoBehaviour:
   enemySpawns:
   - SpawnerId: c
     enemyPrefab:
-    - {fileID: 1040177797947906758, guid: 0d972a66dd74a49f9afe104969e41c97, type: 3}
-    - {fileID: 1040177797947906758, guid: d1e73aa74f9bd4255af5bbe2670259b8, type: 3}
+    - {fileID: 2661965287912576222, guid: 0d972a66dd74a49f9afe104969e41c97, type: 3}
+    - {fileID: 2661965287912576222, guid: 0d972a66dd74a49f9afe104969e41c97, type: 3}
   - SpawnerId: d
     enemyPrefab:
-    - {fileID: 1040177797947906758, guid: 0d972a66dd74a49f9afe104969e41c97, type: 3}
-    - {fileID: 1040177797947906758, guid: 0d972a66dd74a49f9afe104969e41c97, type: 3}
+    - {fileID: 2661965287912576222, guid: 0d972a66dd74a49f9afe104969e41c97, type: 3}
+    - {fileID: 2661965287912576222, guid: 7de86f09f9b134e4d89c9e4827d30b70, type: 3}
   totalEnemies: 4
-  startDelay: 4
+  startDelay: 3
   triggerEvent: 

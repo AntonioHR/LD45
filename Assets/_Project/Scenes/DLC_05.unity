@@ -210,7 +210,7 @@ GameObject:
   m_Component:
   - component: {fileID: 30950160}
   - component: {fileID: 30950161}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo-wall_diagonal_left (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -293,7 +293,7 @@ GameObject:
   - component: {fileID: 31653437}
   - component: {fileID: 31653436}
   - component: {fileID: 31653435}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -422,7 +422,7 @@ GameObject:
   m_Component:
   - component: {fileID: 52110940}
   - component: {fileID: 52110941}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo-wall_diagonal_left (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -502,7 +502,7 @@ GameObject:
   m_Component:
   - component: {fileID: 78085086}
   - component: {fileID: 78085085}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo-wall_diagonal_left_full (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -582,7 +582,7 @@ GameObject:
   m_Component:
   - component: {fileID: 85879262}
   - component: {fileID: 85879263}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo-wall_diagonal_left (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -662,7 +662,7 @@ GameObject:
   m_Component:
   - component: {fileID: 152523767}
   - component: {fileID: 152523768}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo-wall_diagonal_left_full (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -772,7 +772,7 @@ GameObject:
   m_Component:
   - component: {fileID: 200792917}
   - component: {fileID: 200792918}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo-wall_diagonal_left (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -852,7 +852,7 @@ GameObject:
   m_Component:
   - component: {fileID: 216323247}
   - component: {fileID: 216323246}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo-wall_diagonal_left_full
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -989,7 +989,7 @@ GameObject:
   m_Component:
   - component: {fileID: 343681281}
   - component: {fileID: 343681282}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo-wall_diagonal_left_full (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1069,7 +1069,7 @@ GameObject:
   m_Component:
   - component: {fileID: 385891100}
   - component: {fileID: 385891101}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo-wall_diagonal_intersection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1240,7 +1240,7 @@ GameObject:
   m_Component:
   - component: {fileID: 447763863}
   - component: {fileID: 447763864}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo-wall_diagonal_left (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1565,7 +1565,7 @@ GameObject:
   - component: {fileID: 520013135}
   - component: {fileID: 520013134}
   - component: {fileID: 520013133}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horiz-sword (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1753,7 +1753,7 @@ GameObject:
   - component: {fileID: 553928712}
   - component: {fileID: 553928711}
   - component: {fileID: 553928710}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1886,7 +1886,7 @@ GameObject:
   - component: {fileID: 569746163}
   - component: {fileID: 569746162}
   - component: {fileID: 569746161}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horiz-sword (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2040,7 +2040,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 634447522}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall-diagonal (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2249,7 +2249,7 @@ GameObject:
   m_Component:
   - component: {fileID: 725514270}
   - component: {fileID: 725514269}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo-wall_diagonal_left_full (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2329,7 +2329,7 @@ GameObject:
   m_Component:
   - component: {fileID: 762695843}
   - component: {fileID: 762695844}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo-wall_diagonal_left (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2409,7 +2409,7 @@ GameObject:
   m_Component:
   - component: {fileID: 825298857}
   - component: {fileID: 825298858}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo-wall_diagonal_left_full (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2573,7 +2573,7 @@ GameObject:
   - component: {fileID: 838219707}
   - component: {fileID: 838219706}
   - component: {fileID: 838219705}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-corner(l)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2728,7 +2728,7 @@ GameObject:
   m_Component:
   - component: {fileID: 914708038}
   - component: {fileID: 914708039}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo-wall_diagonal_left (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2808,7 +2808,7 @@ GameObject:
   m_Component:
   - component: {fileID: 914732315}
   - component: {fileID: 914732316}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo-wall_diagonal_left (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2945,7 +2945,7 @@ GameObject:
   m_Component:
   - component: {fileID: 932335537}
   - component: {fileID: 932335538}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Collider-WallDiagonal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3009,7 +3009,7 @@ GameObject:
   m_Component:
   - component: {fileID: 993643859}
   - component: {fileID: 993643860}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo-wall_diagonal_left_full (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3089,7 +3089,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1044808363}
   - component: {fileID: 1044808364}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo-wall_diagonal_left (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3169,7 +3169,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1067676864}
   - component: {fileID: 1067676865}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo-wall_diagonal_left (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3249,7 +3249,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1121148563}
   - component: {fileID: 1121148564}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo-wall_diagonal_left (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3425,7 +3425,7 @@ GameObject:
   - component: {fileID: 1242489368}
   - component: {fileID: 1242489367}
   - component: {fileID: 1242489366}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_tree (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3574,7 +3574,7 @@ GameObject:
   - component: {fileID: 1262797388}
   - component: {fileID: 1262797387}
   - component: {fileID: 1262797386}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_tree (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3719,7 +3719,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1285081172}
   - component: {fileID: 1285081173}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo-wall_diagonal_left_full (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3799,7 +3799,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1328684961}
   - component: {fileID: 1328684962}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo-wall_diagonal_left (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3879,7 +3879,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1381829773}
   - component: {fileID: 1381829772}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo-wall_diagonal_left_full (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3960,7 +3960,7 @@ GameObject:
   - component: {fileID: 1399991227}
   - component: {fileID: 1399991226}
   - component: {fileID: 1399991225}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo-wall_corner-right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4153,7 +4153,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1513192946}
   - component: {fileID: 1513192947}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo-wall_diagonal_left_full (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4237,7 +4237,7 @@ GameObject:
   - component: {fileID: 1568298537}
   - component: {fileID: 1568298536}
   - component: {fileID: 1568298535}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_tree (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4445,7 +4445,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1676780058}
   - component: {fileID: 1676780059}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Collider-WallDiagonal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4512,7 +4512,7 @@ GameObject:
   - component: {fileID: 1684113804}
   - component: {fileID: 1684113803}
   - component: {fileID: 1684113802}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4710,7 +4710,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1730843354}
   - component: {fileID: 1730843353}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo-wall_diagonal_left_full (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4794,7 +4794,7 @@ GameObject:
   - component: {fileID: 1749274961}
   - component: {fileID: 1749274960}
   - component: {fileID: 1749274959}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_sign-1 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4942,7 +4942,7 @@ GameObject:
   - component: {fileID: 1758044811}
   - component: {fileID: 1758044810}
   - component: {fileID: 1758044809}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horizontal (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5071,7 +5071,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1763272338}
   - component: {fileID: 1763272339}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo-wall_diagonal_left_full (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5151,7 +5151,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1778763962}
   - component: {fileID: 1778763961}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo-wall_diagonal_intersection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5235,7 +5235,7 @@ GameObject:
   - component: {fileID: 1779205333}
   - component: {fileID: 1779205332}
   - component: {fileID: 1779205331}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horiz-sword (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5526,7 +5526,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1833665133}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall-diagonal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5575,7 +5575,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1838631422}
   - component: {fileID: 1838631423}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo-wall_diagonal_left_full
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5659,7 +5659,7 @@ GameObject:
   - component: {fileID: 1859140016}
   - component: {fileID: 1859140015}
   - component: {fileID: 1859140014}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_sign-1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5804,7 +5804,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1864069799}
   - component: {fileID: 1864069798}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo-wall_diagonal_left_full (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5884,7 +5884,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1879081048}
   - component: {fileID: 1879081049}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo-wall_diagonal_left (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5964,7 +5964,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1902310361}
   - component: {fileID: 1902310360}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo-wall_diagonal_left (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6084,7 +6084,7 @@ GameObject:
   - component: {fileID: 1947763014}
   - component: {fileID: 1947763013}
   - component: {fileID: 1947763012}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-horiz-sword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6243,7 +6243,7 @@ GameObject:
   - component: {fileID: 1980088956}
   - component: {fileID: 1980088955}
   - component: {fileID: 1980088954}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-vertical(l) (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6398,7 +6398,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1980265601}
   - component: {fileID: 1980265602}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo-wall_diagonal_left (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6478,7 +6478,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1987324093}
   - component: {fileID: 1987324094}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo-wall_diagonal_left (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6964,7 +6964,7 @@ GameObject:
   - component: {fileID: 2121336814}
   - component: {fileID: 2121336813}
   - component: {fileID: 2121336812}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_wall-vertical(l) (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7123,7 +7123,7 @@ GameObject:
   - component: {fileID: 2141312497}
   - component: {fileID: 2141312496}
   - component: {fileID: 2141312495}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dojo_tree (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7366,6 +7366,11 @@ PrefabInstance:
     - target: {fileID: 1040177797947906761, guid: 0d972a66dd74a49f9afe104969e41c97,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2661965287912576222, guid: 0d972a66dd74a49f9afe104969e41c97,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

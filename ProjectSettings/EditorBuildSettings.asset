@@ -21,15 +21,24 @@ EditorBuildSettings:
     path: Assets/_Project/Scenes/Scene 05.unity
     guid: f63e7f8dd39ce4b5e9c64dd3bd5e7051
   - enabled: 1
-    path: Assets/_Project/Scenes/Cutscenes/Ending.unity
-    guid: 272dc89211ba7478da36c4c2bb9c8db6
-  - enabled: 1
     path: Assets/_Project/Scenes/DLC_01.unity
     guid: eca15be81894041b98256f50d327bae5
+  - enabled: 1
+    path: Assets/_Project/Scenes/DLC_02.unity
+    guid: b98537596a7544ac4b5d13c5a513238e
   - enabled: 1
     path: Assets/_Project/Scenes/DLC_03.unity
     guid: 6bc6b6eaadf7e4458aaddf7266270655
   - enabled: 1
-    path: Assets/_Project/Scenes/DLC_02.unity
-    guid: b98537596a7544ac4b5d13c5a513238e
+    path: Assets/_Project/Scenes/DLC_04.unity
+    guid: 4c7d3983c18d24ce1beed07c6e975146
+  - enabled: 1
+    path: Assets/_Project/Scenes/DLC_05.unity
+    guid: 332771f2bae7649db88ebf0252b78402
+  - enabled: 1
+    path: Assets/_Project/Scenes/DLC_06.unity
+    guid: 6c2a601a3567546f595bd04ecb458c8a
+  - enabled: 1
+    path: Assets/_Project/Scenes/Cutscenes/Ending.unity
+    guid: 272dc89211ba7478da36c4c2bb9c8db6
   m_configObjects: {}
