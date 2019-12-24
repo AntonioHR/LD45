@@ -6,6 +6,7 @@ using Common.Input;
 using Common.Movement;
 using SamuraiGame.Events;
 using SamuraiGame.Managers;
+using SamuraiGame.Util;
 using UnityEngine;
 
 namespace SamuraiGame.Player
@@ -21,9 +22,11 @@ namespace SamuraiGame.Player
 
         public PlayerConfigs configs;
         public Animator animator;
+        public ParticleTriggerer particleFxTriggerer;
         public ParticleSystem deathParticle;
         public ParticleSystem[] dashParticles;
         public ParticleSystem[] blockParticles;
+        public string healFx;
         public Transform foot;
 
         public Collider2D dashHitbox;
@@ -187,6 +190,7 @@ namespace SamuraiGame.Player
         public void Heal()
         {
             AudioManager.Instance.Play("recover");
+            particleFxTriggerer.FireParticles(healFx);
             health.Heal();
         }
         public void OnDead()
