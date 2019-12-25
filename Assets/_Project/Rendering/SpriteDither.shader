@@ -110,7 +110,7 @@
 				float2 textureScale = _DitherTex_TexelSize.zw * screenRatio / _DitherScale;
 				float2 screenCoords = i.lightingUV * textureScale;
 
-				half4 dither = SAMPLE_TEXTURE2D(_DitherTex, sampler_DitherTex, screenCoords);
+				half4 dither = SAMPLE_TEXTURE2D(_DitherTex, sampler_DitherTex, screenCoords) + 0.01;
 				
 				half step = dot(color.xyz, color.xyz) > ( _DitherFactor * (dither * dot(main.xyz, main.xyz)));
 				half4 result = step * main;
@@ -142,6 +142,7 @@
 				accentColor += half4(1,0,0,0) * (accent.r > eqThreshold);
 				accentColor += half4(0,1,0,0) * (accent.g > eqThreshold);
 				accentColor += half4(0,0,1,0) * (accent.b > eqThreshold);
+				accentColor += (dot(accentColor.xyz, accentColor.xyz) == 0) * half4(1,1,1,1);
 				
 				half accentStep = dot(accent, accent)/ _AccentCutout > ((dither * dot(main.xyz, main.xyz)));
 
