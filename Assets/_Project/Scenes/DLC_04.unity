@@ -691,7 +691,7 @@ GameObject:
   m_Component:
   - component: {fileID: 284108141}
   - component: {fileID: 284108142}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Screen-Colliders (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -948,7 +948,7 @@ PrefabInstance:
     - target: {fileID: 3707738723152521897, guid: 19b543e929183a7408aa9a510ad3e216,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3707738723152521897, guid: 19b543e929183a7408aa9a510ad3e216,
         type: 3}
@@ -2110,7 +2110,7 @@ GameObject:
   m_Component:
   - component: {fileID: 917038820}
   - component: {fileID: 917038821}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Screen-Colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4015,7 +4015,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1596567730}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Colliders-Screen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4398,7 +4398,7 @@ PrefabInstance:
     - target: {fileID: 8926045941865655995, guid: c47dfefee79226b48a84725c260fca34,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8926045941865655995, guid: c47dfefee79226b48a84725c260fca34,
         type: 3}
@@ -5845,7 +5845,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: c1b56e2739fb3a14d8e0f3e20db797d1,
+      objectReference: {fileID: 21300000, guid: 2a3dcb8ce7aca4b79a437ac8e457764d,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd9a655a52f0a384d870fd8b7422d6cb, type: 3}
@@ -5892,7 +5892,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2021880934}
   - component: {fileID: 2021880935}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Screen-Colliders (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6193,6 +6193,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2661965287912576222, guid: 0d972a66dd74a49f9afe104969e41c97,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1040177797947906758, guid: 0d972a66dd74a49f9afe104969e41c97,
         type: 3}
       propertyPath: m_Name
@@ -6256,11 +6261,6 @@ PrefabInstance:
     - target: {fileID: 1040177797947906761, guid: 0d972a66dd74a49f9afe104969e41c97,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2661965287912576222, guid: 0d972a66dd74a49f9afe104969e41c97,
-        type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
