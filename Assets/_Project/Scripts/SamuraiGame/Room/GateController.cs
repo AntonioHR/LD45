@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 using Common.Interactables;
+using Common.Utils;
 using SamuraiGame.Player;
 using SamuraiGame.Events;
 using System;
 using DG.Tweening;
 using System.Threading.Tasks;
+using UnityEngine.Experimental.Rendering.LWRP;
 
 namespace SamuraiGame.Room
 {
@@ -13,6 +15,9 @@ namespace SamuraiGame.Room
     {
         public float openDistance = 1;
         public float openTime = .5f;
+        public float intensityFlicker = .5f;
+        public float flickerTime = 1;
+        private float targetIntensity;
         [SerializeField]
         private SpriteRenderer left;
         [SerializeField]
@@ -21,11 +26,15 @@ namespace SamuraiGame.Room
         private Collider2D blocker;
         [SerializeField]
         private Collider2D trigger;
+        [SerializeField]
+        private Light2D light;
 
         public void Start()
         {
             TriggerManager.StartListening(EventName.RoomCompleted, Open);
             TriggerManager.StartListening(EventName.OnBossSpawn, OnBossSpawn);
+            targetIntensity = light.intensity;
+            light.intensity = 0;
         }
 
         private async void OnBossSpawn()
@@ -48,6 +57,7 @@ namespace SamuraiGame.Room
             var seq = DOTween.Sequence();
             seq.Join(left.transform.DOMoveX(-openDistance, openTime).SetRelative());
             seq.Join(right.transform.DOMoveX(openDistance, openTime).SetRelative());
+            seq.Join(light.DOIntensity(targetIntensity, openTime));
             seq.OnComplete(OnOpened);
         }
 
@@ -63,6 +73,7 @@ namespace SamuraiGame.Room
         {
             blocker.enabled = false;
             trigger.enabled = true;
+            light.DOIntensity(light.intensity + intensityFlicker, flickerTime).SetLoops(-1, LoopType.Yoyo);
         }
         private void OnClosed()
         {

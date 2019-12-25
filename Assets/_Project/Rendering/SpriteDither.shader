@@ -107,7 +107,7 @@
 				half4 dither = SAMPLE_TEXTURE2D(_DitherTex, sampler_DitherTex, screenCoords);
 				
 				half step = dot(color.xyz, color.xyz) > (dither * dot(main.xyz, main.xyz));
-				half4 result = step * color;
+				half4 result = step * main;
 				result.w = color.w;
 				return result;
 				return half4(screenCoords.x, screenCoords.y, 0, 1);
