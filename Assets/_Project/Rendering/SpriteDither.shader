@@ -5,8 +5,11 @@
         _MainTex("Diffuse", 2D) = "white" {}
         _MaskTex("Mask", 2D) = "white" {}
         _NormalMap("Normal Map", 2D) = "bump" {}
-        _DitherTex("Dither", 2D) = "white" {}
+        _DitherTex("Dither Texture", 2D) = "white" {}
 		_DitherScale("Scale", Float)  = 0.5
+		_DitherFactor("Dither Power", Float)  = 0
+		_AccentCutout("Accent Cutout", Float)  = 0.5
+
     }
 
     HLSLINCLUDE
@@ -62,6 +65,8 @@
             half4 _MainTex_ST;
             half4 _NormalMap_ST;
 			float _DitherScale;
+			float _DitherFactor;
+			float _AccentCutout;
 
             #if USE_SHAPE_LIGHT_TYPE_0
             SHAPE_LIGHT(0)
@@ -91,14 +96,15 @@
                 return o;
             }
 
-            #include "Packages/com.unity.render-pipelines.lightweight/Shaders/2D/Include/CombinedShapeLightShared.hlsl"
+            //#include "Assets/Include/CombinedAccentShapeLightShared.hlsl"
+			#include "Packages/com.unity.render-pipelines.lightweight/Shaders/2D/Include/CombinedShapeLightShared.hlsl"
 
             half4 CombinedShapeLightFragment(Varyings i) : SV_Target
             {
                 half4 main = i.color * SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, i.uv);
                 half4 mask = SAMPLE_TEXTURE2D(_MaskTex, sampler_MaskTex, i.uv);
-
-                half4 color = CombinedShapeLightShared(main, mask, i.lightingUV);
+                //half4 color = CombinedAccentShapeLightShared(main, mask, i.lightingUV);
+				half4 color = CombinedShapeLightShared(main, mask, i.lightingUV);
 				
 				float2 screenRatio = float2(_ScreenParams.x * (_ScreenParams.w-1), 1);
 				float2 textureScale = _DitherTex_TexelSize.zw * screenRatio / _DitherScale;
@@ -106,8 +112,42 @@
 
 				half4 dither = SAMPLE_TEXTURE2D(_DitherTex, sampler_DitherTex, screenCoords);
 				
-				half step = dot(color.xyz, color.xyz) > (dither * dot(main.xyz, main.xyz));
+				half step = dot(color.xyz, color.xyz) > ( _DitherFactor * (dither * dot(main.xyz, main.xyz)));
 				half4 result = step * main;
+
+
+				half4 red = half4(color.r,0,0, 0);
+				half4 green = half4(0,color.g,0, 0);
+				half4 blue =  half4(0,0,color.b, 0);
+				half4 accent = red;
+				const half eqThreshold = 0.1;
+
+				half grtr = dot(accent, accent) > dot(green, green);
+				accent = accent * grtr + green * (1-grtr);
+				grtr = dot(accent, accent) > dot(blue, blue);
+				accent = accent * grtr + blue * (1-grtr); 
+
+				half noAccent = abs(max(color.r, color.g) - max(color.g, color.b)) < eqThreshold
+							&& abs(max(color.r, color.b) - max(color.g, color.b)) < eqThreshold;
+				accent = (noAccent) * half4(1,1,1, 1) + (1 - noAccent) * accent; 
+				
+				half factor = dot(accent, accent) / dot(color, color);
+				
+				accent = accent * factor;
+
+				accent.a = 1;
+				
+				half4 accentColor = half4(0,0,0,1);
+				
+				accentColor += half4(1,0,0,0) * (accent.r > eqThreshold);
+				accentColor += half4(0,1,0,0) * (accent.g > eqThreshold);
+				accentColor += half4(0,0,1,0) * (accent.b > eqThreshold);
+				
+				half accentStep = dot(accent, accent)/ _AccentCutout > ((dither * dot(main.xyz, main.xyz)));
+
+				accentColor = (1 - accentStep) * half4(1, 1, 1, 1) + accentStep * accentColor;
+				result = result * accentColor;
+				
 				result.w = color.w;
 				return result;
 				return half4(screenCoords.x, screenCoords.y, 0, 1);

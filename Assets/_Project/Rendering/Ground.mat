@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Sprite Dither
+  m_Name: Ground
   m_Shader: {fileID: 4800000, guid: 1d647772a78d1294e8a0965717d67cd3, type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 0
@@ -80,7 +80,7 @@ Material:
     - Vector1_9DF8A771: 1.08
     - Vector1_B35F5F81: 0.499
     - Vector1_D48BB4D8: 0.5
-    - _AccentCutout: 1
+    - _AccentCutout: 2
     - _BlendOp: 0
     - _BumpScale: 1
     - _CameraFadingEnabled: 0
@@ -92,7 +92,7 @@ Material:
     - _DistortionEnabled: 0
     - _DistortionStrength: 1
     - _DistortionStrengthScaled: 0
-    - _DitherFactor: 1
+    - _DitherFactor: 35
     - _DitherScale: 36
     - _DstBlend: 0
     - _EmissionEnabled: 0
