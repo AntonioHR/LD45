@@ -131,7 +131,8 @@
 							&& abs(max(color.r, color.b) - max(color.g, color.b)) < eqThreshold;
 				accent = (noAccent) * half4(1,1,1, 1) + (1 - noAccent) * accent; 
 				
-				half factor = dot(accent, accent) / dot(color, color);
+				half factor = dot(accent.xyz, accent.xyz) / dot(color.xyz, color.xyz);
+				factor = factor * factor;
 				
 				accent = accent * factor;
 

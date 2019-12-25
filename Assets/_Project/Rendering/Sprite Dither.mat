@@ -80,7 +80,7 @@ Material:
     - Vector1_9DF8A771: 1.08
     - Vector1_B35F5F81: 0.499
     - Vector1_D48BB4D8: 0.5
-    - _AccentCutout: 1
+    - _AccentCutout: 2
     - _BlendOp: 0
     - _BumpScale: 1
     - _CameraFadingEnabled: 0

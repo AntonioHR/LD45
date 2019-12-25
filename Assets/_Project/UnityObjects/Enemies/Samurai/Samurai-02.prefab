@@ -43,9 +43,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LightType: 3
+  m_LightType: 1
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.5
+  m_FalloffIntensity: 0.121
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_Intensity: 0
   m_LightVolumeOpacity: 0
@@ -63,13 +63,19 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 0.36
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
-  - {x: -0.5, y: -0.5, z: 0}
-  - {x: 0.5, y: -0.5, z: 0}
-  - {x: 0.5, y: 0.5, z: 0}
-  - {x: -0.5, y: 0.5, z: 0}
+  - {x: -0.34407753, y: -0.18829295, z: 0}
+  - {x: 0.027907746, y: -0.2944375, z: 0}
+  - {x: 0.31747815, y: -0.26475114, z: 0}
+  - {x: 0.4888628, y: -0.084390566, z: 0}
+  - {x: 0.45112604, y: 0.1323043, z: 0}
+  - {x: 0.24322931, y: 0.29557943, z: 0}
+  - {x: 0.05389494, y: 0.31413344, z: 0}
+  - {x: -0.13853997, y: 0.29219538, z: 0}
+  - {x: 0.3434653, y: 0.08035316, z: 0}
+  - {x: 0.016029269, y: -0.19391921, z: 0}
 --- !u!1 &4794792820414932391
 GameObject:
   m_ObjectHideFlags: 0
