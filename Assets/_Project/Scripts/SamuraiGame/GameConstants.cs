@@ -24,5 +24,9 @@ namespace SamuraiGame
 
         public const float BOSS_KILLED_WAIT_TIME = 3;
 
+        public static float HEALTH_START_BLINKING_TIME = 8f;
+        public static float HEALTH_BLINK_TO_DISAPPEAR_TIME = 4f;
+
+        public static float HEALTH_BLINK_TIME = 0.22f;
     }
 }
