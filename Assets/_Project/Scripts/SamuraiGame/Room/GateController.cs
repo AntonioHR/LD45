@@ -22,28 +22,18 @@ namespace SamuraiGame.Room
         [SerializeField]
         private Collider2D trigger;
 
-        public void Start()
+        public virtual void Start()
         {
             TriggerManager.StartListening(EventName.RoomCompleted, Open);
-            TriggerManager.StartListening(EventName.OnBossSpawn, OnBossSpawn);
         }
 
-        private async void OnBossSpawn()
+        public virtual void OnDestroy()
         {
-            Open();
-            await Wait.For(GameConstants.BOSS_WAIT_TIME);
-
-            Close();
-        }
-
-        public void OnDestroy()
-        {
-            TriggerManager.StopListening(EventName.OnBossSpawn, OnBossSpawn);
             TriggerManager.StopListening(EventName.RoomCompleted, Open);
         }
 
 
-        private void Open()
+        protected void Open()
         {
             var seq = DOTween.Sequence();
             seq.Join(left.transform.DOMoveX(-openDistance, openTime).SetRelative());
@@ -51,7 +41,7 @@ namespace SamuraiGame.Room
             seq.OnComplete(OnOpened);
         }
 
-        private void Close()
+        protected void Close()
         {
             var seq = DOTween.Sequence();
             seq.Join(left.transform.DOMoveX(openDistance, openTime).SetRelative());

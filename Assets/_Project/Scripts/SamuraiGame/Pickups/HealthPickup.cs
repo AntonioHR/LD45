@@ -9,6 +9,12 @@ namespace SamuraiGame.Pickups
     [RequireComponent(typeof(SpriteRenderer))]
     public class HealthPickup : ObjectTrigger<Player.PlayerController>
     {
+        [SerializeField]
+        private float startBlinkSeconds = 8f;
+        [SerializeField]
+        private float fromBlinkToDisappearSeconds = 4f;
+        [SerializeField]
+        private float blinkTime = 0.22f;
         private SpriteRenderer spriteRenderer;
         private Sequence beat;
         private Tween bounce;
@@ -49,11 +55,11 @@ namespace SamuraiGame.Pickups
 
         private void BlinkToDisappear() {
             disappear = DOTween.Sequence();
-            disappear.AppendInterval(GameConstants.HEALTH_START_BLINKING_TIME);
+            disappear.AppendInterval(startBlinkSeconds);
             disappear.AppendCallback(StartBlink);
 
-            disappear.AppendInterval(GameConstants.HEALTH_BLINK_TO_DISAPPEAR_TIME);
-            disappear.Append(spriteRenderer.DOFade(0, GameConstants.HEALTH_BLINK_TIME));
+            disappear.AppendInterval(fromBlinkToDisappearSeconds);
+            disappear.Append(spriteRenderer.DOFade(0, blinkTime));
             disappear.AppendCallback(() => {
                 if(gameObject != null) {
                     Destroy(gameObject);
@@ -64,8 +70,8 @@ namespace SamuraiGame.Pickups
         private void StartBlink() {
                 if(gameObject != null) {
                     blink = DOTween.Sequence();
-                    blink.Append(spriteRenderer.DOFade(0, GameConstants.HEALTH_BLINK_TIME));
-                    blink.Append(spriteRenderer.DOFade(1, GameConstants.HEALTH_BLINK_TIME));
+                    blink.Append(spriteRenderer.DOFade(0, blinkTime));
+                    blink.Append(spriteRenderer.DOFade(1, blinkTime));
                     blink.SetLoops(-1);
                 }
         }
