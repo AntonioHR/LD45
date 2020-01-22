@@ -18,11 +18,12 @@ namespace SamuraiGame.Enemy
 
         async void StartBehaviour()
         {
+            GetComponent<EnemyController>().animationPlayable.PlayLooped(GameConstants.ENEMY_ANIMATION_IDLE, () => {});
+
             await Wait.For(GameConstants.BOSS_WAIT_TIME - GameConstants.BOSS_WALKING_TIME);
 
             GetComponent<EnemyController>().disableInteractions = false;
         }
-
     }
 }
 
