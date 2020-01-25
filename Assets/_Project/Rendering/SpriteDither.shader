@@ -1,4 +1,4 @@
-﻿Shader "Lightweight Render Pipeline/2D/Sprite-Lit-Dither"
+﻿Shader "Universal Render Pipeline/2D/Sprite-Lit-Dither"
 {
     Properties
     {
@@ -13,12 +13,12 @@
     }
 
     HLSLINCLUDE
-    #include "Packages/com.unity.render-pipelines.lightweight/ShaderLibrary/Core.hlsl"
+    #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
     ENDHLSL
 
     SubShader
     {
-        Tags {"Queue" = "Transparent" "RenderType" = "Transparent" "RenderPipeline" = "LightweightPipeline" }
+        Tags {"Queue" = "Transparent" "RenderType" = "Transparent" "RenderPipeline" = "UniversalPipeline" }
 
         Blend SrcAlpha OneMinusSrcAlpha
         Cull Off
@@ -26,7 +26,7 @@
 
         Pass
         {
-            Tags { "LightMode" = "Lightweight2D" }
+            Tags { "LightMode" = "Universal2D" }
             HLSLPROGRAM
             #pragma prefer_hlslcc gles
             #pragma vertex CombinedShapeLightVertex
@@ -51,7 +51,7 @@
                 float2	lightingUV  : TEXCOORD1;
             };
 
-            #include "Packages/com.unity.render-pipelines.lightweight/Shaders/2D/Include/LightingUtility.hlsl"
+            #include "Packages/com.unity.render-pipelines.universal/Shaders/2D/Include/LightingUtility.hlsl"
 
             TEXTURE2D(_MainTex);
             SAMPLER(sampler_MainTex);
@@ -97,7 +97,8 @@
             }
 
             //#include "Assets/Include/CombinedAccentShapeLightShared.hlsl"
-			#include "Packages/com.unity.render-pipelines.lightweight/Shaders/2D/Include/CombinedShapeLightShared.hlsl"
+			#include "Packages/com.unity.render-pipelines.universal/Shaders/2D/Include/CombinedShapeLightShared.hlsl"
+
 
             half4 CombinedShapeLightFragment(Varyings i) : SV_Target
             {
@@ -202,7 +203,7 @@
                 return o;
             }
 
-            #include "Packages/com.unity.render-pipelines.lightweight/Shaders/2D/Include/NormalsRenderingShared.hlsl"
+            #include "Packages/com.unity.render-pipelines.universal/Shaders/2D/Include/NormalsRenderingShared.hlsl"
 
             float4 NormalsRenderingFragment(Varyings i) : SV_Target
             {
@@ -214,7 +215,7 @@
         }
         Pass
         {
-            Tags { "LightMode" = "LightweightForward" "Queue"="Transparent" "RenderType"="Transparent"}
+            Tags { "LightMode" = "UniversalForward" "Queue"="Transparent" "RenderType"="Transparent"}
 
             HLSLPROGRAM
             #pragma prefer_hlslcc gles

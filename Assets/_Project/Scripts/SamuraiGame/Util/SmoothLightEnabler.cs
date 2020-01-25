@@ -13,7 +13,7 @@ namespace SamuraiGame.Util
     public class SmoothLightEnabler : MonoBehaviour
     {
         [SerializeField]
-        private Light2D light;
+        private UnityEngine.Experimental.Rendering.Universal.Light2D light;
         [SerializeField]
         private bool startDisabled = true;
         [SerializeField]
@@ -30,7 +30,7 @@ namespace SamuraiGame.Util
         private void Awake()
         {
             if (light == null)
-                light = GetComponent<Light2D>();
+                light = GetComponent<UnityEngine.Experimental.Rendering.Universal.Light2D>();
 
             intensity = light.intensity;
 

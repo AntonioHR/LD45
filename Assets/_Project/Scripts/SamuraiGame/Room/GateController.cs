@@ -27,7 +27,7 @@ namespace SamuraiGame.Room
         [SerializeField]
         private Collider2D trigger;
         [SerializeField]
-        private Light2D light;
+        private UnityEngine.Experimental.Rendering.Universal.Light2D light;
 
         public void Start()
         {
