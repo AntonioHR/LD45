@@ -6,21 +6,39 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Project/Scenes/Scene 01.unity
-    guid: a6c0333942dce43b394f1c66092a93fe
+    path: Assets/_Project/Scenes/Scene 01 (DLC_01).unity
+    guid: eca15be81894041b98256f50d327bae5
   - enabled: 1
-    path: Assets/_Project/Scenes/Scene 02.unity
+    path: Assets/_Project/Scenes/Scene 02 (DLC_02).unity
+    guid: b98537596a7544ac4b5d13c5a513238e
+  - enabled: 1
+    path: Assets/_Project/Scenes/Scene 03 (DLC_03).unity
+    guid: 6bc6b6eaadf7e4458aaddf7266270655
+  - enabled: 1
+    path: Assets/_Project/Scenes/Scene 04 (JAM_02).unity
     guid: 5d9b45317760d47c49de6bc8ea26ba90
   - enabled: 1
-    path: Assets/_Project/Scenes/Scene 03.unity
+    path: Assets/_Project/Scenes/Scene 05 (JAM_03).unity
     guid: f4d801cdf7d07488b8507f6f2e23463a
   - enabled: 1
-    path: Assets/_Project/Scenes/Scene 04.unity
+    path: Assets/_Project/Scenes/Scene 06 (JAM_04).unity
     guid: 09fe42b0e6fad4828bc3fdd427a1af43
   - enabled: 1
-    path: Assets/_Project/Scenes/Scene 05.unity
-    guid: f63e7f8dd39ce4b5e9c64dd3bd5e7051
+    path: Assets/_Project/Scenes/Scene 07 (DLC_05).unity
+    guid: 332771f2bae7649db88ebf0252b78402
+  - enabled: 1
+    path: Assets/_Project/Scenes/Scene 08 (DLC_06).unity
+    guid: 6c2a601a3567546f595bd04ecb458c8a
   - enabled: 1
     path: Assets/_Project/Scenes/Cutscenes/Ending.unity
     guid: 272dc89211ba7478da36c4c2bb9c8db6
+  - enabled: 0
+    path: Assets/_Project/Scenes/Unnused Rooms/Scene 01 (JAM).unity
+    guid: a6c0333942dce43b394f1c66092a93fe
+  - enabled: 0
+    path: Assets/_Project/Scenes/Unnused Rooms/Scene 05.unity
+    guid: f63e7f8dd39ce4b5e9c64dd3bd5e7051
+  - enabled: 0
+    path: Assets/_Project/Scenes/Unnused Rooms/DLC_04.unity
+    guid: 4c7d3983c18d24ce1beed07c6e975146
   m_configObjects: {}
