@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Sprite Dither
+  m_Name: Sprite Dither - C
   m_Shader: {fileID: 4800000, guid: 1d647772a78d1294e8a0965717d67cd3, type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 0
@@ -44,7 +44,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DitherTex:
-        m_Texture: {fileID: 2800000, guid: dcb56bd7bc40427459ddc2a6f554830f, type: 3}
+        m_Texture: {fileID: 2800000, guid: 416b33d983123ad43baaee1be463920c, type: 3}
         m_Scale: {x: 0, y: 0}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
@@ -97,7 +97,7 @@ Material:
     - _DistortionStrength: 1
     - _DistortionStrengthScaled: 0
     - _DitherFactor: 1
-    - _DitherScale: 36
+    - _DitherScale: 3.6
     - _DstBlend: 0
     - _EmissionEnabled: 0
     - _EnableExternalAlpha: 0
